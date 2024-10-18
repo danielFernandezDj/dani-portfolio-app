@@ -4,6 +4,7 @@ import { HomeIcon, CogIcon, UserIcon } from '@heroicons/react/outline';
 
 // Component Pages
 import Home from './components/LandingPage';
+import Footer from './Footer';
 
 function Projects() {
   return <div className="p-4"></div>;
@@ -50,19 +51,23 @@ function NavBar() {
     </nav>
   );
 }
-
+// ! FIX THE FOOTER THAT IS LOOKS IN THE CENTER OF THE PAGE!
 // Main App
 function App() {
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
-      {/* <Footer /> */}
-    </Router>
+    <div className="flex flex-col min-h-screen">
+      <Router >
+        <NavBar />
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
