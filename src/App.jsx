@@ -51,7 +51,7 @@ function NavBar() {
     </nav>
   );
 }
-// ! FIX THE FOOTER THAT IS LOOKS IN THE CENTER OF THE PAGE!
+
 // Main App
 function App() {
   return (

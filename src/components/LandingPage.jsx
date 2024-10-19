@@ -53,7 +53,7 @@ function ContactForm() {
           <button type="submit" className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white p-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
             Send Message
           </button>
-            <div className="m-5 p-0.5 bg-gray-200"></div>
+          <div className="m-5 p-0.5 bg-gray-200"></div>
           {/* My contact Information */}
           <div className="flex flex-col gap-2">
             <h3 className="text-2xl font-bold">Contact Information</h3>
@@ -67,15 +67,21 @@ function ContactForm() {
   );
 }
 
-
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col man-h-screen bg-red-100 gap-y-14 p-4">
+      <main className="flex flex-col gap-y-14">
         {/* Welcome */}
-        <section className="flex flex-col justify-center item-center bg-blue-200">
-          <p className="text-3xl font-bold">Hi there, I'm Daniel. <br /> Full Stack Developer, <br /> Student and Enthusiast</p>
-          <img src="https://fakeimg.pl/600x400" alt="Me in Moto ;)" />
+        <section className="flex flex-col justify-center item-center mt-8">
+          <div className="md:flex">
+            <div className="p-4">
+              <p className="text-3xl font-bold">Hi there, I'm Daniel. <br /> Full Stack Developer, <br /> Student and Enthusiast</p>
+              <img className="pt-4"
+                src="https://fakeimg.pl/600x400"
+                alt="Me in Moto ;)"
+              />
+            </div>
+          </div>
         </section>
 
         {/* About me text 'p' */}
@@ -95,12 +101,11 @@ export default function Home() {
         <section className="flex flex-wrap justify-center self-center space-x-4">
           <div className="bg-blue-200">
             <p>Project Name here!</p>
-            <img src="https://fakeimg.pl/400x200" alt="Project Image" />
+            <img src="https://fakeimg.pl/400x100" alt="Project Image" />
           </div>
-
         </section>
 
-        {/* Tech That I know list using a 'p' */}
+        {/* Tech That I use */}
         <section className="flex flex-wrap justify-around ">
           <div className="bg-blue-200 text-center">
             <FaReact className="size-14 md:size-20 grow" />
