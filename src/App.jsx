@@ -17,13 +17,12 @@ function About() {
 // Navigation Bar
 function NavBar() {
   return (
-    // backdrop-blur-lm
-    <nav className="bg-blue-600 ">
+    <nav className="">
       <div className="container mx-auto px-4 py-6 flex justify-around items-center md:space-x-48 lg:space-x-72">
 
         <div className='flex space-x-8 items-center justify-center'>
           {/* Left side - Logo */}
-          <Link to="/home" className="text-white text-xl font-bold">
+          <Link to="/home" className="text-black text-xl font-bold">
             MyLogo
           </Link>
 
@@ -37,13 +36,13 @@ function NavBar() {
 
         {/* Right side - Icons */}
         <div className="flex space-x-4">
-          <button className="text-white hover:text-gray-300">
+          <button className="text-black hover:text-gray-300">
             <HomeIcon className="h-6 w-6" />
           </button>
-          <button className="text-white hover:text-gray-300">
+          <button className="text-black hover:text-gray-300">
             <CogIcon className="h-6 w-6" />
           </button>
-          <button className="text-white hover:text-gray-300">
+          <button className="text-black hover:text-gray-300">
             <UserIcon className="h-6 w-6" />
           </button>
         </div>

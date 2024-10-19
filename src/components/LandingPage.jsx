@@ -70,31 +70,32 @@ function ContactForm() {
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col gap-y-14">
+      <main className="flex flex-col gap-y-14 max-w-sm mx-auto md:max-w-4xl">
         {/* Welcome */}
-        <section className="flex flex-col justify-center item-center mt-8">
+        <section className="overflow-hidden  mt-8 border-2 border-rose-500">
           <div className="md:flex">
             <div className="p-4">
-              <p className="text-3xl font-bold">Hi there, I'm Daniel. <br /> Full Stack Developer, <br /> Student and Enthusiast</p>
-              <img className="pt-4"
-                src="https://fakeimg.pl/600x400"
-                alt="Me in Moto ;)"
-              />
+              <p className="text-3xl md:text-8xl font-bold">Hi there, I'm Daniel.</p>
+              <img className="rounded-xl float-right size-52" src="./mePhoto.jpeg" alt="Me in Moto ;)" />
+              <p className="text-3xl md:text-6xl font-bold">Full Stack Developer, Student and Enthusiast</p>
             </div>
           </div>
         </section>
 
         {/* About me text 'p' */}
-        <section className="bg-blue-200">
-          <p>About Me.</p>
-          <p>
-            I'm 27 year old graduate student at University of Nevada (UNLV)
-            where I graduate in Full Stack Software Engineer, using technology has React and Nodejs.
-          </p>
-          <p>
-            Through these experience, I've had the opportunity to create memorable products
-            that are not only enjoyable to use, but are written in code thats maintainable and easy to understand.
-          </p>
+        <section className="overflow-hidden m-4">
+          <div className="md:flex">
+            <div className="p-4">
+              <p>
+                I'm 27 year old graduate student at University of Nevada (UNLV)
+                where I graduate in Full Stack Software Engineer, using technology has React and Nodejs.
+              </p>
+              <p>
+                Through these experience, I've had the opportunity to create memorable products
+                that are not only enjoyable to use, but are written in code thats maintainable and easy to understand.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Project list, Cards */}
