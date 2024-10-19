@@ -23,7 +23,7 @@ function NavBar() {
         <div className='flex space-x-8 items-center justify-center'>
           {/* Left side - Logo */}
           <Link to="/home" className="text-black text-xl font-bold">
-            MyLogo
+            &#123; El Dani &#125;
           </Link>
 
           {/* Center - Navigation Links */}

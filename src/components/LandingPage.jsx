@@ -72,12 +72,17 @@ export default function Home() {
     <>
       <main className="flex flex-col gap-y-14 max-w-sm mx-auto md:max-w-4xl">
         {/* Welcome */}
-        <section className="overflow-hidden  mt-8 border-2 border-rose-500">
+        <section className="overflow-hidden  mt-8">
           <div className="md:flex">
             <div className="p-4">
               <p className="text-3xl md:text-8xl font-bold">Hi there, I'm Daniel.</p>
-              <img className="rounded-xl float-right size-52" src="./mePhoto.jpeg" alt="Me in Moto ;)" />
-              <p className="text-3xl md:text-6xl font-bold">Full Stack Developer, Student and Enthusiast</p>
+              <div className="md:mr-8 ">
+                <img className="rounded-xl float-right size-52" src="./mePhoto.jpeg" alt="Me in Moto ;)" />
+                <p className="text-3xl md:text-6xl font-bold">Full Stack Developer, Student & Enthusiast </p>
+                <p className="text-2xl mt-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+                  ______________________________________________
+                </p>
+              </div>
             </div>
           </div>
         </section>
