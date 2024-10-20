@@ -71,29 +71,25 @@ function ContactForm() {
 export default function Home() {
   return (
     <>
+      {/* I need to center the entire home page! ---------------------- */}
       <main className="flex flex-col gap-y-14 max-w-sm mx-auto sm:max-w-3xl">
         {/* Hero */}
-        <section className="overflow-hidden mt-8">
-          <div className="flex p-4">
-
-            <div className="flex flex-col bg-blue-100">
-              <p className="text-3xl sm:text-8xl font-bold">Hi there, <br /> I'm Daniel</p>
-              <p className="text-3xl sm:text-5xl font-bold">Full Stack Developer, Student & Enthusiast </p>
-            </div>
-
-            <div className="flex flex-col size-3/5 bg-red-100">
-              <img className="rounded-xl size-fit " src="./mePhoto.jpeg" alt="Me in Moto)" />
-              <button className="flex gap-2 w flex-row justify-center items-center  bg-gradient-to-r from-blue-500 to-purple-500 text-white mt-4 p-3 rounded-lg
+        <section className="flex p-4 overflow-hidden mt-8 max-w-full gap-2">
+          <div className="flex flex-col size-4/5">
+            <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
+            <button className="flex gap-2 flex-row justify-center items-center bg-gradient-to-r from-blue-500 to-purple-500 text-white mt-2 p-3 rounded-lg
                  transition-all duration-200 ease-in-out"
-              >
-                Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
-              </button>
-            </div>
-
+            >
+              Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
+            </button>
+          </div>
+          <div className="flex flex-col border-r border-blue-500">
+            <p className="text-4xl sm:text-8xl font-bold">Hi there, <br /> I'm Daniel</p>
+            <p className="text-2xl sm:text-5xl font-bold">Full Stack Developer, Student & Enthusiast! </p>
           </div>
         </section>
 
-        {/* About me text 'p' */}
+        {/* About Me */}
         <section className="overflow-hidden m-4">
           <div className="md:flex">
             <div className="p-4">

@@ -18,15 +18,13 @@ function About() {
 function NavBar() {
   return (
     <nav>
-      <div className="container mx-auto px-4 py-6 flex justify-around items-center space-x-72">
+      <div className="container mx-auto px-4 py-8 flex justify-between md:px-20 items-center">
 
+        {/* Left Side */}
         <div className='flex space-x-8 items-center justify-center'>
-          {/* Left side - Logo */}
-          <Link to="/home" className="text-black text-xl font-bold">
+          <Link to="/home" className="text-black text-2xl font-bold">
             &#123; El Dani &#125;
           </Link>
-
-          {/* Center - Navigation Links */}
           {/* <div className="space-x-4">
             <Link to="/home" className="text-white hover:text-gray-300">Home</Link>
             <Link to="/projects" className="text-white hover:text-gray-300">Projects</Link>
@@ -54,7 +52,7 @@ function NavBar() {
 // Main App
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen ">
       <Router >
         <NavBar />
         <div className="flex-grow">
