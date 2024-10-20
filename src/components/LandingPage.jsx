@@ -26,7 +26,7 @@ function ContactForm() {
   };
 
   return (
-    <section className="bg-gray-100 font-sans leading-normal tracking-normal flex items-center justify-center py-8">
+    <section className="font-sans leading-normal tracking-normal flex items-center justify-center p-4">
       <div className="bg-white shadow-2xl rounded-xl p-8 max-w-md w-full">
         <h1 className="text-2xl font-bold mb-6 text-center">Contact Us</h1>
         <form ref={form} onSubmit={sendEmail}>
@@ -72,9 +72,9 @@ export default function Home() {
   return (
     <>
       {/* I need to center the entire home page! ---------------------- */}
-      <main className="flex flex-col gap-y-14 max-w-sm mx-auto sm:max-w-3xl">
+      <main className="flex flex-col gap-8  max-w-sm mx-auto sm:max-w-3xl">
         {/* Hero */}
-        <section className="flex p-4 overflow-hidden mt-8 max-w-full gap-2">
+        <section className="flex p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
             <button className="flex gap-2 flex-row justify-center items-center bg-gradient-to-r from-blue-500 to-purple-500 text-white mt-2 p-3 rounded-lg
@@ -83,30 +83,26 @@ export default function Home() {
               Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
             </button>
           </div>
-          <div className="flex flex-col border-r border-blue-500">
+          <div className="flex flex-col sm:border-r border-blue-500">
             <p className="text-4xl sm:text-8xl font-bold">Hi there, <br /> I'm Daniel</p>
             <p className="text-2xl sm:text-5xl font-bold">Full Stack Developer, Student & Enthusiast! </p>
           </div>
         </section>
 
         {/* About Me */}
-        <section className="overflow-hidden m-4">
-          <div className="md:flex">
-            <div className="p-4">
-              <p>
-                I'm 27 year old graduate student at University of Nevada (UNLV)
-                where I graduate in Full Stack Software Engineer, using technology has React and Nodejs.
-              </p>
-              <p>
-                Through these experience, I've had the opportunity to create memorable products
-                that are not only enjoyable to use, but are written in code thats maintainable and easy to understand.
-              </p>
-            </div>
-          </div>
+        <section className="flex p-4 overflow-hidden max-w-full gap-2">
+          <p>
+            I'm 27 year old graduate student at University of Nevada (UNLV)
+            where I graduate in Full Stack Software Engineer, using technology has React and Nodejs.
+          </p>
+          <p>
+            Through these experience, I've had the opportunity to create memorable products
+            that are not only enjoyable to use, but are written in code thats maintainable and easy to understand.
+          </p>
         </section>
 
         {/* Project list, Cards */}
-        <section className="flex flex-wrap justify-center self-center space-x-4">
+        <section className="flex flex-wrap p-4 justify-center self-center space-x-4">
           <div className="bg-blue-200">
             <p>Project Name here!</p>
             <img src="https://fakeimg.pl/400x100" alt="Project Image" />
@@ -114,7 +110,7 @@ export default function Home() {
         </section>
 
         {/* Tech That I use */}
-        <section className="flex flex-wrap justify-around ">
+        <section className="flex flex-wrap p-4 justify-around ">
           <div className="bg-blue-200 text-center">
             <FaReact className="size-14 md:size-20 grow" />
             <p>React</p>
@@ -130,7 +126,7 @@ export default function Home() {
         </section>
 
         {/* Something Cool to impress the heir team (like a line that do something). */}
-        <section className="">
+        <section className="p-4">
           <div className="bg-red-600 p-4">
             <h3>Doo something cool here!</h3>
           </div>
