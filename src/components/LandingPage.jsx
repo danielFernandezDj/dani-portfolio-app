@@ -8,6 +8,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 // EmailJS
 function ContactForm() {
@@ -70,20 +71,25 @@ function ContactForm() {
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col gap-y-14 max-w-sm mx-auto md:max-w-4xl">
-        {/* Welcome */}
-        <section className="overflow-hidden  mt-8">
-          <div className="md:flex">
-            <div className="p-4">
-              <p className="text-3xl md:text-8xl font-bold">Hi there, I'm Daniel.</p>
-              <div className="md:mr-8 ">
-                <img className="rounded-xl float-right size-52" src="./mePhoto.jpeg" alt="Me in Moto ;)" />
-                <p className="text-3xl md:text-6xl font-bold">Full Stack Developer, Student & Enthusiast </p>
-                <p className="text-2xl mt-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-                  ______________________________________________
-                </p>
-              </div>
+      <main className="flex flex-col gap-y-14 max-w-sm mx-auto sm:max-w-3xl">
+        {/* Hero */}
+        <section className="overflow-hidden mt-8">
+          <div className="flex p-4">
+
+            <div className="flex flex-col bg-blue-100">
+              <p className="text-3xl sm:text-8xl font-bold">Hi there, <br /> I'm Daniel</p>
+              <p className="text-3xl sm:text-5xl font-bold">Full Stack Developer, Student & Enthusiast </p>
             </div>
+
+            <div className="flex flex-col size-3/5 bg-red-100">
+              <img className="rounded-xl size-fit " src="./mePhoto.jpeg" alt="Me in Moto)" />
+              <button className="flex gap-2 w flex-row justify-center items-center  bg-gradient-to-r from-blue-500 to-purple-500 text-white mt-4 p-3 rounded-lg
+                 transition-all duration-200 ease-in-out"
+              >
+                Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
+              </button>
+            </div>
+
           </div>
         </section>
 
@@ -136,7 +142,7 @@ export default function Home() {
 
         {/* Contact-Form */}
         {ContactForm()}
-      </main>
+      </main >
     </>
   )
 }

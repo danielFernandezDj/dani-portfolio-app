@@ -17,8 +17,8 @@ function About() {
 // Navigation Bar
 function NavBar() {
   return (
-    <nav className="">
-      <div className="container mx-auto px-4 py-6 flex justify-around items-center md:space-x-48 lg:space-x-72">
+    <nav>
+      <div className="container mx-auto px-4 py-6 flex justify-around items-center space-x-72">
 
         <div className='flex space-x-8 items-center justify-center'>
           {/* Left side - Logo */}
