@@ -91,7 +91,7 @@ export default function Home() {
         {/* <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div> */}
 
         {/* About Me */}
-        <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around bg-white shadow-md rounded-xl">
+        <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around bg-white shadow-md shadow-indigo-300/50 rounded-xl">
           <div className="max-w-80">
             <p className="tracking-wider text-justify indent-8">
               <strong className="text-purple-500">1-</strong> I'm 27 year old graduate student at <a className="underline decoration-purple-400">University of Nevada
@@ -110,7 +110,7 @@ export default function Home() {
         </section>
 
         {/* Project CARDs  */}
-        <section className="flex flex-col w-full m-4 p-4 gap-4 justify-center self-center rounded-xl sm:shadow-md sm:shadow-indigo-300/50">
+        <section className="flex flex-col w-full m-4 p-4 gap-4 justify-center self-center rounded-xl ">
           {/* TITLE */}
           <strong className="text-2xl tracking-wider text-indigo-500">PROJECTS</strong>
           {/* GROUP */}
