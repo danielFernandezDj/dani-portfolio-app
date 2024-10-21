@@ -71,7 +71,7 @@ function ContactForm() {
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col gap-8  max-w-sm mx-auto sm:max-w-3xl">
+      <main className="flex flex-col gap-8 max-w-sm mx-auto sm:max-w-3xl">
         {/* Hero */}
         <section className="flex mt-4 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
@@ -103,20 +103,52 @@ export default function Home() {
 
           <div className="max-w-80">
             <p className="tracking-wider text-justify indent-8">
-              <strong className="text-blue-500">2-</strong> Through these experience, I've had the opportunity to create memorable products
-              that are not only enjoyable to use, but are written in code thats <a className="underline decoration-blue-400">maintainable and easy to understand.</a>
+              <strong className="text-blue-400">2-</strong> Through these experience, I've had the opportunity to create memorable products
+              that are not only enjoyable to use, but are written in code thats <a className="rounded bg-blue-100">maintainable and easy to understand.</a>
             </p>
           </div>
         </section>
 
         <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
 
-        {/* Project list, Cards  */}
-        <section className="flex flex-wrap p-4 justify-center self-center space-x-4">
-          <div className="bg-blue-200">
-            <p>Project Name here!</p>
-            <img src="https://fakeimg.pl/400x100" alt="Project Image" />
+        {/* Project CARDs  */}
+        <section className="flex flex-col w-full m-4 p-4 gap-4 justify-center self-center rounded-xl shadow-md
+          border-2 border-dotted border-purple-400"
+        >
+          {/* TITLE */}
+          <strong className="text-2xl text-blue-400">Projects</strong>
+          {/* GROUP */}
+          <div className="flex w-full gap-4">
+            {/* CARD 1 */}
+            <div className="flex flex-col gap-4 p-4 rounded-lg bg-indigo-300">
+              <div className="flex  justify-between items-center">
+                <p className="">Word Games</p>
+                <button>See More</button>
+              </div>
+              <div className="flex gap-2">
+                <img className="rounded-md" src="https://fakeimg.pl/100x100" alt="Project Image" />
+                <img className="rounded-md" src="https://fakeimg.pl/100x100" alt="Project Image" />
+                <img className="rounded-md" src="https://fakeimg.pl/100x100" alt="Project Image" />
+              </div>
+            </div>
+
+            <div className="hidden sm:block flex justify-center self-center h-24 w-px | bg-gradient-to-t from-blue-400 to-purple-400"></div>
+
+            {/* CARD 2 */}
+            <div className="flex flex-col gap-4 p-4 rounded-lg bg-indigo-300">
+              <div className="flex  justify-between items-center">
+                <p className="">Word Games</p>
+                <button>See More</button>
+              </div>
+              <div className="flex gap-2">
+                <img className="rounded-md" src="https://fakeimg.pl/100x100" alt="Project Image" />
+                <img className="rounded-md" src="https://fakeimg.pl/100x100" alt="Project Image" />
+                <img className="rounded-md" src="https://fakeimg.pl/100x100" alt="Project Image" />
+              </div>
+            </div>
           </div>
+
+
         </section>
 
         {/* Tech That I use */}
