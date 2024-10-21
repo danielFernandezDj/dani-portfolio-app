@@ -89,17 +89,25 @@ export default function Home() {
           </div>
         </section>
 
+        {/* <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div> */}
+
         {/* About Me */}
-        <section className="flex p-4 overflow-hidden max-w-full gap-2">
-          <p>
-            I'm 27 year old graduate student at University of Nevada (UNLV)
-            where I graduate in Full Stack Software Engineer, using technology has React and Nodejs.
-          </p>
-          <p>
-            Through these experience, I've had the opportunity to create memorable products
-            that are not only enjoyable to use, but are written in code thats maintainable and easy to understand.
-          </p>
+        <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around bg-white shadow-md rounded-xl">
+          <div className="max-w-80">
+            <p className="tracking-wider text-justify indent-8">
+              <strong className="text-purple-500">1-</strong> I'm 27 year old graduate student at <a className="underline decoration-purple-400">University of Nevada
+                (UNLV)</a> where I graduate in Full Stack Software Engineer, using technology has <a className="underline decoration-purple-400">React and Nodejs.</a>
+            </p>
+          </div>
+          <div className="max-w-80">
+            <p className="tracking-wider text-justify indent-8">
+              <strong className="text-blue-500">2-</strong>Through these experience, I've had the opportunity to create memorable products
+              that are not only enjoyable to use, but are written in code thats <a className="underline decoration-blue-400">maintainable and easy to understand.</a>
+            </p>
+          </div>
         </section>
+
+        <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
 
         {/* Project list, Cards */}
         <section className="flex flex-wrap p-4 justify-center self-center space-x-4">
