@@ -76,7 +76,7 @@ export default function Home() {
         <section className="flex mt-8 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
-            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold tracking-wider rounded-lg sm:hover:shadow-lg
+            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider rounded-lg sm:hover:shadow-lg
               sm:transition sm:ease-in-out sm:delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-indigo-500 duration-300"
             >
               Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
