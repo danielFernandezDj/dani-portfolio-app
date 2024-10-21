@@ -53,17 +53,17 @@ function NavBar() {
 function App() {
   return (
     <div className="flex flex-col min-h-screen ">
-      <Router >
-        <NavBar />
-        <div className="flex-grow">
-          <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </div>
-        <Footer />
-      </Router>
+        <Router >
+          <NavBar />
+          <div className="flex-grow">
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+            </Routes>
+          </div>
+          <Footer />
+        </Router>
     </div>
   );
 }

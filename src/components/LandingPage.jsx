@@ -51,18 +51,18 @@ function ContactForm() {
             <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
             <textarea id="message" name="message" className="w-full p-3 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your message" rows="4" required></textarea>
           </div>
-          <button type="submit" className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white p-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+          <button type="submit" className="w-full p-3 text-white font-bold sm:tracking-wider btn-home-animation">
             Send Message
           </button>
-          <div className="m-5 p-0.5 bg-gray-200"></div>
-          {/* My contact Information */}
-          <div className="flex flex-col gap-2">
-            <h3 className="text-2xl font-bold">Contact Information</h3>
-            <p className="flex flex-row items-center gap-1"><FaUser />Daniel Fernandez</p>
-            <p className="flex flex-row items-center gap-1"><FaPhone />(786)307-4352</p>
-            <p className="flex flex-row items-center gap-1"><MdAttachEmail />danielfernandez.tech@gmail.com</p>
-          </div>
         </form>
+        {/* My contact Information */}
+        <div className="flex flex-col gap-2">
+          <div className="flex justify-center self-center mt-5 w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
+          <h3 className="text-2xl font-bold">Contact Information</h3>
+          <p className="flex flex-row items-center gap-1"><FaUser />Daniel Fernandez</p>
+          <p className="flex flex-row items-center gap-1"><FaPhone />(786)307-4352</p>
+          <p className="flex flex-row items-center gap-1"><MdAttachEmail />danielfernandez.tech@gmail.com</p>
+        </div>
       </div>
     </section>
   );
@@ -76,15 +76,14 @@ export default function Home() {
         <section className="flex mt-8 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
-            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider rounded-lg sm:hover:shadow-lg
-              sm:transition sm:ease-in-out sm:delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-indigo-500 duration-300"
+            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider btn-home-animation"
             >
               Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
             </button>
           </div>
           <div className="flex flex-col">
-            <p className="text-4xl sm:text-8xl font-bold">Hi there, <br /> I'm Daniel</p>
-            <p className="text-2xl sm:text-5xl font-bold">Full Stack Developer, Student & Enthusiast! </p>
+            <p className="text-4xl sm:text-8xl font-bold text-slate-800">Hi there, <br /> I'm Daniel</p>
+            <p className="text-2xl sm:text-5xl font-bold text-slate-800">Full Stack Developer, Student & Enthusiast! </p>
           </div>
         </section>
 
@@ -109,9 +108,9 @@ export default function Home() {
 
         {/* ----------------------------- Project CARDs ----------------------------- */}
         <section className="flex flex-col w-full m-4 p-4 gap-4 justify-center self-center rounded-xl ">
-          {/* TITLE */}
-          <strong className="text-2xl tracking-wider text-indigo-500">PROJECTS</strong>
-          {/* GROUP */}
+          <strong className="text-2xl tracking-wider text-slate-800">
+            PROJECTS
+          </strong>
           <div className="flex flex-wrap w-full gap-4">
             {/* CARD 1 */}
             <div className="flex flex-col gap-4 p-4 rounded-lg bg-indigo-50 border-solid border-2 sm:shadow-none shadow-md sm:hover:border-blue-400 sm:border-blue-100 border-blue-400
@@ -122,8 +121,7 @@ export default function Home() {
                   <strong className="text-lg text-blue-500">Word Games</strong>
                   <p className="font-extralight">Multi games web app.</p>
                 </div>
-                <button className="p-2 text-white font-bold tracking-wider rounded-lg sm:hover:shadow-lg
-                  sm:transition sm:ease-in-out delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-indigo-500 duration-300"
+                <button className="p-2 text-white font-bold tracking-wider btn-home-animation"
                 >
                   See More
                 </button>
