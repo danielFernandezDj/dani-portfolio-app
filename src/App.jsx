@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { HomeIcon, CogIcon, UserIcon } from '@heroicons/react/outline';
 
 // Component Pages
-import Home from './components/LandingPage';
+import Home from './components/HomePage';
 import Footer from './Footer';
 
 function Projects() {

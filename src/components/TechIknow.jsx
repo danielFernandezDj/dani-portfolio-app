@@ -15,9 +15,9 @@ export default function TechThatIKnow() {
 
   return (
     <>
-      <section className="flex flex-col m-4 | rounded-lg bg-clip-content p-4 border-2 border-blue-300 border-dashed">
-        <strong className="mx-4 mb-4 flex justify-center w-auto text-2xl tracking-wider | py-4 border-b-2 border-blue-300 border-dashed w-4/6">
-          Tech that I have use.
+      <section className="flex flex-col m-4">
+        <strong className="mx-4 mb-4 flex justify-center w-auto text-2xl tracking-wider">
+          Tech that I have used.
         </strong>
         <div className="flex flex-wrap gap-2 p-4 justify-around ">
           <div className="flex flex-col justify-center items-center icon-hover-animation">
