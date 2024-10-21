@@ -19,7 +19,7 @@ export default function TechThatIKnow() {
         <strong className="mx-4 mb-4 flex justify-center w-auto text-2xl tracking-wider">
           Tech that I have used.
         </strong>
-        <div className="flex flex-wrap gap-2 p-4 justify-around ">
+        <div className="flex flex-wrap gap-5 p-4 justify-around ">
           <div className="flex flex-col justify-center items-center icon-hover-animation">
             <FaReact className="size-10 grow" style={iconsColor('rgb(14 165 233)')} />{/*Blue*/}
             <p>React</p>
@@ -88,14 +88,14 @@ export default function TechThatIKnow() {
             <LuServerCog className="size-10 grow" style={iconsColor('rgb(239 68 68)')} />{/*Red*/}
             <p>Restful</p>
           </div>
-          <div className="flex flex-col justify-center items-center icon-hover-animation">
-            <SiRedux className="size-10 grow" style={iconsColor('rgb(245 158 11)')} />{/*Orange*/}
+          {/* <div className="flex flex-col justify-center items-center icon-hover-animation">
+            <SiRedux className="size-10 grow" style={iconsColor('')} />
             <p>Redux</p>
-          </div>
-          <div className="flex flex-col justify-center items-center icon-hover-animation">
-            <BiLogoTypescript className="size-10 grow" style={iconsColor('rgb(239 68 68)')} />{/*Red*/}
+          </div> */}
+          {/* <div className="flex flex-col justify-center items-center icon-hover-animation">
+            <BiLogoTypescript className="size-10 grow" style={iconsColor('rgb(239 68 68)')} />
             <p>TypeScript</p>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
