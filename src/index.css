@@ -4,7 +4,11 @@
 
 @layer components {
   .btn-home-animation {
-    @apply rounded-lg sm:hover:shadow-lg sm:transition sm:ease-in-out delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-indigo-500 duration-300;
+    @apply rounded-lg sm:hover:shadow-lg sm:transition sm:ease-out delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-indigo-500 duration-500;
+  }
+
+  .icon-hover-animation {
+    @apply sm:transition-all sm:ease-out sm:hover:mx-2 sm:hover:-translate-y-1 sm:hover:scale-110 duration-300;
   }
 }
 

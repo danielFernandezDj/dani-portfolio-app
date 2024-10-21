@@ -1,14 +1,12 @@
 import React, { useRef } from "react";
 import emailjs from 'emailjs-com';
+import TechThatIKnow from "./TechIknow";
 
 // Icons
-import { FaReact } from "react-icons/fa";
-import { FaJsSquare } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 // EmailJS
 function ContactForm() {
@@ -51,8 +49,8 @@ function ContactForm() {
             <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
             <textarea id="message" name="message" className="w-full p-3 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your message" rows="4" required></textarea>
           </div>
-          <button type="submit" className="w-full p-3 text-white font-bold sm:tracking-wider btn-home-animation">
-            Send Message
+          <button type="submit" className="flex gap-2 flex-row justify-center items-center w-full p-3 text-white font-bold sm:tracking-wider btn-home-animation">
+            Send Message<span> <FaRegArrowAltCircleRight className="size-4" /></span>
           </button>
         </form>
         {/* My contact Information */}
@@ -88,7 +86,7 @@ export default function Home() {
         </section>
 
         {/* ----------------------------- About Me ----------------------------- */}
-        <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around bg-white shadow-md shadow-indigo-300/50 rounded-xl">
+        <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around shadow-md shadow-indigo-300/50 rounded-xl">
           <div className="max-w-80">
             <p className="tracking-wider text-justify indent-8">
               <strong className="text-purple-500">1-</strong> I'm 27 year old graduate student at <a className="underline decoration-purple-400">University of Nevada
@@ -138,24 +136,10 @@ export default function Home() {
         </section>
 
         {/* ----------------------------- Tech That I Use ----------------------------- */}
-        <section className="flex flex-wrap p-4 justify-around ">
-          <div className="bg-blue-200 text-center">
-            <FaReact className="size-14 md:size-20 grow" />
-            <p>React</p>
-          </div>
-          <div className="bg-blue-200 flex flex-col justify-center items-center">
-            <FaJsSquare className="size-14 md:size-20 grow" />
-            <p>JavaScript</p>
-          </div>
-          <div className="bg-blue-200 text-center">
-            <RiTailwindCssFill className="size-14 md:size-20 grow" />
-            <p>Tailwind</p>
-          </div>
-        </section>
-
+        <TechThatIKnow />
         <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
 
-        {/* Something Cool to impress the heir team (like a line that do something) ----------------------------- */}
+        {/* ----------------------------- Special FX ----------------------------- */}
         <section className="p-4">
           <div className="bg-red-600 p-4">
             <h3>Doo something cool here!</h3>
