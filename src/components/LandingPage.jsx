@@ -136,16 +136,8 @@ export default function Home() {
         </section>
 
         {/* ----------------------------- Tech That I Use ----------------------------- */}
-        <TechThatIKnow />
         <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
-
-        {/* ----------------------------- Special FX ----------------------------- */}
-        <section className="p-4">
-          <div className="bg-red-600 p-4">
-            <h3>Doo something cool here!</h3>
-          </div>
-        </section>
-
+        <TechThatIKnow />
         <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
 
         {/* Contact-Form */}
