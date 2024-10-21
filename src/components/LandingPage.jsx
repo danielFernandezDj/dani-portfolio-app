@@ -100,7 +100,7 @@ export default function Home() {
           </div>
           <div className="max-w-80">
             <p className="tracking-wider text-justify indent-8">
-              <strong className="text-blue-500">2-</strong>Through these experience, I've had the opportunity to create memorable products
+              <strong className="text-blue-500">2-</strong> Through these experience, I've had the opportunity to create memorable products
               that are not only enjoyable to use, but are written in code thats <a className="underline decoration-blue-400">maintainable and easy to understand.</a>
             </p>
           </div>
