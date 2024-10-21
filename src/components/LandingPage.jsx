@@ -108,7 +108,7 @@ export default function Home() {
 
         <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
 
-        {/* Project list, Cards */}
+        {/* Project list, Cards  */}
         <section className="flex flex-wrap p-4 justify-center self-center space-x-4">
           <div className="bg-blue-200">
             <p>Project Name here!</p>
