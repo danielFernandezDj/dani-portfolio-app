@@ -10,7 +10,7 @@ import { LuServerCog } from "react-icons/lu";
 
 export default function TechThatIKnow() {
   const iconsColor = (color) => ({
-    filter: `drop-shadow(2px 4px 6px ${color}) saturate(200%)`
+    filter: `drop-shadow(2px 4px 6px ${color}) saturate(200%) `
   });
 
   return (
