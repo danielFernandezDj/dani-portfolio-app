@@ -71,13 +71,13 @@ function ContactForm() {
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col gap-8  max-w-sm mx-auto sm:max-w-3xl">
+      <main className="flex flex-col gap-16 max-w-sm mx-auto sm:max-w-3xl">
         {/* Hero */}
-        <section className="flex mt-4 p-4 overflow-hidden max-w-full gap-2">
+        <section className="flex mt-8 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
-            <button className="flex gap-2 flex-row justify-center items-center bg-gradient-to-r from-blue-500 to-purple-500 text-white mt-2 p-3 rounded-lg
-                 transition-all duration-200 ease-in-out"
+            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold tracking-wider rounded-lg sm:hover:shadow-lg
+              sm:transition sm:ease-in-out sm:delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-indigo-500 duration-300"
             >
               Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
             </button>
@@ -98,21 +98,46 @@ export default function Home() {
                 (UNLV)</a> where I graduate in Full Stack Software Engineer, using technology has <a className="underline decoration-purple-400">React and Nodejs.</a>
             </p>
           </div>
+
+          <div className="hidden sm:block flex justify-center self-center h-24 w-px | bg-gradient-to-t from-blue-400 to-purple-400"></div>
+
           <div className="max-w-80">
             <p className="tracking-wider text-justify indent-8">
-              <strong className="text-blue-500">2-</strong> Through these experience, I've had the opportunity to create memorable products
-              that are not only enjoyable to use, but are written in code thats <a className="underline decoration-blue-400">maintainable and easy to understand.</a>
+              <strong className="text-blue-400">2-</strong> Through these experience, I've had the opportunity to create memorable products
+              that are not only enjoyable to use, but are written in code thats <a className="rounded bg-blue-100">maintainable and easy to understand.</a>
             </p>
           </div>
         </section>
 
-        <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
+        {/* Project CARDs  */}
+        <section className="flex flex-col w-full m-4 p-4 gap-4 justify-center self-center rounded-xl sm:shadow-md sm:shadow-indigo-300/50">
+          {/* TITLE */}
+          <strong className="text-2xl tracking-wider text-indigo-500">PROJECTS</strong>
+          {/* GROUP */}
+          <div className="flex flex-wrap w-full gap-4">
+            {/* CARD 1 */}
+            <div className="flex flex-col gap-4 p-4 rounded-lg bg-indigo-50 border-solid border-2 sm:shadow-none shadow-md sm:hover:border-blue-400 sm:border-blue-100 border-blue-400
+              transition duration-300
+            ">
+              <div className="flex  justify-between items-center">
+                <div>
+                  <strong className="text-lg text-blue-500">Word Games</strong>
+                  <p className="font-extralight">Multi games web app.</p>
+                </div>
+                <button className="p-2 text-white font-bold tracking-wider rounded-lg sm:hover:shadow-lg
+                  sm:transition sm:ease-in-out delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-indigo-500 duration-300"
+                >
+                  See More
+                </button>
+              </div>
+              <div className="flex gap-2">
+                <img className="rounded-md" src="https://fakeimg.pl/100x100" alt="Project Image" />
+                <img className="rounded-md" src="https://fakeimg.pl/100x100" alt="Project Image" />
+                <img className="rounded-md" src="https://fakeimg.pl/100x100" alt="Project Image" />
+              </div>
+            </div>
 
-        {/* Project list, Cards */}
-        <section className="flex flex-wrap p-4 justify-center self-center space-x-4">
-          <div className="bg-blue-200">
-            <p>Project Name here!</p>
-            <img src="https://fakeimg.pl/400x100" alt="Project Image" />
+            <div className="hidden sm:block flex justify-center self-center h-24 w-px | bg-gradient-to-t from-blue-200 to-purple-200"></div>
           </div>
         </section>
 
@@ -132,12 +157,16 @@ export default function Home() {
           </div>
         </section>
 
+        <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
+
         {/* Something Cool to impress the heir team (like a line that do something). */}
         <section className="p-4">
           <div className="bg-red-600 p-4">
             <h3>Doo something cool here!</h3>
           </div>
         </section>
+
+        <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
 
         {/* Contact-Form */}
         {ContactForm()}
