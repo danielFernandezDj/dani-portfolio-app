@@ -1,14 +1,12 @@
 import React, { useRef } from "react";
 import emailjs from 'emailjs-com';
+import TechThatIKnow from "./TechIknow";
 
 // Icons
-import { FaReact } from "react-icons/fa";
-import { FaJsSquare } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 // EmailJS
 function ContactForm() {
@@ -51,18 +49,18 @@ function ContactForm() {
             <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
             <textarea id="message" name="message" className="w-full p-3 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your message" rows="4" required></textarea>
           </div>
-          <button type="submit" className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white p-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
-            Send Message
+          <button type="submit" className="flex gap-2 flex-row justify-center items-center w-full p-3 text-white font-bold sm:tracking-wider btn-home-animation">
+            Send Message<span> <FaRegArrowAltCircleRight className="size-4" /></span>
           </button>
-          <div className="m-5 p-0.5 bg-gray-200"></div>
-          {/* My contact Information */}
-          <div className="flex flex-col gap-2">
-            <h3 className="text-2xl font-bold">Contact Information</h3>
-            <p className="flex flex-row items-center gap-1"><FaUser />Daniel Fernandez</p>
-            <p className="flex flex-row items-center gap-1"><FaPhone />(786)307-4352</p>
-            <p className="flex flex-row items-center gap-1"><MdAttachEmail />danielfernandez.tech@gmail.com</p>
-          </div>
         </form>
+        {/* My contact Information */}
+        <div className="flex flex-col gap-2">
+          <div className="flex justify-center self-center mt-5 w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
+          <h3 className="text-2xl font-bold">Contact Information</h3>
+          <p className="flex flex-row items-center gap-1"><FaUser />Daniel Fernandez</p>
+          <p className="flex flex-row items-center gap-1"><FaPhone />(786)307-4352</p>
+          <p className="flex flex-row items-center gap-1"><MdAttachEmail />danielfernandez.tech@gmail.com</p>
+        </div>
       </div>
     </section>
   );
@@ -72,26 +70,23 @@ export default function Home() {
   return (
     <>
       <main className="flex flex-col gap-16 max-w-sm mx-auto sm:max-w-3xl">
-        {/* Hero */}
+        {/* ----------------------------- HERO ----------------------------- */}
         <section className="flex mt-8 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
-            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider rounded-lg sm:hover:shadow-lg
-              sm:transition sm:ease-in-out sm:delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-indigo-500 duration-300"
+            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider btn-home-animation"
             >
               Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
             </button>
           </div>
-          <div className="flex flex-col sm:border-r border-blue-500">
-            <p className="text-4xl sm:text-8xl font-bold">Hi there, <br /> I'm Daniel</p>
-            <p className="text-2xl sm:text-5xl font-bold">Full Stack Developer, Student & Enthusiast! </p>
+          <div className="flex flex-col">
+            <p className="text-4xl sm:text-8xl font-bold text-slate-800">Hi there, <br /> I'm Daniel</p>
+            <p className="text-2xl sm:text-5xl font-bold text-slate-800">Full Stack Developer, Student & Enthusiast! </p>
           </div>
         </section>
 
-        {/* <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div> */}
-
-        {/* About Me */}
-        <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around bg-white shadow-md shadow-indigo-300/50 rounded-xl">
+        {/* ----------------------------- About Me ----------------------------- */}
+        <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around shadow-md shadow-indigo-300/50 rounded-xl">
           <div className="max-w-80">
             <p className="tracking-wider text-justify indent-8">
               <strong className="text-purple-500">1-</strong> I'm 27 year old graduate student at <a className="underline decoration-purple-400">University of Nevada
@@ -109,11 +104,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Project CARDs  */}
+        {/* ----------------------------- Project CARDs ----------------------------- */}
         <section className="flex flex-col w-full m-4 p-4 gap-4 justify-center self-center rounded-xl ">
-          {/* TITLE */}
-          <strong className="text-2xl tracking-wider text-indigo-500">PROJECTS</strong>
-          {/* GROUP */}
+          <strong className="text-2xl tracking-wider text-slate-800">
+            PROJECTS
+          </strong>
           <div className="flex flex-wrap w-full gap-4">
             {/* CARD 1 */}
             <div className="flex flex-col gap-4 p-4 rounded-lg bg-indigo-50 border-solid border-2 sm:shadow-none shadow-md sm:hover:border-blue-400 sm:border-blue-100 border-blue-400
@@ -124,8 +119,7 @@ export default function Home() {
                   <strong className="text-lg text-blue-500">Word Games</strong>
                   <p className="font-extralight">Multi games web app.</p>
                 </div>
-                <button className="p-2 text-white font-bold tracking-wider rounded-lg sm:hover:shadow-lg
-                  sm:transition sm:ease-in-out delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-indigo-500 duration-300"
+                <button className="p-2 text-white font-bold tracking-wider btn-home-animation"
                 >
                   See More
                 </button>
@@ -141,25 +135,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Tech That I use */}
-        <section className="flex flex-wrap p-4 justify-around ">
-          <div className="bg-blue-200 text-center">
-            <FaReact className="size-14 md:size-20 grow" />
-            <p>React</p>
-          </div>
-          <div className="bg-blue-200 flex flex-col justify-center items-center">
-            <FaJsSquare className="size-14 md:size-20 grow" />
-            <p>JavaScript</p>
-          </div>
-          <div className="bg-blue-200 text-center">
-            <RiTailwindCssFill className="size-14 md:size-20 grow" />
-            <p>Tailwind</p>
-          </div>
-        </section>
-
+        {/* ----------------------------- Tech That I Use ----------------------------- */}
+        <TechThatIKnow />
         <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
 
-        {/* Something Cool to impress the heir team (like a line that do something). */}
+        {/* ----------------------------- Special FX ----------------------------- */}
         <section className="p-4">
           <div className="bg-red-600 p-4">
             <h3>Doo something cool here!</h3>
