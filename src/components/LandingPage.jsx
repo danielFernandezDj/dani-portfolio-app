@@ -72,7 +72,7 @@ export default function Home() {
   return (
     <>
       <main className="flex flex-col gap-16 max-w-sm mx-auto sm:max-w-3xl">
-        {/* Hero */}
+        {/* ----------------------------- HERO ----------------------------- */}
         <section className="flex mt-8 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
@@ -82,15 +82,13 @@ export default function Home() {
               Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
             </button>
           </div>
-          <div className="flex flex-col sm:border-r border-blue-500">
+          <div className="flex flex-col">
             <p className="text-4xl sm:text-8xl font-bold">Hi there, <br /> I'm Daniel</p>
             <p className="text-2xl sm:text-5xl font-bold">Full Stack Developer, Student & Enthusiast! </p>
           </div>
         </section>
 
-        {/* <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div> */}
-
-        {/* About Me */}
+        {/* ----------------------------- About Me ----------------------------- */}
         <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around bg-white shadow-md shadow-indigo-300/50 rounded-xl">
           <div className="max-w-80">
             <p className="tracking-wider text-justify indent-8">
@@ -109,7 +107,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Project CARDs  */}
+        {/* ----------------------------- Project CARDs ----------------------------- */}
         <section className="flex flex-col w-full m-4 p-4 gap-4 justify-center self-center rounded-xl ">
           {/* TITLE */}
           <strong className="text-2xl tracking-wider text-indigo-500">PROJECTS</strong>
@@ -141,7 +139,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Tech That I use */}
+        {/* ----------------------------- Tech That I Use ----------------------------- */}
         <section className="flex flex-wrap p-4 justify-around ">
           <div className="bg-blue-200 text-center">
             <FaReact className="size-14 md:size-20 grow" />
@@ -159,7 +157,7 @@ export default function Home() {
 
         <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
 
-        {/* Something Cool to impress the heir team (like a line that do something). */}
+        {/* Something Cool to impress the heir team (like a line that do something) ----------------------------- */}
         <section className="p-4">
           <div className="bg-red-600 p-4">
             <h3>Doo something cool here!</h3>
