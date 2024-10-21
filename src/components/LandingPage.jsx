@@ -71,10 +71,9 @@ function ContactForm() {
 export default function Home() {
   return (
     <>
-      {/* I need to center the entire home page! ---------------------- */}
       <main className="flex flex-col gap-8  max-w-sm mx-auto sm:max-w-3xl">
         {/* Hero */}
-        <section className="flex p-4 overflow-hidden max-w-full gap-2">
+        <section className="flex mt-4 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
             <button className="flex gap-2 flex-row justify-center items-center bg-gradient-to-r from-blue-500 to-purple-500 text-white mt-2 p-3 rounded-lg
