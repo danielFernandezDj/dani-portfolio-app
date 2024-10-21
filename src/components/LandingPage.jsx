@@ -98,6 +98,9 @@ export default function Home() {
                 (UNLV)</a> where I graduate in Full Stack Software Engineer, using technology has <a className="underline decoration-purple-400">React and Nodejs.</a>
             </p>
           </div>
+
+          <div className="hidden sm:block flex justify-center self-center h-24 w-px | bg-gradient-to-t from-blue-400 to-purple-400"></div>
+
           <div className="max-w-80">
             <p className="tracking-wider text-justify indent-8">
               <strong className="text-blue-500">2-</strong> Through these experience, I've had the opportunity to create memorable products
