@@ -17,17 +17,14 @@ function About() {
 // Navigation Bar
 function NavBar() {
   return (
-    // backdrop-blur-lm
-    <nav className="bg-blue-600 ">
-      <div className="container mx-auto px-4 py-6 flex justify-around items-center md:space-x-48 lg:space-x-72">
+    <nav>
+      <div className="container mx-auto px-4 py-8 flex justify-between md:px-20 items-center">
 
+        {/* Left Side */}
         <div className='flex space-x-8 items-center justify-center'>
-          {/* Left side - Logo */}
-          <Link to="/home" className="text-white text-xl font-bold">
-            MyLogo
+          <Link to="/home" className="text-black text-2xl font-bold">
+            &#123; El Dani &#125;
           </Link>
-
-          {/* Center - Navigation Links */}
           {/* <div className="space-x-4">
             <Link to="/home" className="text-white hover:text-gray-300">Home</Link>
             <Link to="/projects" className="text-white hover:text-gray-300">Projects</Link>
@@ -37,13 +34,13 @@ function NavBar() {
 
         {/* Right side - Icons */}
         <div className="flex space-x-4">
-          <button className="text-white hover:text-gray-300">
+          <button className="text-black hover:text-gray-300">
             <HomeIcon className="h-6 w-6" />
           </button>
-          <button className="text-white hover:text-gray-300">
+          <button className="text-black hover:text-gray-300">
             <CogIcon className="h-6 w-6" />
           </button>
-          <button className="text-white hover:text-gray-300">
+          <button className="text-black hover:text-gray-300">
             <UserIcon className="h-6 w-6" />
           </button>
         </div>
@@ -51,11 +48,11 @@ function NavBar() {
     </nav>
   );
 }
-// ! FIX THE FOOTER THAT IS LOOKS IN THE CENTER OF THE PAGE!
+
 // Main App
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen ">
       <Router >
         <NavBar />
         <div className="flex-grow">

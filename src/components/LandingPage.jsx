@@ -8,6 +8,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 // EmailJS
 function ContactForm() {
@@ -25,7 +26,7 @@ function ContactForm() {
   };
 
   return (
-    <section className="bg-gray-100 font-sans leading-normal tracking-normal flex items-center justify-center py-8">
+    <section className="font-sans leading-normal tracking-normal flex items-center justify-center p-4">
       <div className="bg-white shadow-2xl rounded-xl p-8 max-w-md w-full">
         <h1 className="text-2xl font-bold mb-6 text-center">Contact Us</h1>
         <form ref={form} onSubmit={sendEmail}>
@@ -53,7 +54,7 @@ function ContactForm() {
           <button type="submit" className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white p-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
             Send Message
           </button>
-            <div className="m-5 p-0.5 bg-gray-200"></div>
+          <div className="m-5 p-0.5 bg-gray-200"></div>
           {/* My contact Information */}
           <div className="flex flex-col gap-2">
             <h3 className="text-2xl font-bold">Contact Information</h3>
@@ -67,41 +68,57 @@ function ContactForm() {
   );
 }
 
-
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col man-h-screen bg-red-100 gap-y-14 p-4">
-        {/* Welcome */}
-        <section className="flex flex-col justify-center item-center bg-blue-200">
-          <p className="text-3xl font-bold">Hi there, I'm Daniel. <br /> Full Stack Developer, <br /> Student and Enthusiast</p>
-          <img src="https://fakeimg.pl/600x400" alt="Me in Moto ;)" />
+      {/* I need to center the entire home page! ---------------------- */}
+      <main className="flex flex-col gap-8  max-w-sm mx-auto sm:max-w-3xl">
+        {/* Hero */}
+        <section className="flex p-4 overflow-hidden max-w-full gap-2">
+          <div className="flex flex-col size-4/5">
+            <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
+            <button className="flex gap-2 flex-row justify-center items-center bg-gradient-to-r from-blue-500 to-purple-500 text-white mt-2 p-3 rounded-lg
+                 transition-all duration-200 ease-in-out"
+            >
+              Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
+            </button>
+          </div>
+          <div className="flex flex-col sm:border-r border-blue-500">
+            <p className="text-4xl sm:text-8xl font-bold">Hi there, <br /> I'm Daniel</p>
+            <p className="text-2xl sm:text-5xl font-bold">Full Stack Developer, Student & Enthusiast! </p>
+          </div>
         </section>
 
-        {/* About me text 'p' */}
-        <section className="bg-blue-200">
-          <p>About Me.</p>
-          <p>
-            I'm 27 year old graduate student at University of Nevada (UNLV)
-            where I graduate in Full Stack Software Engineer, using technology has React and Nodejs.
-          </p>
-          <p>
-            Through these experience, I've had the opportunity to create memorable products
-            that are not only enjoyable to use, but are written in code thats maintainable and easy to understand.
-          </p>
+        {/* <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div> */}
+
+        {/* About Me */}
+        <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around bg-white shadow-md rounded-xl">
+          <div className="max-w-80">
+            <p className="tracking-wider text-justify indent-8">
+              <strong className="text-purple-500">1-</strong> I'm 27 year old graduate student at <a className="underline decoration-purple-400">University of Nevada
+                (UNLV)</a> where I graduate in Full Stack Software Engineer, using technology has <a className="underline decoration-purple-400">React and Nodejs.</a>
+            </p>
+          </div>
+          <div className="max-w-80">
+            <p className="tracking-wider text-justify indent-8">
+              <strong className="text-blue-500">2-</strong>Through these experience, I've had the opportunity to create memorable products
+              that are not only enjoyable to use, but are written in code thats <a className="underline decoration-blue-400">maintainable and easy to understand.</a>
+            </p>
+          </div>
         </section>
+
+        <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
 
         {/* Project list, Cards */}
-        <section className="flex flex-wrap justify-center self-center space-x-4">
+        <section className="flex flex-wrap p-4 justify-center self-center space-x-4">
           <div className="bg-blue-200">
             <p>Project Name here!</p>
-            <img src="https://fakeimg.pl/400x200" alt="Project Image" />
+            <img src="https://fakeimg.pl/400x100" alt="Project Image" />
           </div>
-
         </section>
 
-        {/* Tech That I know list using a 'p' */}
-        <section className="flex flex-wrap justify-around ">
+        {/* Tech That I use */}
+        <section className="flex flex-wrap p-4 justify-around ">
           <div className="bg-blue-200 text-center">
             <FaReact className="size-14 md:size-20 grow" />
             <p>React</p>
@@ -117,7 +134,7 @@ export default function Home() {
         </section>
 
         {/* Something Cool to impress the heir team (like a line that do something). */}
-        <section className="">
+        <section className="p-4">
           <div className="bg-red-600 p-4">
             <h3>Doo something cool here!</h3>
           </div>
@@ -125,7 +142,7 @@ export default function Home() {
 
         {/* Contact-Form */}
         {ContactForm()}
-      </main>
+      </main >
     </>
   )
 }
