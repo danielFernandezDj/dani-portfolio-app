@@ -8,6 +8,7 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
+import { IoMdMailOpen } from "react-icons/io";
 
 // EmailJS
 function ContactForm() {
@@ -25,9 +26,13 @@ function ContactForm() {
   };
 
   return (
-    <section className="font-sans leading-normal tracking-normal flex items-center justify-center p-4">
-      <div className="bg-white shadow-2xl rounded-xl p-8 max-w-md w-full">
-        <h1 className="text-2xl font-bold mb-6 text-center">Contact Us</h1>
+    <section className="sm:p-4 mb-8 font-sans leading-normal tracking-normal flex items-center justify-center">
+      <div className="bg-white sm:shadow-md rounded-xl p-8 max-w-md w-full">
+        <h1 className="flex gap-2 flex-row justify-center items-center text-2xl font-bold mb-6 text-center
+          font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-blue-500"
+        >
+          Let's Talk <IoMdMailOpen className="fill-blue-500" />
+        </h1>
         <form ref={form} onSubmit={sendEmail}>
           {/* Name & Phone_#*/}
           <div className="flex flex-row gap-4">
@@ -75,14 +80,21 @@ export default function Home() {
         <section className="flex mt-8 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
-            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider btn-home-animation"
-            >
+            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider btn-home-animation">
               Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
             </button>
           </div>
           <div className="flex flex-col">
-            <p className="text-4xl sm:text-8xl font-bold text-slate-800">Hi there, <br /> I'm Daniel</p>
-            <p className="text-2xl sm:text-5xl font-bold text-slate-800">Full Stack Developer, Student & Enthusiast! </p>
+            <p className="text-4xl sm:text-8xl font-bold text-slate-800
+              font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500"
+            >
+              Hi there, <br /> I'm Daniel
+            </p>
+            <p className="text-2xl sm:text-5xl font-bold
+              bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% to-blue-500"
+            >
+              Full Stack Developer, Student & Enthusiast!
+            </p>
           </div>
         </section>
 
