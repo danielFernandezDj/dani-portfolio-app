@@ -6,7 +6,11 @@ export default {
   ],
   important: "#root",
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '84' : '21rem',
+      }
+    },
   },
   plugins: [],
 }
