@@ -77,15 +77,15 @@ export default function Home() {
     <>
       <main className="flex flex-col gap-16 max-w-sm mx-auto sm:max-w-3xl">
         {/* ----------------------------- HERO ----------------------------- */}
-        <section className="flex mt-8 p-4 overflow-hidden max-w-full gap-2">
-          <div className="flex flex-col size-4/5">
+        <section className="flex sm:flex-row flex-col-reverse items-center sm:mt-8 p-4 overflow-hidden max-w-full gap-2">
+           <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
             <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider btn-home-animation">
               Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
             </button>
           </div>
-          <div className="flex flex-col">
-            <p className="text-4xl sm:text-8xl font-bold text-slate-800
+          <div className="flex flex-col text-center sm:text-left">
+            <p className="text-7xl sm:text-8xl font-bold text-slate-800
               font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500"
             >
               Hi there, <br /> I'm Daniel
@@ -93,27 +93,30 @@ export default function Home() {
             <p className="text-2xl sm:text-5xl font-bold
               bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% to-blue-500"
             >
-              Full Stack Developer, Student & Enthusiast!
+              Full Stack Developer, <span className="hidden sm:contents">Student &</span> Enthusiast!
             </p>
           </div>
         </section>
 
         {/* ----------------------------- About Me ----------------------------- */}
-        <section className="flex sm:flex-nowrap gap-4 flex-wrap m-4 p-4 overflow-hidden max-w-full justify-around shadow-md shadow-indigo-300/50 rounded-xl">
-          <div className="max-w-80">
-            <p className="tracking-wider text-justify indent-8">
-              <strong className="text-purple-500">1-</strong> I'm 27 year old graduate student at <a className="underline decoration-purple-400">University of Nevada
-                (UNLV)</a> where I graduate in Full Stack Software Engineer, using technology has <a className="underline decoration-purple-400">React and Nodejs.</a>
-            </p>
-          </div>
-
-          <div className="hidden sm:block flex justify-center self-center h-24 w-px | bg-gradient-to-t from-blue-400 to-purple-400"></div>
-
-          <div className="max-w-80">
-            <p className="tracking-wider text-justify indent-8">
-              <strong className="text-blue-400">2-</strong> Through these experience, I've had the opportunity to create memorable products
-              that are not only enjoyable to use, but are written in code thats <a className="rounded bg-blue-100">maintainable and easy to understand.</a>
-            </p>
+        <section className="m-4">
+          <strong className="flex justify-center gap-6 text-2xl tracking-wider text-slate-800 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-blue-500">
+            <span className="horizontal-line"></span> About Me <span className="horizontal-line"></span>
+          </strong>
+          <div className="flex sm:flex-nowrap gap-4 flex-wrap mt-4 p-4 overflow-hidden max-w-full justify-around shadow-md shadow-indigo-300/50 rounded-xl">
+            <div className="max-w-80">
+              <p className="tracking-wider text-justify indent-8">
+                <strong className="text-purple-500">1-</strong> I'm 27 year old graduate student at <a className="underline decoration-purple-400">University of Nevada
+                  (UNLV)</a> where I graduate in Full Stack Software Engineer, using technology has <a className="underline decoration-purple-400">React and Nodejs.</a>
+              </p>
+            </div>
+            <div className="hidden sm:block flex justify-center self-center h-24 w-px | bg-gradient-to-t from-blue-400 to-purple-400"></div>
+            <div className="max-w-80">
+              <p className="tracking-wider text-justify indent-8">
+                <strong className="text-blue-400">2-</strong> Through these experience, I've had the opportunity to create memorable products
+                that are not only enjoyable to use, but are written in code thats <a className="rounded bg-blue-100">maintainable and easy to understand.</a>
+              </p>
+            </div>
           </div>
         </section>
 

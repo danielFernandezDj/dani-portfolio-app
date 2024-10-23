@@ -16,7 +16,7 @@ export default function TechThatIKnow() {
   return (
     <>
       <section className="flex flex-col m-4">
-        <strong className="mx-4 mb-4 flex justify-center w-auto text-2xl tracking-wider">
+        <strong className="mx-4 mb-4 flex justify-center w-auto text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-500 from-20% to-green-500">
           Tech that I have used.
         </strong>
         <div className="flex flex-wrap gap-5 p-4 justify-around ">

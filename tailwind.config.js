@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       width: {
-        '84' : '21rem',
+        '84': '21rem',
       }
     },
   },

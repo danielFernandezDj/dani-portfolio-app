@@ -39,12 +39,12 @@ export default function ProjectList() {
   return (
     <>
       <section className="flex flex-col w-full p-4 gap-4 rounded-xl">
-        <strong className="flex justify-center gap-6 text-2xl tracking-wider text-slate-800">
+        <strong className="flex justify-center gap-6 text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500">
           <span className="horizontal-line"></span> PROJECTS <span className="horizontal-line"></span>
         </strong>
         <div className="flex flex-wrap justify-center w-full gap-4">
           {cardsData.map((card, index) => (
-            <div key={index} className="card-container">
+            <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100">
               <div className="flex  justify-between items-center">
                 <div>
                   <strong className="text-lg text-blue-500">{card.title}</strong>
