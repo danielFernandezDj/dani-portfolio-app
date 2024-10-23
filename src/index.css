@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .logo-style {
+    @apply font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500;
+  }
+
   .btn-home-animation {
     @apply rounded-lg sm:hover:shadow-md transition sm:ease-out delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blue-950 duration-300;
   }

@@ -78,16 +78,14 @@ export default function Home() {
       <main className="flex flex-col gap-16 max-w-sm mx-auto sm:max-w-3xl">
         {/* ----------------------------- HERO ----------------------------- */}
         <section className="flex sm:flex-row flex-col-reverse items-center sm:mt-8 p-4 overflow-hidden max-w-full gap-2">
-           <div className="flex flex-col size-4/5">
+          <div className="flex flex-col size-4/5">
             <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
             <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider btn-home-animation">
               Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
             </button>
           </div>
           <div className="flex flex-col text-center sm:text-left">
-            <p className="text-7xl sm:text-8xl font-bold text-slate-800
-              font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500"
-            >
+            <p className="text-7xl sm:text-8xl font-bold font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500">
               Hi there, <br /> I'm Daniel
             </p>
             <p className="text-2xl sm:text-5xl font-bold
@@ -100,7 +98,7 @@ export default function Home() {
 
         {/* ----------------------------- About Me ----------------------------- */}
         <section className="m-4">
-          <strong className="flex justify-center gap-6 text-2xl tracking-wider text-slate-800 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-blue-500">
+          <strong className="flex justify-center gap-6 text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-blue-500">
             <span className="horizontal-line"></span> About Me <span className="horizontal-line"></span>
           </strong>
           <div className="flex sm:flex-nowrap gap-4 flex-wrap mt-4 p-4 overflow-hidden max-w-full justify-around shadow-md shadow-indigo-300/50 rounded-xl">

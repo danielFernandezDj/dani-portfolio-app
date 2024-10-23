@@ -1,6 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { HomeIcon, CogIcon, UserIcon } from '@heroicons/react/outline';
+// Dark Theme Icon
+import { GiMoonBats } from "react-icons/gi";
+// Light Theme Icon
+import { MdSunny } from "react-icons/md";
+// Nav Menu Icon
+import { TiThMenu } from "react-icons/ti";
+// Linkedin Icon
+import { FaLinkedin } from "react-icons/fa";
+// Github Icon
+import { SiGithub } from "react-icons/si";
 
 // Component Pages
 import Home from './components/HomePage';
@@ -22,7 +32,7 @@ function NavBar() {
 
         {/* Left Side */}
         <div className='flex space-x-8 items-center justify-center'>
-          <Link to="/home" className="text-black text-2xl font-bold">
+          <Link to="/home" className="text-2xl logo-style">
             &#123; El Dani &#125;
           </Link>
           {/* <div className="space-x-4">
@@ -35,13 +45,10 @@ function NavBar() {
         {/* Right side - Icons */}
         <div className="flex space-x-4">
           <button className="text-black hover:text-gray-300">
-            <HomeIcon className="h-6 w-6" />
+            <MdSunny className="h-6 w-6" />
           </button>
           <button className="text-black hover:text-gray-300">
-            <CogIcon className="h-6 w-6" />
-          </button>
-          <button className="text-black hover:text-gray-300">
-            <UserIcon className="h-6 w-6" />
+            <TiThMenu className="h-6 w-6" />
           </button>
         </div>
       </div>
