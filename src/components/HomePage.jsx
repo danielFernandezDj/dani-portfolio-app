@@ -4,11 +4,11 @@ import TechThatIKnow from "./TechIknow";
 import ProjectList from "./ProjectList";
 
 // Icons
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
-import { FaUser } from "react-icons/fa";
+import { FaRegArrowAltCircleRight, FaUser, FaLinkedin } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
 import { IoMdMailOpen } from "react-icons/io";
+import { SiGithub } from "react-icons/si";
 
 // EmailJS
 function ContactForm() {
@@ -73,16 +73,27 @@ function ContactForm() {
 }
 
 export default function Home() {
+  const linkedinLink = "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+  const githubLink = "https://github.com/danielFernandezDj"
+
   return (
     <>
       <main className="flex flex-col gap-16 max-w-sm mx-auto sm:max-w-3xl">
         {/* ----------------------------- HERO ----------------------------- */}
         <section className="flex sm:flex-row flex-col-reverse items-center sm:mt-8 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
-            <img className="rounded-xl size-fit" src="./mePhoto.jpeg" alt="Me in Moto)" />
-            <button className="flex gap-2 flex-row justify-center items-center mt-2 p-3 text-white font-bold sm:tracking-wider btn-home-animation">
-              Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
-            </button>
+            <img className="rounded-xl size-fit h-auto" src="./mePhoto.jpeg" alt="Me in Moto)" />
+            <div className="mt-2 flex gap-2 justify-between content-center">
+
+              <button className="flex gap-2 flex-row justify-center items-center w-full text-white font-bold sm:tracking-wider btn-home-animation">
+                Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
+              </button>
+
+              <div className="flex gap-2">
+                <a href={linkedinLink} target="_blank"><FaLinkedin className="w-12 h-auto fill-blue-900 hover:fill-yellow-600" /></a>
+                <a href={githubLink} target="_blank"><SiGithub className="w-12 h-auto fill-blue-900 hover:fill-indigo-600" /></a>
+              </div>
+            </div>
           </div>
           <div className="flex flex-col text-center sm:text-left">
             <p className="text-7xl sm:text-8xl font-bold font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500">
@@ -91,7 +102,7 @@ export default function Home() {
             <p className="text-2xl sm:text-5xl font-bold
               bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% to-blue-500"
             >
-              Full Stack Developer<span className="hidden sm:contents">, Student </span>& Enthusiast!
+              Full Stack Developer<span className="hidden sm:contents">, Student </span> & Enthusiast!
             </p>
           </div>
         </section>

@@ -7,10 +7,7 @@ import { GiMoonBats } from "react-icons/gi";
 import { MdSunny } from "react-icons/md";
 // Nav Menu Icon
 import { TiThMenu } from "react-icons/ti";
-// Linkedin Icon
-import { FaLinkedin } from "react-icons/fa";
-// Github Icon
-import { SiGithub } from "react-icons/si";
+
 
 // Component Pages
 import Home from './components/HomePage';
@@ -44,10 +41,10 @@ function NavBar() {
 
         {/* Right side - Icons */}
         <div className="flex space-x-4">
-          <button className="text-black hover:text-gray-300">
+          <button className="blue-900 hover:text-blue-700">
             <MdSunny className="h-6 w-6" />
           </button>
-          <button className="text-black hover:text-gray-300">
+          <button className="blue-900 hover:text-blue-700">
             <TiThMenu className="h-6 w-6" />
           </button>
         </div>
