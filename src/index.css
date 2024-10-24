@@ -7,16 +7,20 @@
     @apply font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500;
   }
 
+  .nav-text-style {
+    @apply text-blue-900 lg:hover:text-blue-700;
+  }
+
   .btn-home-animation {
-    @apply rounded-lg sm:hover:shadow-md transition sm:ease-out delay-150 bg-blue-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blue-950 duration-300;
+    @apply rounded-lg lg:hover:shadow-md transition lg:ease-out delay-150 bg-blue-500 lg:hover:-translate-y-1 lg:hover:scale-110 lg:hover:bg-blue-950 duration-300;
   }
 
   .icon-hover-animation {
-    @apply sm:transition-all sm:ease-out sm:hover:mx-2 sm:hover:-translate-y-1 sm:hover:scale-110 duration-300;
+    @apply lg:transition-all lg:ease-out lg:hover:mx-2 lg:hover:-translate-y-1 lg:hover:scale-110 duration-300;
   }
 
   .card-container {
-    @apply flex flex-col sm:w-84 w-full gap-4 p-4 rounded-lg bg-indigo-50 border-solid border-2 sm:shadow-none shadow-md sm:hover:border-blue-400 sm:border-blue-100 border-blue-400 transition duration-300;
+    @apply flex flex-col sm:w-84 w-full gap-4 p-4 rounded-lg bg-indigo-50 border-solid border-2 sm:shadow-none shadow-md lg:hover:border-blue-400 lg:border-blue-100 border-blue-400 transition duration-300;
   }
 
   .card-images img {

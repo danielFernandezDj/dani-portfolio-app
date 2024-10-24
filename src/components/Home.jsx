@@ -90,8 +90,8 @@ export default function Home() {
               </button>
 
               <div className="flex gap-2">
-                <a href={linkedinLink} target="_blank"><FaLinkedin className="w-12 h-auto fill-blue-900 hover:fill-yellow-600" /></a>
-                <a href={githubLink} target="_blank"><SiGithub className="w-12 h-auto fill-blue-900 hover:fill-indigo-600" /></a>
+                <a href={linkedinLink} target="_blank"><FaLinkedin className="w-12 h-auto fill-blue-900 lg:hover:fill-yellow-600" /></a>
+                <a href={githubLink} target="_blank"><SiGithub className="w-12 h-auto fill-blue-900 lg:hover:fill-indigo-600" /></a>
               </div>
             </div>
           </div>
