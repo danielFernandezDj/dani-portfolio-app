@@ -91,7 +91,7 @@ export default function Home() {
             <p className="text-2xl sm:text-5xl font-bold
               bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% to-blue-500"
             >
-              Full Stack Developer, <span className="hidden sm:contents">Student &</span> Enthusiast!
+              Full Stack Developer<span className="hidden sm:contents">, Student </span>& Enthusiast!
             </p>
           </div>
         </section>
