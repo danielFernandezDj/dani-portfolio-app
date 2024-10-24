@@ -27,7 +27,7 @@ function NavBar() {
     <nav>
       <div className="container mx-auto md:px-4 px-8 py-8 flex justify-between md:px-20 items-center">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
-        <div className='flex space-x-8 content-center justify-center'>
+        <div className='flex space-x-12 items-center justify-center'>
           <Link to="/home" className="text-2xl logo-style">
             &#123; El Dani &#125;
           </Link>
@@ -40,8 +40,8 @@ function NavBar() {
 
         {/* –––––––––––––––––––––––––––– Right side - Icons –––––––––––––––––––––––––––– */}
         <div className="flex space-x-4">
-          <button className="text-blue-900 lg:hover:text-blue-700"><MdSunny className="w-6 h-auto" /></button>
-          <button className="text-blue-900 lg:hover:text-blue-700 md:hidden"><TiThMenu className="w-6 h-auto" /></button>
+          <button className="text-blue-900 lg:hover:text-yellow-500 simple-hover-animation"><MdSunny className="w-6 h-auto" /></button>
+          <button className="text-blue-900 md:hidden"><TiThMenu className="w-6 h-auto" /></button>
         </div>
       </div>
     </nav>

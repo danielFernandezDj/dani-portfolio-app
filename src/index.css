@@ -8,7 +8,7 @@
   }
 
   .nav-text-style {
-    @apply text-blue-900 lg:hover:text-blue-700;
+    @apply text-blue-900 lg:hover:text-blue-700 lg:hover:underline;
   }
 
   .btn-home-animation {
@@ -17,6 +17,10 @@
 
   .icon-hover-animation {
     @apply lg:transition-all lg:ease-out lg:hover:mx-2 lg:hover:-translate-y-1 lg:hover:scale-110 duration-300;
+  }
+
+  .simple-hover-animation {
+    @apply lg:transition-all lg:ease-out lg:hover:scale-125 duration-300;
   }
 
   .card-container {
