@@ -31,6 +31,10 @@
     @apply max-w-24 max-h-24 rounded-md;
   }
 
+  .card-images-menu img {
+    @apply max-w-16 max-h-16 rounded-md;
+  }
+
   .horizontal-line {
     @apply flex justify-center self-center sm:w-28 w-14 h-px bg-gradient-to-t from-blue-200 to-purple-200;
   }

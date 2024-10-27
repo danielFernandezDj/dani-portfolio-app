@@ -9,11 +9,11 @@ import { FaBoxes } from "react-icons/fa";
 import { IoMdMedical } from "react-icons/io";
 
 // Component
-import DropDowMenu from './DropDowMenu';
+import DropDowMenu from './components/DropDowMenu';
 import Home from './components/Home';
 import Footer from './Footer';
 
-function Projects() {
+function Contact() {
   return <div className="p-4"></div>;
 }
 
@@ -24,7 +24,7 @@ function About() {
 function NavBar() {
   const links = [
     { path: '/', label: 'Home', icon: <HiMiniHome className="w-4 h-auto" /> },
-    { path: 'Projects', label: 'Projects', icon: <FaBoxes className="w-4 h-auto"/> },
+    { path: 'Contact', label: 'Contact', icon: <FaBoxes className="w-4 h-auto"/> },
     { path: 'About', label: 'About', icon: <IoMdMedical className="w-4 h-auto" /> }
   ]
 
@@ -62,7 +62,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
