@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { GiMoonBats } from "react-icons/gi";
 import { MdSunny } from "react-icons/md";
 import { HiMiniHome } from "react-icons/hi2";
-import { FaBoxes } from "react-icons/fa";
-import { IoMdMedical } from "react-icons/io";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { SiMinutemailer } from "react-icons/si";
 
 // Component
 import DropDowMenu from './components/DropDowMenu';
@@ -24,8 +24,8 @@ function About() {
 function NavBar() {
   const links = [
     { path: '/', label: 'Home', icon: <HiMiniHome className="w-4 h-auto" /> },
-    { path: 'Contact', label: 'Contact', icon: <FaBoxes className="w-4 h-auto"/> },
-    { path: 'About', label: 'About', icon: <IoMdMedical className="w-4 h-auto" /> }
+    { path: 'Contact', label: 'Contact', icon: <SiMinutemailer className="w-4 h-auto"/> },
+    { path: 'About', label: 'About', icon: <BsFillPersonLinesFill className="w-4 h-auto" /> }
   ]
 
   return (
