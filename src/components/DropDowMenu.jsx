@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom'
-import { Menu, Transition, Disclosure } from '@headlessui/react'
+import { Menu, MenuItems, MenuItem, Transition, Disclosure } from '@headlessui/react'
 import CardsData from "./CardsData";
 
 // Icons
@@ -28,8 +28,8 @@ export default function DropDowMenu({ links }) {
           leaveTo="transform opacity-0 scale-95"
         >
           {/* ------------ Menu Content ------------ */}
-          <Menu.Items className="flex fixed justify-center inset-x-0 top-0 top-14 m-6 py-6 w-100 rounded-lg bg-blue-900 shadow-md ring-1 ring-black/5 focus:outline-none">
-            <div className="flex justify-between px-1 py-1 divide-x divide-blue-600">
+          <Menu.Items className="flex flex-col gap-2 justify-center fixed inset-x-0 top-0 top-14 m-6 w-100">
+            <div className="flex justify-center px-1 py-4 divide-x divide-blue-600 rounded-xl bg-blue-900 shadow-lg">
               {links.map((link) => (
                 <Menu.Item key={link.path}>
                   <Link
@@ -41,10 +41,52 @@ export default function DropDowMenu({ links }) {
                 </Menu.Item>
               ))}
             </div>
+
+            <div className='flex flex-col gap-4 py-4 rounded-xl shadow-lg bg-blue-900'>
+              <div className="mx-auto w-full max-w-md rounded-lg">
+                <Disclosure defaultOpen>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 text-left text-md font-bold text-white">
+                        <span>Projects:</span>
+                        <IoIosArrowDown
+                          className={`${open ? 'rotate-180 transform' : ''
+                            } h-5 w-5 text-white`}
+                        />
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-300 ease-in-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-500">
+                          <div className="flex flex-wrap justify-center w-full gap-4">
+                            {cardsData.map((card, index) => (
+                              <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100">
+                                <div className="flex  justify-between items-center">
+                                  <div>
+                                    <strong className="text-lg text-blue-500">{card.title}</strong>
+                                    <p className="font-extralight">{card.description}</p>
+                                  </div>
+                                  <a href={card.link} target="_blank" className="p-2 text-white font-bold tracking-wider btn-home-animation">See More</a>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
+            </div>
           </Menu.Items>
         </Transition>
 
-        {/* ------------ Project List ------------ */}
+        {/* ------------ Project List ------------
         <Transition
           as={Fragment}
           enter="transition ease-out duration-100"
@@ -97,7 +139,7 @@ export default function DropDowMenu({ links }) {
               </Disclosure>
             </div>
           </Menu.Items>
-        </Transition>
+        </Transition> */}
       </Menu>
     </div >
   )
