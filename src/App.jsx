@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 // Icons
@@ -22,15 +22,26 @@ function About() {
 }
 
 function NavBar() {
+  const [scrolled, setScrolled] = useState(false);
+
   const links = [
     { path: '/', label: 'Home', icon: <HiMiniHome className="w-4 h-auto" /> },
     { path: 'Contact', label: 'Contact', icon: <SiMinutemailer className="w-4 h-auto" /> },
     { path: 'About', label: 'About', icon: <BsFillPersonLinesFill className="w-4 h-auto" /> }
   ]
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // Trigger shadow when scrolled down 50px
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav>
-      <div className="container mx-auto md:px-4 px-8 py-8 flex justify-between md:px-20 items-center">
+    <nav className={`my-6 z-50 sticky top-0 bg-white dark:bg-slate-900 transition-all duration-300 ${scrolled ? 'pt-3 shadow-xl shadow-indigo-300/50' : ''}`}>
+      <div className="container mx-auto md:px-4 px-8 py-3 flex justify-between md:px-20 items-center">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
         <div className='flex space-x-12 items-center justify-center'>
           <Link to="/" className="text-2xl logo-style">
@@ -38,7 +49,7 @@ function NavBar() {
           </Link>
           <div className="flex content-center hidden md:block space-x-4">
             <Link to="/" className="nav-text-style">Home</Link>
-            <Link to="/projects" className="nav-text-style">Projects</Link>
+            <Link to="/contact" className="nav-text-style">Contact</Link>
             <Link to="/about" className="nav-text-style">About</Link>
           </div>
         </div>
@@ -48,7 +59,7 @@ function NavBar() {
           <DropDowMenu links={links} />
         </div>
       </div>
-    </nav>
+    </nav >
   );
 }
 
@@ -62,7 +73,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
