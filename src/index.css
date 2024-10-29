@@ -11,6 +11,10 @@
     @apply text-blue-900 lg:hover:text-blue-700 lg:hover:underline dark:text-slate-200 dark:lg:hover:text-indigo-400;
   }
 
+  .nav-scroll-style {
+    @apply pt-3 shadow-xl md:shadow-indigo-200/50 shadow-indigo-300/50 dark:shadow-indigo-800/50 bg-gradient-to-b dark:from-slate-900 from-80% dark:to-indigo-800/50
+  }
+
   .btn-home-animation {
     @apply rounded-lg lg:hover:shadow-md transition lg:ease-out bg-blue-500 lg:hover:-translate-y-1 lg:hover:scale-110 duration-300;
   }
