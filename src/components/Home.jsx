@@ -37,23 +37,31 @@ function ContactForm() {
           {/* Name & Phone_#*/}
           <div className="flex flex-row gap-4">
             <div className="mb-4">
-              <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
-              <input type="text" id="name" name="user_name" className="w-full p-3 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-300 dark:text-slate-100" placeholder="Enter your name" required />
+              <label htmlFor="name" className="block text-slate-800 mb-2">Name</label>
+              <input type="text" id="name" name="user_name" className="w-full p-3 text-slate-800 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-300"
+                placeholder="Enter your name" required
+              />
             </div>
             <div className="mb-4">
-              <label htmlFor="phone" className="block text-gray-700 mb-2">Phone</label>
-              <input type="text" id="phone" name="user_phone" className="w-full p-3 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-300 dark:text-slate-100" placeholder="Enter your Phone" required />
+              <label htmlFor="phone" className="block text-slate-800 mb-2">Phone</label>
+              <input type="text" id="phone" name="user_phone" className="w-full p-3 text-slate-800 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-300"
+                placeholder="Enter your Phone" required
+              />
             </div>
           </div>
           {/* Email */}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
-            <input type="email" id="email" name="user_email" className="w-full p-3 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-300 dark:text-slate-100" placeholder="Enter your email" required />
+            <label htmlFor="email" className="block text-slate-800 mb-2">Email</label>
+            <input type="email" id="email" name="user_email" className="w-full p-3 text-slate-800 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-300"
+              placeholder="Enter your email" required
+            />
           </div>
           {/* Message */}
           <div className="mb-4">
-            <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
-            <textarea id="message" name="message" className="w-full p-3 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-300 dark:text-slate-100" placeholder="Enter your message" rows="4" required></textarea>
+            <label htmlFor="message" className="block text-slate-800 mb-2">Message</label>
+            <textarea id="message" name="message" className="w-full p-3 text-slate-800 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-300"
+              placeholder="Enter your message" rows="4" required>
+            </textarea>
           </div>
           <button type="submit" className="flex gap-2 flex-row justify-center items-center w-full p-3 text-white dark:text-slate-200 font-bold sm:tracking-wider btn-home-animation">
             Send Message<span> <FaRegArrowAltCircleRight className="size-4" /></span>
@@ -62,10 +70,10 @@ function ContactForm() {
         {/* My contact Information */}
         <div className="flex flex-col gap-2">
           <div className="flex justify-center self-center mt-5 w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
-          <h3 className="text-2xl font-bold">Contact Information</h3>
-          <p className="flex flex-row items-center gap-1"><FaUser />Daniel Fernandez</p>
-          <p className="flex flex-row items-center gap-1"><FaPhone />(786)307-4352</p>
-          <p className="flex flex-row items-center gap-1"><MdAttachEmail />danielfernandez.tech@gmail.com</p>
+          <h3 className="text-2xl font-bold text-slate-800">Contact Information</h3>
+          <p className="flex flex-row items-center gap-1 text-slate-800"><FaUser />Daniel Fernandez</p>
+          <p className="flex flex-row items-center gap-1 text-slate-800"><FaPhone />(786)307-4352</p>
+          <p className="flex flex-row items-center gap-1 text-slate-800"><MdAttachEmail />danielfernandez.tech@gmail.com</p>
         </div>
       </div>
     </section>
@@ -112,7 +120,7 @@ export default function Home() {
           <strong className="flex justify-center gap-6 text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-blue-500">
             <span className="horizontal-line"></span> About Me <span className="horizontal-line"></span>
           </strong>
-          <div className="flex sm:flex-nowrap gap-4 flex-wrap mt-4 p-4 overflow-hidden max-w-full justify-around shadow-md shadow-indigo-300/50 rounded-xl">
+          <div className="flex sm:flex-nowrap gap-4 flex-wrap mt-4 p-4 overflow-hidden max-w-full justify-around shadow-md shadow-indigo-300/50 dark:bg-slate-800 dark:shadow-indigo-600/50 rounded-xl">
             <div className="max-w-80">
               <p className="tracking-wider text-justify indent-8 dark:text-slate-200">
                 <strong className="text-purple-500">1-</strong> I'm 27 year old graduate student at <a className="underline decoration-purple-400">University of Nevada

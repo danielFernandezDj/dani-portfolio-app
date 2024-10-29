@@ -59,11 +59,11 @@ export default function DropDowMenu({ links }) {
                       <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-500">
                         <div className="flex flex-wrap justify-center w-full gap-4">
                           {cardsData.map((card, index) => (
-                            <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100 dark:from-slate-300">
+                            <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100 dark:from-slate-300   dark:from-slate-900 dark:to-slate-900">
                               <div className="flex  justify-between items-center">
                                 <div>
                                   <strong className="text-lg text-blue-500">{card.title}</strong>
-                                  <p className="font-extralight">{card.description}</p>
+                                  <p className="font-extralight dark:text-slate-300">{card.description}</p>
                                 </div>
                                 <a href={card.link} target="_blank" className="p-2 text-white font-bold tracking-wider btn-home-animation dark:text-slate-200">See More</a>
                               </div>
