@@ -8,11 +8,11 @@
   }
 
   .nav-text-style {
-    @apply text-blue-900 lg:hover:text-blue-700 lg:hover:underline;
+    @apply text-blue-900 lg:hover:text-blue-700 lg:hover:underline   dark:text-slate-200 dark:lg:hover:text-indigo-400;
   }
 
   .btn-home-animation {
-    @apply rounded-lg lg:hover:shadow-md transition lg:ease-out delay-150 bg-blue-500 lg:hover:-translate-y-1 lg:hover:scale-110 lg:hover:bg-blue-950 duration-300;
+    @apply rounded-lg lg:hover:shadow-md transition lg:ease-out bg-blue-500 lg:hover:-translate-y-1 lg:hover:scale-110 duration-300 ;
   }
 
   .icon-hover-animation {

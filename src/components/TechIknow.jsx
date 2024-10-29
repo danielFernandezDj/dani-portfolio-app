@@ -39,9 +39,9 @@ export default function TechThatIKnow() {
       <strong className="mx-4 mb-4 flex justify-center w-auto text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-500 from-20% to-green-500">
         Tech that I have used.
       </strong>
-      <div className="flex flex-wrap sm:gap-5 gap-3 p-4 justify-around">
+      <div className="flex flex-wrap sm:gap-5 gap-3 p-4 justify-around rounded-lg dark:bg-slate-200">
         {techIcons.map(({ icon: Icon, label, color }, index) => (
-          <div key={index} className="flex flex-col justify-center items-center icon-hover-animation">
+          <div key={index} className="flex gap-2 flex-col justify-center items-center icon-hover-animation">
             <Icon className="size-10 grow" style={iconsColor(color)} />
             <p>{label}</p>
           </div>
