@@ -11,13 +11,13 @@ export default function ProjectList() {
         </strong>
         <div className="flex flex-wrap justify-center w-full gap-4">
           {cardsData.map((card, index) => (
-            <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100">
-              <div className="flex  justify-between items-center">
+            <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100 dark:from-slate-300">
+              <div className="flex justify-between items-center">
                 <div>
                   <strong className="text-lg text-blue-500">{card.title}</strong>
                   <p className="font-extralight">{card.description}</p>
                 </div>
-                <a href={card.link} target="_blank" className="p-2 text-white font-bold tracking-wider btn-home-animation">See More</a>
+                <a href={card.link} target="_blank" className="p-2 text-white dark:text-slate-200 font-bold tracking-wider btn-home-animation">See More</a>
               </div>
               <div className="flex gap-2 justify-center card-images">
                 <img src={card.imgA} alt="Project Image" />

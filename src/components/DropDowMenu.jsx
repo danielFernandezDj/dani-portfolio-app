@@ -14,7 +14,7 @@ export default function DropDowMenu({ links }) {
       <Menu as="div" className="flex content-center relative inline-block text-left">
         <div className="flex self-center">
           <Menu.Button>
-            <TiThMenu aria-hidden="true" className="text-blue-900 w-6 h-auto md:hidden" />
+            <TiThMenu aria-hidden="true" className="text-indigo-800 dark:text-indigo-600 w-6 h-auto md:hidden" />
           </Menu.Button>
         </div>
 
@@ -34,7 +34,7 @@ export default function DropDowMenu({ links }) {
                 <Menu.Item key={link.path}>
                   <Link
                     to={link.path}
-                    className={"flex justify-center gap-1 font-bold text-white w-full px-2 py-2 text-md"}>
+                    className={"flex justify-center gap-1 font-bold text-white w-full px-2 py-2 text-md dark:text-slate-200"}>
                     {link.icon}
                     {link.label}
                   </Link>
@@ -59,13 +59,13 @@ export default function DropDowMenu({ links }) {
                       <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-500">
                         <div className="flex flex-wrap justify-center w-full gap-4">
                           {cardsData.map((card, index) => (
-                            <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100">
+                            <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100 dark:from-slate-300">
                               <div className="flex  justify-between items-center">
                                 <div>
                                   <strong className="text-lg text-blue-500">{card.title}</strong>
                                   <p className="font-extralight">{card.description}</p>
                                 </div>
-                                <a href={card.link} target="_blank" className="p-2 text-white font-bold tracking-wider btn-home-animation">See More</a>
+                                <a href={card.link} target="_blank" className="p-2 text-white font-bold tracking-wider btn-home-animation dark:text-slate-200">See More</a>
                               </div>
                             </div>
                           ))}
