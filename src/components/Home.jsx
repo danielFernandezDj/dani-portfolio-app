@@ -26,7 +26,7 @@ function ContactForm() {
   };
 
   return (
-    <section className="sm:p-4 mb-8 font-sans leading-normal tracking-normal flex items-center justify-center">
+    <section className="sm:p-4 mb-8 font-sans leading-normal tracking-normal flex items-center justify-center ">
       <div className="bg-white sm:shadow-md rounded-xl p-8 max-w-md w-full">
         <h1 className="flex gap-2 flex-row justify-center items-center text-2xl font-bold mb-6 text-center
           font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-blue-500"

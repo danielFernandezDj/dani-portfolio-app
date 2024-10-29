@@ -24,7 +24,7 @@ function About() {
 function NavBar() {
   const links = [
     { path: '/', label: 'Home', icon: <HiMiniHome className="w-4 h-auto" /> },
-    { path: 'Contact', label: 'Contact', icon: <SiMinutemailer className="w-4 h-auto"/> },
+    { path: 'Contact', label: 'Contact', icon: <SiMinutemailer className="w-4 h-auto" /> },
     { path: 'About', label: 'About', icon: <BsFillPersonLinesFill className="w-4 h-auto" /> }
   ]
 
@@ -55,7 +55,7 @@ function NavBar() {
 // Main App
 function App() {
   return (
-    <div className="flex flex-col min-h-screen ">
+    <div className="flex flex-col min-h-screen dark:bg-slate-800">
       <Router >
         <NavBar />
         <div className="flex-grow">
