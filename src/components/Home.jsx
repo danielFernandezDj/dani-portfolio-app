@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import emailjs from 'emailjs-com';
-import TechThatIKnow from "./TechIknow";
 import ProjectList from "./ProjectList";
 
 // Icons
@@ -141,8 +140,7 @@ export default function Home() {
         <ProjectList />
 
         {/* ----------------------------- Tech that I have used ----------------------------- */}
-        <TechThatIKnow />
-        <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
+        {/* <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div> */}
 
         {/* Contact-Form */}
         {ContactForm()}
