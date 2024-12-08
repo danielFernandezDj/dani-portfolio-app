@@ -30,15 +30,6 @@ function NavBar() {
     { path: 'About', label: 'About', icon: <BsFillPersonLinesFill className="w-4 h-auto" /> }
   ]
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // Trigger shadow when scrolled down 50px
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <nav className={`my-6 z-50 sticky bg-transparent backdrop-blur-lg top-0 bg-white dark:bg-slate-900 transition-all duration-300 `}>
       <div className="container mx-auto md:px-4 px-8 py-3 flex justify-between md:px-20 items-center">
