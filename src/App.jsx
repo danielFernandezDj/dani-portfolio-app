@@ -31,14 +31,14 @@ function NavBar() {
   ]
 
   return (
-    <nav className={`my-6 z-50 sticky bg-transparent backdrop-blur-lg top-0 bg-white dark:bg-slate-900 transition-all duration-300 `}>
+    <nav className={`my-6 z-50 sticky top-0 bg-transparent backdrop-blur-lg dark:bg-slate-900 transition-all duration-300 `}>
       <div className="container mx-auto md:px-4 px-8 py-3 flex justify-between md:px-20 items-center">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
         <div className='flex space-x-12 items-center justify-center'>
           <DropDowMenu links={links} />
-          {/* <Link to="/" className="text-2xl logo-style">
+          <Link to="/" className="text-2xl logo-style">
             &#123; El Dani &#125;
-          </Link> */}
+          </Link>
           <div className="flex content-center hidden md:block space-x-4">
             <Link to="/" className="nav-text-style">Home</Link>
             <Link to="/contact" className="nav-text-style">Contact</Link>

@@ -4,7 +4,7 @@
 
 @layer components {
   .logo-style {
-    @apply font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500;
+    @apply md:block hidden font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500;
   }
 
   .nav-text-style {
