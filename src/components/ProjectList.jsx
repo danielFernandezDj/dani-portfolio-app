@@ -6,9 +6,19 @@ export default function ProjectList() {
   return (
     <>
       <section className="flex flex-col w-full p-4 gap-4 rounded-xl">
-        <strong className="flex justify-center gap-6 text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500">
-          <span className="horizontal-line"></span> PROJECTS <span className="horizontal-line"></span>
-        </strong>
+        <div className="mb-4 text-center">
+          {/* Title */}
+          <strong className="flex justify-center gap-6 text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500">
+            <span className="md:block hidden horizontal-line"></span>
+            What I’ve been working on
+            <span className="md:block hidden horizontal-line"></span>
+          </strong>
+          {/* Sub title */}
+          <p className="text-blue-800/80">
+            Take a look at some of the applications and
+            companies I’ve dedicated my time to.
+          </p>
+        </div>
         <div className="flex flex-wrap justify-center w-full gap-4">
           {cardsData.map((card, index) => (
             <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100   dark:from-slate-800 dark:to-slate-800">
