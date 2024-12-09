@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectList from "./ProjectList";
-import ContactForm from "./ContactFrom";
 
 // Icons
 import { FaRegArrowAltCircleRight, FaLinkedin } from "react-icons/fa";
@@ -68,9 +67,6 @@ export default function Home() {
 
         {/* ----------------------------- Tech that I have used ----------------------------- */}
         {/* <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div> */}
-
-
-        <ContactForm />
       </main >
     </>
   )

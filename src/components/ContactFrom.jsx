@@ -2,9 +2,7 @@ import React, { useRef } from "react";
 import emailjs from 'emailjs-com';
 
 // Icons
-import { FaRegArrowAltCircleRight, FaUser, FaLinkedin } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa6";
-import { MdAttachEmail } from "react-icons/md";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { IoMdMailOpen } from "react-icons/io";
 
 // EmailJS
@@ -23,10 +21,10 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="sm:p-4 mb-8 font-sans leading-normal tracking-normal flex items-center justify-center ">
+        <section className="sm:p-4 mb-4 font-sans leading-normal tracking-normal flex items-center justify-center ">
             <div className="bg-white dark:bg-slate-200 sm:shadow-md sm:rounded-xl p-8 max-w-md w-full">
                 <h1 className="flex gap-2 flex-row justify-center items-center text-2xl font-bold mb-6 text-center
-          font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-blue-500"
+                    font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-blue-500"
                 >
                     Let's Talk <IoMdMailOpen className="fill-blue-500" />
                 </h1>
@@ -64,14 +62,6 @@ export default function ContactForm() {
                         Send Message<span> <FaRegArrowAltCircleRight className="size-4" /></span>
                     </button>
                 </form>
-                {/* My contact Information */}
-                <div className="flex flex-col gap-2">
-                    <div className="flex justify-center self-center mt-5 w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div>
-                    <h3 className="text-2xl font-bold text-slate-800">Contact Information</h3>
-                    <p className="flex flex-row items-center gap-1 text-slate-800"><FaUser />Daniel Fernandez</p>
-                    <p className="flex flex-row items-center gap-1 text-slate-800"><FaPhone />(786)307-4352</p>
-                    <p className="flex flex-row items-center gap-1 text-slate-800"><MdAttachEmail />danielfernandez.tech@gmail.com</p>
-                </div>
             </div>
         </section>
     );

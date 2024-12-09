@@ -26,13 +26,5 @@ export default function CardsData() {
       imgB: './unlv-badges/html-badge.png',
       imgC: './unlv-badges/final-badge.png',
     },
-    {
-      title: 'Card 4 Title',
-      description: 'Description for card 4',
-      link: 'https://tailwindcss.com/docs/gap',
-      imgA: './unlv-badges/css-badge.png',
-      imgB: './unlv-badges/html-badge.png',
-      imgC: './unlv-badges/final-badge.png',
-    },
   ]
 }
