@@ -14,9 +14,10 @@ export default function Footer() {
   const githubLink = "https://github.com/danielFernandezDj"
 
   return (
-    <footer className=" text-blue-900 py-4">
+    <footer className="flex flex-col content-center max-w-md text-blue-900 py-4 m-auto mt-12">
       <ContactForm />
-      <div className="flex flex-col items-start mx-auto px-8">
+
+      <div className="flex flex-col mx-auto px-8">
         {/* Footer Content */}
         <div className="flex flex-col md:flex-row justify-start items-center mb-6">
           {/* My contact Information */}
@@ -28,16 +29,16 @@ export default function Footer() {
         </div>
 
         {/* End Side */}
-        <div className="flex border-t justify-between items-center pt-4 border-gradient-to-r from-blue-400 to-purple-400">
-          <p className="text-start">
-            &copy; {new Date().getFullYear()} rights reserved
+        <div className="flex gap-4 justify-between items-center border-t py-4">
+          <p className="">
+            &copy; {new Date().getFullYear()} rights reserved.
           </p>
-          <div className="flex justify-end space-x-6 md:mt-0 m-4">
-            <a href={linkedinLink} target="_blank"><FaLinkedin className="w-12 h-auto fill-blue-900 lg:hover:fill-blue-500 " /></a>
-            <a href={githubLink} target="_blank"><SiGithub className="w-12 h-auto fill-blue-900 lg:hover:fill-blue-500" /></a>
+          <div className="flex gap-2 justify-end content-center">
+            <a href={linkedinLink} target="_blank"><FaLinkedin className="w-12 h-auto fill-blue-900 hover:fill-blue-500 " /></a>
+            <a href={githubLink} target="_blank"><SiGithub className="w-12 h-auto fill-blue-900 hover:fill-blue-500" /></a>
           </div>
         </div>
-        <p> Designed & Coded by Daniel Fernandez </p>
+        <p> Designed & Coded by Daniel Fernandez. </p>
       </div>
     </footer>
   );
