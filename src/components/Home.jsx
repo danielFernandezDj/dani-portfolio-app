@@ -46,20 +46,20 @@ export default function Home() {
           <strong className="flex justify-center gap-6 text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-blue-500">
             <span className="horizontal-line"></span> About Me <span className="horizontal-line"></span>
           </strong>
-          <div className="flex sm:flex-nowrap gap-4 flex-wrap mt-4 p-4 overflow-hidden max-w-full justify-around shadow-md shadow-indigo-300/50 dark:bg-slate-800 dark:shadow-indigo-600/50 rounded-xl">
-            <div className="max-w-80">
-              <p className="tracking-wider text-justify indent-8 dark:text-slate-200">
-                <strong className="text-purple-500">1-</strong> I'm 27 year old graduate student at <a className="underline decoration-purple-400">University of Nevada
-                  (UNLV)</a> where I graduate in Full Stack Software Engineer, using technology has <a className="underline decoration-purple-400">React and Nodejs.</a>
-              </p>
-            </div>
-            <div className="hidden sm:block flex justify-center self-center h-24 w-px | bg-gradient-to-t from-blue-400 to-purple-400"></div>
-            <div className="max-w-80">
-              <p className="tracking-wider text-justify indent-8 dark:text-slate-200">
-                <strong className="text-blue-400 ">2-</strong> Through these experience, I've had the opportunity to create memorable products
-                that are not only enjoyable to use, but are written in code thats <a className="rounded bg-blue-100 dark:bg-blue-700">maintainable and easy to understand.</a>
-              </p>
-            </div>
+          <div className="flex gap-4 flex-wrap md:p-8 p-4 overflow-hidden max-w-full justify-start  dark:bg-slate-800 dark:shadow-indigo-600/50 rounded-xl">
+            <p className="tracking-wider indent-4 dark:text-slate-200 max-w-full">
+              I'm a 27-year-old graduate student at the University of Nevada, Las Vegas (UNLV), where my journey in Full Stack Software Engineering has become more than just a career path—it's a personal mission to create meaningful digital experiences. Specializing in technologies like React, Express, and JavaScript, I pour my heart into every line of code.
+            </p>
+            <p className="tracking-wider indent-4 dark:text-slate-200">
+              Each day brings a wave of excitement that propels me to explore skills I once thought were beyond my reach. Technology isn't just a job for me—it's a canvas where creativity and logic dance together. And while my world revolves around innovative solutions, music remains my soulful companion, offering inspiration that enriches my perspective and fuels my professional creativity.
+            </p>
+            <p className="tracking-wider indent-4 dark:text-slate-200">
+              If you're seeking to transform your web application into something truly exceptional, I'm ready to bring both technical expertise and genuine passion to your project.
+            </p>
+
+            <strong className="text-blue-800">
+                More about me {'>'}
+            </strong>
           </div>
         </section>
 
