@@ -11,6 +11,9 @@ export default {
     extend: {
       width: {
         '84': '21rem',
+      },
+      colors: {
+        
       }
     },
   },
