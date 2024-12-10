@@ -9,7 +9,7 @@
   }
 
   .nav-text-style {
-    @apply text-blue-900 lg:hover:text-blue-700 lg:hover:underline dark:text-slate-200 dark:lg:hover:text-indigo-400;
+    @apply text-blue-900 lg:hover:text-blue-700 lg:hover:underline;
   }
 
   .simple-hover-animation {

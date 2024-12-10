@@ -51,6 +51,7 @@ function NavBar() {
           </Link>
           <div className="flex content-center hidden md:block space-x-4">
             <Link to="/" className="nav-text-style">Home</Link>
+            <Link to="/projects" className="nav-text-style">Projects</Link>
             <Link to="/contact" className="nav-text-style">Contact</Link>
             <Link to="/about" className="nav-text-style">About</Link>
           </div>
