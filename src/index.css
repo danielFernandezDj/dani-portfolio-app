@@ -18,12 +18,12 @@
 
   /* ----------------------------- Card Styling ----------------------------- */
   .card-container {
-    @apply flex justify-center w-full h-[280px] gap-4 p-4 relative overflow-hidden rounded-lg backdrop-blur-xl 
+    @apply flex justify-center w-full md:h-[280px] h-56 gap-4 p-4 relative overflow-hidden rounded-lg backdrop-blur-xl 
     hover:bg-slate-900 transition duration-300;
   }
 
   .card-images {
-    @apply max-w-full h-90 rounded-md absolute -bottom-[5rem] md:grayscale grayscale-0 md:hover:grayscale-0 transition duration-200;
+    @apply max-w-full md:h-90 h-56 rounded-md absolute md:-bottom-[5rem] -bottom-[1rem];
   }
 
   .card-images-menu img {

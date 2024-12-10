@@ -7,7 +7,7 @@ export default function ProjectList() {
     <>
       <section className="flex flex-col items-center w-full p-4 gap-4">
         {/* Header */}
-        <div className="mb-6 text-center">
+        <div className="mb-6 text-center ">
           <strong className="flex justify-center gap-6 text-3xl tracking-wider text-gradient">
             What I’ve been working on
           </strong>
