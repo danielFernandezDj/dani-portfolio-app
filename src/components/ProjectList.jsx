@@ -27,12 +27,12 @@ export default function ProjectList() {
               </a>
 
               <div href={card.link} target="_blank" key={index}>
-                <div className="flex justify-between mb-10 px-4 py-4">
+                <div className="flex flex-wrap md:flex-nowrap md:justify-between mb-10 px-4 py-4">
                   <div className="w-full">
                     <a href={card.link} target="_blank">
                       <strong className="text-2xl text-slate-950">{card.title}</strong>
                     </a>
-                    <p className="text-slate-950/90 ">{card.description}</p>
+                    <p className="text-slate-950/90 md:mb-0 mb-2">{card.description}</p>
                   </div>
 
                   {/* Tech */}

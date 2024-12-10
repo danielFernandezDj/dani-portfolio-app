@@ -23,7 +23,7 @@
   }
 
   .card-images {
-    @apply max-w-full md:h-90 h-56 rounded-md absolute md:-bottom-[5rem] -bottom-[1rem];
+    @apply max-w-fit md:h-90 h-56 rounded-md absolute md:-bottom-[5rem] -bottom-[1rem];
   }
 
   .card-images-menu img {
