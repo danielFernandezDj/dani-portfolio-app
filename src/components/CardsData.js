@@ -3,28 +3,28 @@ import React from "react";
 export default function CardsData() {
   return [
     {
-      title: 'Word Games',
-      description: 'Multi games web app.',
-      link: 'https://tailwindcss.com/docs/gap',
-      imgA: './unlv-badges/css-badge.png',
-      imgB: './unlv-badges/html-badge.png',
-      imgC: './unlv-badges/final-badge.png',
+      title: 'TLC LiCensing',
+      description: 'Full-Stack Educational Institution at Miami, FL.',
+      link: 'https://tlclicensing.com/',
+      img: './projects-img/tlc.png',
+      bgColor: 'bg-slate-800',
+      tech: ['React', 'Redux', 'JavaScript']
     },
     {
-      title: 'Card 2 Title',
-      description: 'Description for card 2',
-      link: 'https://tailwindcss.com/docs/gap',
-      imgA: './unlv-badges/css-badge.png',
-      imgB: './unlv-badges/html-badge.png',
-      imgC: './unlv-badges/final-badge.png',
+      title: 'Artistic Echoes',
+      description: 'Image Stock Bank, offers free Download.',
+      link: 'https://tailwindcss.com',
+      img: './projects-img/artistic-echoes.png',
+      bgColor: 'bg-slate-800',
+      tech: ['React', 'MongoDB', 'Express']
     },
     {
-      title: 'Card 3 Title',
-      description: 'Description for card 3',
-      link: 'https://tailwindcss.com/docs/gap',
-      imgA: './unlv-badges/css-badge.png',
-      imgB: './unlv-badges/html-badge.png',
-      imgC: './unlv-badges/final-badge.png',
+      title: 'AI random app.',
+      description: 'This is just an example AI app.',
+      link: 'https://tailwindcss.com',
+      img: '/projects-img/ai.png',
+      bgColor: 'bg-slate-800',
+      tech: ['ChatGPT', 'NextJS', 'TypeScript']
     },
   ]
 }

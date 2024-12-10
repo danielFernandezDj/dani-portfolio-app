@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  /* ----------------------------- Hero Section ----------------------------- */
   .logo-style {
     @apply font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500;
   }
@@ -11,47 +12,38 @@
     @apply text-blue-900 lg:hover:text-blue-700 lg:hover:underline dark:text-slate-200 dark:lg:hover:text-indigo-400;
   }
 
-  .btn-home-animation {
-    @apply rounded-md transition ease-out bg-blue-500 hover:bg-blue-900 duration-300;
-  }
-
-  .icon-hover-animation {
-    @apply lg:transition-all lg:ease-out lg:hover:mx-2 lg:hover:-translate-y-1 lg:hover:scale-110 duration-300;
-  }
-
   .simple-hover-animation {
     @apply lg:transition-all lg:ease-out lg:hover:scale-125 duration-300;
   }
 
+  /* ----------------------------- Card Styling ----------------------------- */
   .card-container {
-    @apply flex flex-col sm:w-84 w-full gap-4 p-4 rounded-lg bg-indigo-50 sm:shadow-none shadow-md border-2 border-blue-400 lg:border-blue-100 lg:hover:border-blue-400 transition duration-300;
-    @apply dark:border-indigo-500
+    @apply flex justify-center w-full md:h-[280px] h-56 gap-4 p-4 relative overflow-hidden rounded-lg backdrop-blur-xl 
+    hover:bg-slate-900 transition duration-300;
   }
 
-  .card-images img {
-    @apply max-w-24 max-h-24 rounded-md;
+  .card-images {
+    @apply max-w-fit md:h-90 h-56 rounded-md absolute md:-bottom-[5rem] -bottom-[1rem];
   }
 
   .card-images-menu img {
     @apply max-w-16 max-h-16 rounded-md;
   }
 
+  /* ----------------------------- Single Style ----------------------------- */
+  .btn-hover-animation {
+    @apply rounded-md font-bold tracking-wider text-slate-200 bg-slate-800 hover:bg-slate-900 transition ease-out duration-300;
+  }
+
+  .icon-hover-animation {
+    @apply lg:transition-all lg:ease-out lg:hover:mx-2 lg:hover:-translate-y-1 lg:hover:scale-110 duration-300; 
+  }
+
   .horizontal-line {
     @apply flex justify-center self-center sm:w-28 w-14 h-px bg-gradient-to-t from-blue-200 to-purple-200;
   }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500
+  }
 }
-
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
