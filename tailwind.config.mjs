@@ -12,6 +12,9 @@ export default {
       width: {
         '84': '21rem',
       },
+      height: {
+        '90': '22rem',
+      },
       colors: {
         
       }

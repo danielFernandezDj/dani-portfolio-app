@@ -40,7 +40,7 @@ function NavBar() {
   }, []);
 
   return (
-    <nav className={`my-6 z-50 sticky top-0 dark:bg-slate-900 transition-all duration-300 
+    <nav className={`my-6 z-50 sticky top-0 transition-all duration-300 
       ${scrolled ? 'md:pt-3 bg-transparent backdrop-blur-xl' : 'bg-white '}`
     }>
       <div className="container mx-auto md:px-4 px-8 py-3 flex md:justify-around justify-between md:px-20 items-center">
@@ -57,7 +57,7 @@ function NavBar() {
         </div>
         {/* –––––––––––––––––––––––––––– Right side - Icons –––––––––––––––––––––––––––– */}
         <div className="flex space-x-6">
-          <button className="text-indigo-600 dark:text-yellow-500 simple-hover-animation"><MdSunny className="w-6 h-auto" /></button>
+          <button className="text-slate-800 simple-hover-animation"><MdSunny className="w-6 h-auto" /></button>
           <DropDowMenu links={links} />
         </div>
       </div>
@@ -68,7 +68,7 @@ function NavBar() {
 // Main App
 function App() {
   return (
-    <div className="flex flex-col min-h-screen dark:bg-slate-900">
+    <div className="flex flex-col min-h-screen ">
       <Router >
         <NavBar />
         <div className="flex-grow">
