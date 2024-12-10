@@ -2,16 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 // Icons
-import { GiMoonBats } from "react-icons/gi";
-import { MdSunny } from "react-icons/md";
+// import { GiMoonBats } from "react-icons/gi";
+// import { MdSunny } from "react-icons/md";
 import { HiMiniHome } from "react-icons/hi2";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
+import { FiDownload } from "react-icons/fi";
 
 // Component
 import DropDowMenu from './components/DropDowMenu';
 import Home from './components/Home';
 import Footer from './Footer';
+
+function Projects() {
+  return <div className="p-4"></div>;
+}
 
 function Contact() {
   return <div className="p-4"></div>;
@@ -46,7 +51,7 @@ function NavBar() {
       <div className="container mx-auto md:px-4 px-8 py-3 flex md:justify-around justify-between md:px-20 items-center">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
         <div className='flex space-x-12 items-center justify-center'>
-          <Link to="/" className="text-2xl logo-style">
+          <Link to="/" className="text-3xl logo-style simple-hover-animation">
             &#123; ø &#125;
           </Link>
           <div className="flex content-center hidden md:block space-x-4">
@@ -57,8 +62,18 @@ function NavBar() {
           </div>
         </div>
         {/* –––––––––––––––––––––––––––– Right side - Icons –––––––––––––––––––––––––––– */}
-        <div className="flex space-x-6">
-          <button className="text-slate-800 simple-hover-animation"><MdSunny className="w-6 h-auto" /></button>
+        <div className="flex gap-2">
+          <a href='https://docs.google.com/document/d/1RQ8uI58cl7uD3EA8v6hDp6M4YfOU0pwrCeszlcx7_eM/edit?usp=sharing' target='_Blank'
+            className="flex justify-center items-center gap-2 rounded-md / py-2 px-6 font-bold btn-hover-animation"
+          >
+            CSV ➚
+          </a>
+          <a href='https://docs.google.com/document/d/1ZdKekTgWMx22usWVeI8DbfDKO-m8UUrzPbLImbZnJSE/edit?usp=sharing' target='_Blank'
+            className="flex justify-center items-center gap-2 rounded-md / 
+            py-2 px-6 text-slate-800 font-bold bg-transparent border-2 border-slate-800 hover:border-blue-600 hover:text-blue-600"
+          >
+            Cover Letter ➚
+          </a>
           <DropDowMenu links={links} />
         </div>
       </div>
@@ -75,8 +90,9 @@ function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
         <Footer />
