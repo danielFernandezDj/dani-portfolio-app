@@ -8,10 +8,8 @@ export default function ProjectList() {
       <section className="flex flex-col w-full p-4 gap-4 rounded-xl">
         <div className="mb-4 text-center">
           {/* Title */}
-          <strong className="flex justify-center gap-6 text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500">
-            <span className="md:block hidden horizontal-line"></span>
+          <strong className="flex justify-center gap-6 text-2xl tracking-wider text-gradient">
             What I’ve been working on
-            <span className="md:block hidden horizontal-line"></span>
           </strong>
           {/* Sub title */}
           <p className="text-blue-800/80">

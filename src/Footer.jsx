@@ -1,5 +1,4 @@
 import React from "react"
-import ContactForm from "./components/ContactFrom"
 
 // Icons
 import { FaLinkedin } from "react-icons/fa";
@@ -15,8 +14,6 @@ export default function Footer() {
 
   return (
     <footer className="flex flex-col content-center max-w-md text-blue-900 py-4 m-auto mt-12">
-      <ContactForm />
-
       <div className="flex flex-col mx-auto px-8">
         {/* Footer Content */}
         <div className="flex flex-col md:flex-row justify-start items-center mb-6">
