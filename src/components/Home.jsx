@@ -20,7 +20,7 @@ export default function Home() {
             <div className="mt-2 flex gap-2 justify-between content-center">
 
               <button className="flex gap-2 flex-row justify-center items-center w-full btn-hover-animation">
-                Let's Talk <span> <FaRegArrowAltCircleRight className="size-4" /></span>
+                Let's Talk <FaRegArrowAltCircleRight className="size-4" />
               </button>
 
               <div className="flex gap-2">
