@@ -33,6 +33,7 @@ export default function Footer() {
       className="
         flex items-center gap-2 
         hover:underline decoration-wavy 
+        hover:text-blue-500
         cursor-pointer 
         group 
         relative
@@ -96,7 +97,7 @@ export default function Footer() {
 
       <div className="flex gap-2 justify-end absolute bottom-5 right-5">
         <a href={linkedinLink} target="_blank"><FaLinkedin className="w-12 h-auto fill-slate-200 hover:fill-blue-500 " /></a>
-        <a href={githubLink} target="_blank"><SiGithub className="w-12 h-auto fill-slate-200 hover:fill-blue-500" /></a>
+        <a href={githubLink} target="_blank"><SiGithub className="w-12 h-auto fill-slate-200 hover:fill-yellow-500" /></a>
       </div>
     </footer>
   );
