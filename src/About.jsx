@@ -1,9 +1,6 @@
 import React from "react";
 import ContactForm from "./components/ContactFrom";
-
-// Icons
-import { FaRegArrowAltCircleRight, FaLinkedin } from "react-icons/fa";
-import { SiGithub } from "react-icons/si";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 
 export default function About() {
@@ -22,7 +19,7 @@ export default function About() {
                     </div>
                     <div className="w-full md:w-[70%] text-slate-800">
                         <img
-                            src="/public/mePhoto.jpeg"
+                            src="/mePhoto.jpeg"
                             alt="My Selfie"
                             className="rounded-xl w-3/6 md:w-2/6 float-right"
                         />
