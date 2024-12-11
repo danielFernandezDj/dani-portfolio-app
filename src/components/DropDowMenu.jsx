@@ -16,7 +16,7 @@ export default function DropDowMenu({ links }) {
       <Menu as="div" className="flex content-center relative inline-block text-left">
         <div className="flex self-center">
           <Menu.Button>
-            {({ open }) => ( 
+            {({ open }) => (
               open ? (
                 <RiMenuFold2Line aria-hidden="true" className="text-blue-600 stroke-2 w-6 h-auto md:hidden" />
               ) : (
@@ -63,16 +63,42 @@ export default function DropDowMenu({ links }) {
                             } h-5 w-5 text-white`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-500">
+
+                      <Disclosure.Panel className="px-4 pb-2 pt-4 text-slate-200">
                         <div className="flex flex-wrap justify-center w-full gap-4">
                           {cardsData.map((card, index) => (
-                            <div key={index} className="card-container bg-gradient-to-r from-white to-indigo-100 dark:from-slate-300   dark:from-slate-900 dark:to-slate-900">
-                              <div className="flex  justify-between items-center">
-                                <div>
-                                  <strong className="text-lg text-blue-500">{card.title}</strong>
-                                  <p className="font-extralight dark:text-slate-300">{card.description}</p>
+                            <div key={index} className="flex flex-col gap-2">
+                              <a
+                                href={card.link}
+                                target="_blank"
+                                key={index}
+                              >
+                                <img
+                                  src={card.img}
+                                  alt="Project Image"
+                                  className="object-cover rounded-lg"
+                                />
+                              </a>
+                              <div className='grid grid-cols-3 '>
+                                {/* Col-1 */}
+                                <div className='col-span-2'>
+                                  <strong className="text-lg text-slate-200">
+                                    {card.title}
+                                  </strong>
+                                  <p className="text-slate-200 font-light">
+                                    {card.description}
+                                  </p>
                                 </div>
-                                <a href={card.link} target="_blank" className="p-2 text-white font-bold tracking-wider btn-home-animation dark:text-slate-200">See More</a>
+                                {/* Col-2 */}
+                                <div className='flex p-1 justify-center items-center'>
+                                  <a
+                                    href={card.link}
+                                    target="_blank"
+                                    className="w-[80%] p-1 text-center text-slate-200 font-bold tracking-wider bg-gradient rounded-lg"
+                                  >
+                                    Learn More ➚
+                                  </a>
+                                </div>
                               </div>
                             </div>
                           ))}
