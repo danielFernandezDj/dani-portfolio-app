@@ -12,30 +12,34 @@ export default function About() {
 
     return (
         <>
-            <main className="flex flex-col items-center gap-16 max-w-sm mx-auto sm:max-w-3xl / border border-red-600">
+            <main className="flex flex-col items-center gap-16 max-w-sm mx-auto sm:max-w-3xl">
                 {/* hero */}
-                <div className="text-center text-slate-800">
-                    <strong className="text-4xl">
-                        Hi there, I’m Daniel Fernandez
-                    </strong>
-                    <p>
-                        A exited Software Engineer ready to build relieve software, and learn new technology.
-                        With a expertise in Database, FrontEND + BackEND applications.
-                    </p>
-                    <img src="/public/mePhoto.jpeg" alt="My Selfie" />
-                    <div className="mt-2 flex gap-2 justify-between content-center">
-                        <button className="flex gap-2 flex-row justify-center items-center w-full btn-hover-animation">
-                            Let's Talk <FaRegArrowAltCircleRight className="size-4" />
-                        </button>
-                        <div className="flex gap-2">
-                            <a href={linkedinLink} target="_blank"><FaLinkedin className="w-12 h-auto fill-blue-900 hover:fill-blue-500 " /></a>
-                            <a href={githubLink} target="_blank"><SiGithub className="w-12 h-auto fill-blue-900 hover:fill-blue-500" /></a>
+                <div className="flex flex-col items-center gap-2 p-4 mb-8 md:mb-16 text-slate-800">
+                    <div className="flex flex-col text-gradient text-center">
+                        <strong className="my-4 text-4xl md:text-5xl">
+                            Hi there, I’m Daniel Fernandez
+                        </strong>
+                    </div>
+                    <div className="w-full md:w-[70%] text-slate-800">
+                        <img
+                            src="/public/mePhoto.jpeg"
+                            alt="My Selfie"
+                            className="rounded-xl w-3/6 md:w-2/6 float-right"
+                        />
+                        <div>
+                            <p>
+                                A exited Software Engineer ready to build relieve software, and learn new technology.
+                                With a expertise in Database, FrontEND + BackEND applications.
+                            </p>
+                            <button className="flex gap-2 p-3 my-4 justify-center items-center btn-hover-animation">
+                                Let's Talk <FaRegArrowAltCircleRight className="size-4" />
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 {/* Long Time ago */}
-                <div className="p-4 md:py-8 md:px-24 bg-slate-800 text-slate-200 rounded-lg">
+                <div className="p-4 md:py-8 md:px-24 md:w-5/6 bg-slate-800 text-slate-200 rounded-lg">
                     <strong className="text-2xl">
                         Long time ago!
                     </strong>
@@ -67,7 +71,7 @@ export default function About() {
                         that prepared me for my current path. My first application was a video game created in Constructor 2,
                         which later moved to Unity Engine. It was here that I first learned to code in C#, a language I found fascinating.
                     </p>
-                    <div className="grid grid-cols-2 gap-2 / border">
+                    <div className="grid grid-cols-2 gap-2">
                         <div className="row-span-2">
                             <img
                                 src="/projects-img/old-pc.png"
@@ -122,7 +126,7 @@ export default function About() {
                 {/* Let's Create Something Together */}
                 <div className="flex flex-col gap-2 p-1 md:p-8 m-2 text-slate-800 bg-gradient rounded-xl">
                     <div className="p-4 bg-white rounded-xl">
-                        <strong className="text-2xl text-gradient p-2">
+                        <strong className="text-2xl text-gradient mb-4">
                             Let's Create Something Amazing Together
                         </strong>
                         <p>
