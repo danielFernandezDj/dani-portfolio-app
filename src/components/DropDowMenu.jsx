@@ -1,10 +1,14 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom'
 import { Menu, Transition, Disclosure } from '@headlessui/react'
 import CardsData from "./CardsData";
 
 // Icons
-import { TiThMenu } from "react-icons/ti";
+// import { TiThMenu } from "react-icons/ti";
+import { RiMenuFoldLine } from "react-icons/ri";
+
+// import { IoIosCloseCircle } from "react-icons/io";
+import { RiMenuFold2Line } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function DropDowMenu({ links }) {
@@ -15,7 +19,13 @@ export default function DropDowMenu({ links }) {
       <Menu as="div" className="flex content-center relative inline-block text-left">
         <div className="flex self-center">
           <Menu.Button>
-            <TiThMenu aria-hidden="true" className="text-indigo-800 dark:text-indigo-600 w-6 h-auto md:hidden" />
+            {({ open }) => ( // Use render prop to access open state
+              open ? (
+                <RiMenuFold2Line aria-hidden="true" className="text-blue-600 stroke-2 w-6 h-auto md:hidden" />
+              ) : (
+                <RiMenuFoldLine aria-hidden="true" className="text-indigo-600 stroke-2 w-6 h-auto md:hidden" />
+              )
+            )}
           </Menu.Button>
         </div>
 
@@ -50,7 +60,6 @@ export default function DropDowMenu({ links }) {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 text-left text-md font-bold text-white">
-
                         <span>Projects</span>
                         <IoIosArrowDown
                           className={`${open ? 'rotate-180 transform' : ''
@@ -80,6 +89,8 @@ export default function DropDowMenu({ links }) {
           </Menu.Items>
         </Transition>
       </Menu>
+
+
     </div >
   )
 }
