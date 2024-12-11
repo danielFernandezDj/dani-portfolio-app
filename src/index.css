@@ -44,7 +44,11 @@
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500 ;
+  }
+
+  .bg-gradient {
+    @apply bg-gradient-to-r from-indigo-500 from-20% to-red-500 opacity-95;
   }
 
   .footer-container {
