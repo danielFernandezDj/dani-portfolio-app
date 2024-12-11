@@ -70,7 +70,7 @@ export default function DropDowMenu({ links }) {
                     </Disclosure.Button>
 
                     <Disclosure.Panel className="px-4 pb-2 text-slate-200 ">
-                      <div className="flex flex-wrap justify-center w-full gap-6 max-h-[50vh] overflow-y-scroll">
+                      <div className="flex flex-wrap justify-center w-full gap-6 max-h-[55vh] overflow-y-scroll">
                         {cardsData.map((card, index) => (
                           <div key={index} className="flex flex-col gap-2">
                             <a
