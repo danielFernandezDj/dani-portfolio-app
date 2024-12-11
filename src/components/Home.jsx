@@ -63,7 +63,6 @@ export default function Home() {
               If you're seeking to transform your web application into something truly exceptional,
               I'm ready to bring both technical expertise and genuine passion to your project.
             </p>
-
             <a href="#">
               <strong className="text-gradient hover:underline decoration-blue-600 decoration-wavy | transition-all duration-300">
                 More about me {'>'}
@@ -71,12 +70,7 @@ export default function Home() {
             </a>
           </div>
         </section>
-
-        {/* ----------------------------- Project CARDs LIST ----------------------------- */}
         <ProjectList />
-
-        {/* ----------------------------- Skils ----------------------------- */}
-        {/* <div className="flex justify-center self-center w-4/5 h-px | bg-gradient-to-r from-blue-400 to-purple-400"></div> */}
         <ContactForm />
       </main >
     </>

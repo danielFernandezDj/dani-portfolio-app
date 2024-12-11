@@ -63,13 +63,13 @@ function NavBar() {
         {/* –––––––––––––––––––––––––––– Right side - Icons –––––––––––––––––––––––––––– */}
         <div className="flex gap-2">
           <a href='https://docs.google.com/document/d/1RQ8uI58cl7uD3EA8v6hDp6M4YfOU0pwrCeszlcx7_eM/edit?usp=sharing' target='_Blank'
-            className="flex justify-center items-center gap-2 rounded-md / py-2 px-6 font-bold btn-hover-animation lg:block hidden"
+            className="flex justify-center content-center gap-2 rounded-md / py-2 px-4 btn-hover-animation lg:block hidden"
           >
-            CSV ➚
+            CV ➚
           </a>
           <a href='https://docs.google.com/document/d/1ZdKekTgWMx22usWVeI8DbfDKO-m8UUrzPbLImbZnJSE/edit?usp=sharing' target='_Blank'
             className="flex justify-center items-center gap-2 rounded-md / 
-            py-2 px-6 text-slate-800 font-bold bg-transparent border-2 border-slate-800 hover:border-blue-600 hover:text-blue-600 md:block hidden"
+            py-2 px-4 text-slate-800 font-bold bg-transparent border-2 border-slate-800 hover:border-blue-600 hover:text-blue-600 md:block hidden"
           >
             Cover Letter ➚
           </a>
