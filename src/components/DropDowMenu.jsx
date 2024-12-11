@@ -19,7 +19,7 @@ export default function DropDowMenu({ links }) {
       <Menu as="div" className="flex content-center relative inline-block text-left">
         <div className="flex self-center">
           <Menu.Button>
-            {({ open }) => ( // Use render prop to access open state
+            {({ open }) => ( 
               open ? (
                 <RiMenuFold2Line aria-hidden="true" className="text-blue-600 stroke-2 w-6 h-auto md:hidden" />
               ) : (
