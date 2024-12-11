@@ -13,7 +13,7 @@ export default function About() {
                 {/* hero */}
                 <div className="flex flex-col items-center gap-2 p-4 mb-8 md:mb-16 text-slate-800">
                     <div className="flex flex-col text-gradient text-center">
-                        <strong className="my-4 text-4xl md:text-5xl">
+                        <strong className="mb-6 text-start md:text-center text-5xl">
                             Hi there, I’m Daniel Fernandez
                         </strong>
                     </div>
