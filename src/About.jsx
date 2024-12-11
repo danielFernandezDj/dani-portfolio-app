@@ -1,14 +1,20 @@
 import React from "react";
 import ContactForm from "./components/ContactFrom";
 
+// Icons
+import { FaRegArrowAltCircleRight, FaLinkedin } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
+
+
 export default function About() {
-    // Create some Variables!
+    const linkedinLink = "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+    const githubLink = "https://github.com/danielFernandezDj"
 
     return (
         <>
             <main className="flex flex-col items-center gap-16 max-w-sm mx-auto sm:max-w-3xl / border border-red-600">
                 {/* hero */}
-                <div>
+                <div className="text-center">
                     <strong className="text-4xl">
                         Hi there, I’m Daniel Fernandez
                     </strong>
@@ -17,29 +23,37 @@ export default function About() {
                         With a expertise in Database, FrontEND + BackEND applications.
                     </p>
                     <img src="/public/mePhoto.jpeg" alt="My Selfie" />
+                    <div className="mt-2 flex gap-2 justify-between content-center">
+                        <button className="flex gap-2 flex-row justify-center items-center w-full btn-hover-animation">
+                            Let's Talk <FaRegArrowAltCircleRight className="size-4" />
+                        </button>
+                        <div className="flex gap-2">
+                            <a href={linkedinLink} target="_blank"><FaLinkedin className="w-12 h-auto fill-blue-900 hover:fill-blue-500 " /></a>
+                            <a href={githubLink} target="_blank"><SiGithub className="w-12 h-auto fill-blue-900 hover:fill-blue-500" /></a>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Long Time ago */}
-                <div className="bg-slate-800">
-                    <strong className="text-3xl">
+                <div className="p-4 md:p-8 bg-slate-800 text-slate-200">
+                    <strong className="text-2xl">
                         Long time ago!
                     </strong>
-                    <div>
-
-                        <p>
-                            I have been surrounded by technology almost my entire life, starting with those old computers
-                            running Windows XP where you had to type commands to start
-                        </p>
+                    <div className="mt-4">
                         <img
-                            src="/public/projects-img/old-pc.avif"
+                            src="/public/projects-img/old-pc.png"
                             alt="Hold computer image from Unsplash"
+                            className="ml-4 md:ml-2 w-40 md:w-56 rounded-sm float-right"
                         />
+                        <p className="mb-4">
+                            I have been surrounded by technology almost my entire life, starting with those old computers
+                            running Windows XP where you had to type commands to start them up—those PCs that made those distinctive, quirky startup noises.
+                        </p>
+                        <p>
+                            Technology has changed dramatically since those days, evolving to a point where AI now shows reasoning
+                            similar to human intelligence.
+                        </p>
                     </div>
-                    <p>
-                        them up—those PCs that made those distinctive, quirky startup noises.
-                        Technology has changed dramatically since those days, evolving to a point where AI now shows reasoning
-                        similar to human intelligence.
-                    </p>
                 </div>
 
 
