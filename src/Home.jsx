@@ -29,14 +29,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col text-center sm:text-left">
-            <p className="text-7xl sm:text-8xl font-bold font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500">
-              Hi there, <br /> I'm Daniel
-            </p>
-            <p className="text-2xl sm:text-5xl font-bold
-              bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% to-blue-500"
-            >
-              Full Stack Developer<span className="hidden sm:contents">, Student </span> & Enthusiast!
+          <div className="flex flex-col md:w-[54rem] text-center sm:text-left">
+            <strong className="text-7xl md:text-8xl text-gradient">
+              Hi there, I'm Daniel
+            </strong>
+            <p className="text-2xl sm:text-5xl font-bold text-gradient">
+              Full Stack Developer & Enthusiast!
             </p>
           </div>
         </section>

@@ -9,6 +9,7 @@ import { SiMinutemailer } from "react-icons/si";
 // Component
 import DropDowMenu from './components/DropDowMenu';
 import Home from './Home';
+import About from './About';
 import Footer from './Footer';
 
 function Projects() {
@@ -16,10 +17,6 @@ function Projects() {
 }
 
 function Contact() {
-  return <div className="p-4"></div>;
-}
-
-function About() {
   return <div className="p-4"></div>;
 }
 
