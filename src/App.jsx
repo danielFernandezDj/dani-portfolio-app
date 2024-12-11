@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { HiMiniHome } from "react-icons/hi2";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
-import { FiDownload } from "react-icons/fi";
 
 // Component
 import DropDowMenu from './components/DropDowMenu';
