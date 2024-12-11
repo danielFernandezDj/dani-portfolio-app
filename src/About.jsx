@@ -9,9 +9,9 @@ export default function About() {
 
     return (
         <>
-            <main className="flex flex-col items-center gap-16 max-w-sm mx-auto sm:max-w-3xl">
+            <main className="flex flex-col items-center gap-24 max-w-sm mx-auto sm:max-w-3xl">
                 {/* hero */}
-                <div className="flex flex-col items-center gap-2 p-4 mb-8 md:mb-16 text-slate-800">
+                <div className="flex flex-col items-center gap-2 p-4 mt-4 text-slate-800">
                     <div className="flex flex-col text-gradient text-center">
                         <strong className="mb-6 text-start md:text-center text-5xl">
                             Hi there, I’m Daniel Fernandez
@@ -36,7 +36,7 @@ export default function About() {
                 </div>
 
                 {/* Long Time ago */}
-                <div className="p-4 md:py-8 md:px-24 md:w-5/6 bg-slate-800 text-slate-200 rounded-lg">
+                <div className="m-4 p-4 md:py-8 md:px-24 md:w-5/6 bg-slate-800 text-slate-200 rounded-lg">
                     <strong className="text-2xl">
                         Long time ago!
                     </strong>
@@ -98,7 +98,7 @@ export default function About() {
                 </div>
 
                 {/* Professional Growth */}
-                <div className="flex flex-col gap-2 p-4 md:p-8 md:w-5/6 bg-slate-800 text-slate-200 rounded-lg">
+                <div className="flex flex-col gap-2 m-4 p-4 md:p-8 md:w-5/6 bg-slate-800 text-slate-200 rounded-lg">
                     <strong className="text-2xl mb-4 text-center">
                         Professional Growth
                     </strong>
