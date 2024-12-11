@@ -8,7 +8,7 @@ import { SiMinutemailer } from "react-icons/si";
 
 // Component
 import DropDowMenu from './components/DropDowMenu';
-import Home from './components/Home';
+import Home from './Home';
 import Footer from './Footer';
 
 function Projects() {

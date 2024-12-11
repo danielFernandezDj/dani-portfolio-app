@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 @layer components {
+
   /* ----------------------------- Hero Section ----------------------------- */
   .logo-style {
     @apply font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500;
   }
 
   .nav-text-style {
-    @apply text-slate-800 md:hover:text-blue-600 md:hover:underline decoration-wavy font-medium ;
+    @apply text-slate-800 md:hover:text-blue-600 md:hover:underline decoration-wavy font-medium;
   }
 
   /* ----------------------------- Card Styling ----------------------------- */
   .card-container {
-    @apply flex justify-center w-full md:h-[280px] h-56 gap-4 p-4 relative overflow-hidden rounded-lg backdrop-blur-xl 
-    hover:bg-slate-900 transition duration-300;
+    @apply flex justify-center w-full md:h-[280px] h-56 gap-4 p-4 relative overflow-hidden rounded-lg backdrop-blur-xl hover:bg-slate-900 transition duration-300;
   }
 
   .card-images {
@@ -24,6 +24,11 @@
 
   .card-images-menu img {
     @apply max-w-16 max-h-16 rounded-md;
+  }
+
+  /* ----------------------------- About ----------------------------- */
+  .new {
+    @apply flex;
   }
 
   /* ----------------------------- Single Style ----------------------------- */
@@ -36,7 +41,7 @@
   }
 
   .icon-hover-animation {
-    @apply lg:transition-all lg:ease-out lg:hover:mx-2 lg:hover:-translate-y-1 lg:hover:scale-110 duration-300; 
+    @apply lg:transition-all lg:ease-out lg:hover:mx-2 lg:hover:-translate-y-1 lg:hover:scale-110 duration-300;
   }
 
   .horizontal-line {
@@ -44,7 +49,7 @@
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500 ;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500;
   }
 
   .bg-gradient {
