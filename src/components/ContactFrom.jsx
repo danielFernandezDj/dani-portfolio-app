@@ -42,7 +42,7 @@ export default function ContactForm() {
                     {/* Email */}
                     <div className="mb-4">
                         <label htmlFor="email" className="block text-slate-200 mb-2">Email</label>
-                        <input type="email" id="email" name="user_email" className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-slate-300 bg-slate-300"
+                        <input type="email" id="email" name="user_email" className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-300"
                             placeholder="Enter your email" required
                         />
                     </div>
