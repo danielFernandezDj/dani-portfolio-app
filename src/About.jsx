@@ -14,7 +14,7 @@ export default function About() {
         <>
             <main className="flex flex-col items-center gap-16 max-w-sm mx-auto sm:max-w-3xl / border border-red-600">
                 {/* hero */}
-                <div className="text-center">
+                <div className="text-center text-slate-800">
                     <strong className="text-4xl">
                         Hi there, I’m Daniel Fernandez
                     </strong>
@@ -35,17 +35,17 @@ export default function About() {
                 </div>
 
                 {/* Long Time ago */}
-                <div className="p-4 md:p-8 bg-slate-800 text-slate-200">
+                <div className="p-4 md:py-8 md:px-24 bg-slate-800 text-slate-200">
                     <strong className="text-2xl">
                         Long time ago!
                     </strong>
                     <div className="mt-4">
                         <img
-                            src="/public/projects-img/old-pc.png"
+                            src="/projects-img/old-pc.png"
                             alt="Hold computer image from Unsplash"
-                            className="ml-4 md:ml-2 w-40 md:w-56 rounded-sm float-right"
+                            className="ml-4 md:ml-2 w-40 md:w-56 rounded-md float-right"
                         />
-                        <p className="mb-4">
+                        <p>
                             I have been surrounded by technology almost my entire life, starting with those old computers
                             running Windows XP where you had to type commands to start them up—those PCs that made those distinctive, quirky startup noises.
                         </p>
@@ -58,8 +58,8 @@ export default function About() {
 
 
                 {/* How Passion Began */}
-                <div>
-                    <strong className="text-3xl">
+                <div className="flex flex-col items-center gap-2 p-4 md:p-24 text-slate-800">
+                    <strong className="mb-4 text-2xl">
                         How Passion Began
                     </strong>
                     <p>
@@ -67,10 +67,28 @@ export default function About() {
                         that prepared me for my current path. My first application was a video game created in Constructor 2,
                         which later moved to Unity Engine. It was here that I first learned to code in C#, a language I found fascinating.
                     </p>
-                    <div className="w-auto h-64">
-                        <img src="#" alt="Photo of Me" />
-                        <img src="#" alt="Photo of Me" />
-                        <img src="#" alt="Photo of Me" />
+                    <div className="grid grid-cols-2 gap-2 / border">
+                        <div className="row-span-2">
+                            <img
+                                src="/projects-img/old-pc.png"
+                                alt="Hold computer image from Unsplash"
+                                className="w-auto h-full object-cover rounded-md rounded-tl-2xl rounded-bl-2xl"
+                            />
+                        </div>
+                        <div className="row-span-1">
+                            <img
+                                src="/projects-img/old-pc.png"
+                                alt="Hold computer image from Unsplash"
+                                className="w-48 md:w-80 rounded-md rounded-tr-2xl"
+                            />
+                        </div>
+                        <div className="row-span-1">
+                            <img
+                                src="/projects-img/old-pc.png"
+                                alt="Hold computer image from Unsplash"
+                                className="w-48 md:w-80 rounded-md rounded-br-2xl"
+                            />
+                        </div>
                     </div>
                     <p>
                         I continued creating small projects that grew my passion for programming. The potential of the Internet,
