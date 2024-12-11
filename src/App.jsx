@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 // Icons
-// import { GiMoonBats } from "react-icons/gi";
-// import { MdSunny } from "react-icons/md";
 import { HiMiniHome } from "react-icons/hi2";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
