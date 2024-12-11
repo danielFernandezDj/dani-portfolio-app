@@ -91,7 +91,7 @@ export default function Footer() {
         />
       </ul>
 
-      <p className="absolute bottom-5 left-5 md:w-auto w-[15rem]">
+      <p className="absolute bottom-5 left-5 md:w-auto w-[14rem]">
         &copy; {new Date().getFullYear()} rights reserved. Designed & Coded by Daniel Fernandez.
       </p>
 

@@ -84,7 +84,7 @@ export default function DropDowMenu({ links }) {
                                 className="object-cover rounded-lg"
                               />
                             </a>
-                            <div className='grid grid-cols-3 '>
+                            <div className='grid grid-cols-3'>
                               {/* Col-1 */}
                               <div className='col-span-2'>
                                 <strong className="text-xl text-slate-200">
@@ -95,13 +95,13 @@ export default function DropDowMenu({ links }) {
                                 </p>
                               </div>
                               {/* Col-2 */}
-                              <div className='flex p-2 justify-center items-center'>
+                              <div className='flex p-2 justify-center items-start'>
                                 <a
                                   href={card.link}
                                   target="_blank"
-                                  className="w-[80%] p-1 text-slate-200 font-bold tracking-wider"
+                                  className="w-[80%] p-1 text-slate-200 tracking-wider"
                                 >
-                                  Learn More ➚
+                                  Learn More➚
                                 </a>
                               </div>
                             </div>
