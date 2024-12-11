@@ -46,4 +46,8 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-20% to-red-500
   }
+
+  .footer-container {
+    @apply flex flex-wrap w-full h-60 p-5 relative text-slate-200 bg-slate-800
+  }
 }
