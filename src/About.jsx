@@ -35,7 +35,7 @@ export default function About() {
                 </div>
 
                 {/* Long Time ago */}
-                <div className="p-4 md:py-8 md:px-24 bg-slate-800 text-slate-200">
+                <div className="p-4 md:py-8 md:px-24 bg-slate-800 text-slate-200 rounded-lg">
                     <strong className="text-2xl">
                         Long time ago!
                     </strong>
@@ -59,7 +59,7 @@ export default function About() {
 
                 {/* How Passion Began */}
                 <div className="flex flex-col items-center gap-2 p-4 md:p-24 text-slate-800">
-                    <strong className="mb-4 text-2xl">
+                    <strong className="text-2xl mb-4">
                         How Passion Began
                     </strong>
                     <p>
@@ -97,8 +97,8 @@ export default function About() {
                 </div>
 
                 {/* Professional Growth */}
-                <div className="bg-slate-800">
-                    <strong className="text-3xl">
+                <div className="flex flex-col gap-2 p-4 md:p-8 md:w-5/6 bg-slate-800 text-slate-200 rounded-lg">
+                    <strong className="text-2xl mb-4 text-center">
                         Professional Growth
                     </strong>
                     <p>
@@ -107,7 +107,11 @@ export default function About() {
                         of experience, was eye-opening. Together, we created an application that combined Database with Fire-Base,
                         Front-End with React, and Back-End with Python. It was a challenge we successfully completed.
                     </p>
-                    <img src="/public/projects-img/tlc.png" alt="TLC Licensing Screenshot." />
+                    <img
+                        src="/projects-img/tlc.png"
+                        alt="TLC Licensing Screenshot."
+                        className="rounded-lg"
+                    />
                     <p>
                         This journey led me to enroll at the University of Nevada, Las Vegas (UNLV), where I graduated as a Full Stack Developer.
                         I've learned technologies including React, JavaScript, Express, Node.js, TypeScript, MongoDB, and other key skills that
@@ -116,16 +120,18 @@ export default function About() {
                 </div>
 
                 {/* Let's Create Something Together */}
-                <div>
-                    <strong className="text-3xl">
-                        Let's Create Something Amazing Together
-                    </strong>
-                    <p>
-                        I'm more than just a developer—I'm a problem solver, a creative thinker, and a passionate creator who believes in
-                        turning complex challenges into elegant solutions. If you're looking to bring your digital ideas to life, transform your
-                        vision into reality, or simply want to explore the possibilities of technology, I'm ready to listen, collaborate,
-                        and help you make your dreams code true. Let's connect and create something extraordinary!
-                    </p>
+                <div className="flex flex-col gap-2 p-1 md:p-8 m-2 text-slate-800 bg-gradient rounded-xl">
+                    <div className="p-4 bg-white rounded-xl">
+                        <strong className="text-2xl text-gradient p-2">
+                            Let's Create Something Amazing Together
+                        </strong>
+                        <p>
+                            I'm more than just a developer—I'm a problem solver, a creative thinker, and a passionate creator who believes in
+                            turning complex challenges into elegant solutions. If you're looking to bring your digital ideas to life, transform your
+                            vision into reality, or simply want to explore the possibilities of technology, I'm ready to listen, collaborate,
+                            and help you make your dreams code true. Let's connect and create something extraordinary!
+                        </p>
+                    </div>
                 </div>
 
                 <ContactForm />
