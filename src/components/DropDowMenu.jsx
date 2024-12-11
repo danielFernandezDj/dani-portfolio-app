@@ -4,10 +4,7 @@ import { Menu, Transition, Disclosure } from '@headlessui/react'
 import CardsData from "./CardsData";
 
 // Icons
-// import { TiThMenu } from "react-icons/ti";
 import { RiMenuFoldLine } from "react-icons/ri";
-
-// import { IoIosCloseCircle } from "react-icons/io";
 import { RiMenuFold2Line } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 
