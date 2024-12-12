@@ -6,14 +6,8 @@ import DropDowMenu from './components/DropDowMenu';
 import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './Footer';
+import TLCLicensing from './pages/TLCLicensing';
 
-function Projects() {
-  return <div className="p-4"></div>;
-}
-
-function Contact() {
-  return <div className="p-4"></div>;
-}
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -110,9 +104,8 @@ function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/tlc-licensing" element={<TLCLicensing />} />
           </Routes>
         </div>
         <Footer />

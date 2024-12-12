@@ -1,27 +1,43 @@
 import React from "react"
+import CardsData from "../components/CardsData"
 
 
-export default function TLC() {
-    const type = 'algo'
+export default function TLCLicensing() {
+    const cardData = CardsData()
+    const bottomColor = {
+        primary: '#E2E065',
+        secondary: 'bg-slate-800'
+    }
 
     return (
         <>
-            <main className="container">
-                <section className="container">
-                    <Strong>
+            <main className="container mx-auto px-4 flex flex-col gap-20">
+                <section className="flex flex-col items-center gap-4">
+                    <strong className="text-5xl">
                         TLC Licensing
-                    </Strong>
+                    </strong>
                     <p>
                         A comprehensive web platform integrating cutting-edge front-end, back-end, and database
                         technologies with secure, robust server infrastructure to deliver a seamless and reliable user experience.
                     </p>
                     <img
-                        src=""
-                        alt=""
+                        src="projects-img/tlc.png"
+                        alt="TLC Licensing Home page Screenshot."
                     />
+                    {cardData.length > 0 && (
+                        <a
+                            href={cardData[0].liveLink}
+                            target="_blank"
+                            className="w-5/6 m-auto p-4 text-xl text-center font-semibold rounded-md"
+                            style={{ backgroundColor: bottomColor.primary }}
+                        >
+                            Live Web Site➚
+                        </a>
+                    )}
+
                 </section>
 
-                <section className="container">
+                <section>
                     <div>
                         <strong>
                             Project Purpose and Goal
@@ -66,13 +82,13 @@ export default function TLC() {
                     </div>
                 </section>
 
-                <section className="container flex gap-4">
+                <section>
                     <img src="" alt="" />
                     <img src="" alt="" />
                     <img src="" alt="" />
                 </section>
 
-                <section className="container">
+                <section className="container mx-auto px-4">
                     <strong>
                         Web Stack and Explanation
                     </strong>
@@ -96,7 +112,7 @@ export default function TLC() {
                     </div>
                 </section>
 
-                <section className="container">
+                <section>
                     <strong>
                         Lessons Learned
                     </strong>
@@ -118,7 +134,7 @@ export default function TLC() {
                     </p>
                 </section>
 
-                <section className="container">
+                <section>
                     <strong>
                         Other Projects
                     </strong>

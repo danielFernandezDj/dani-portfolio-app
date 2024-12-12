@@ -1,11 +1,12 @@
 import React from "react";
-
-export default function CardsData() {
+// https://tlclicensing.com/
+export default function CardsData() { 
   return [
     {
       title: 'TLC LiCensing',
       description: 'Full-Stack Educational Institution at Miami, FL.',
-      link: 'https://tlclicensing.com/',
+      link: '/tlc-licensing',
+      liveLink: 'https://tlclicensing.com/',
       img: './projects-img/tlc.png',
       bgColor: 'bg-slate-800',
       tech: ['React', 'Redux', 'JavaScript']
