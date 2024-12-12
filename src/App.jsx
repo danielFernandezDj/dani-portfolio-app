@@ -54,12 +54,12 @@ function NavBar() {
       <div className="container mx-auto md:px-4 px-8 py-3 flex md:justify-around justify-between md:px-20 items-center">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
         <div className='flex space-x-12 items-center justify-center'>
-          <Link to="/home" className="text-3xl logo-style simple-hover-animation">
+          <Link to="/" className="text-3xl logo-style simple-hover-animation">
             &#123; ø &#125;
           </Link>
           <div className="flex content-center hidden md:block space-x-4">
             <Link
-              to="/home"
+              to="/"
               className="nav-text-style"
             >
               Home
