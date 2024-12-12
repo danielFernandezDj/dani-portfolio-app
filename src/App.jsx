@@ -6,14 +6,8 @@ import DropDowMenu from './components/DropDowMenu';
 import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './Footer';
+import TLCLicensing from './pages/TLCLicensing';
 
-function Projects() {
-  return <div className="p-4"></div>;
-}
-
-function Contact() {
-  return <div className="p-4"></div>;
-}
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -49,7 +43,7 @@ function NavBar() {
 
   return (
     <nav className={`z-50 sticky top-0 transition-all duration-300 
-      ${scrolled ? 'bg-transparent backdrop-blur-xl' : 'bg-white '}`
+      ${scrolled ? 'bg-transparent backdrop-blur-3xl' : 'bg-slate-50 '}`
     }>
       <div className="container flex md:justify-around justify-between items-center mx-auto md:px-4 px-8 py-3 md:px-20">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
@@ -103,21 +97,20 @@ function NavBar() {
 // Main App
 function App() {
   return (
-    <div className="flex flex-col min-h-screen ">
+    <main className="flex flex-col min-h-screen bg-slate-50">
       <Router >
         <ScrollToTop />
         <NavBar />
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/tlc-licensing" element={<TLCLicensing />} />
           </Routes>
         </div>
         <Footer />
       </Router>
-    </div>
+    </main>
   );
 }
 
