@@ -9,7 +9,7 @@ import { RiMenuFold2Line } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 
 
-export default function DropDowMenu({ links }) {
+export default function DropDowMenu() {
   const cardsData = CardsData()
 
   const scrollToContactSection = (elementId) => {
@@ -49,7 +49,7 @@ export default function DropDowMenu({ links }) {
             <div className="flex justify-center px-1 py-4 rounded-xl bg-slate-800 shadow-lg">
               <MenuItem>
                 <Link
-                  to="/home"
+                  to="/"
                   className={"flex justify-center gap-1 text-slate-200 w-full px-2 py-2 text-md"}
                 >
                   Home
