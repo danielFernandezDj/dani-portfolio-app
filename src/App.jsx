@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react
 
 // Component
 import DropDowMenu from './components/DropDowMenu';
-import Home from './Home';
-import About from './About';
+import Home from './pages/Home';
+import About from './pages/About';
 import Footer from './Footer';
 
 function Projects() {

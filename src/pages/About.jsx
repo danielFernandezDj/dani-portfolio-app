@@ -1,12 +1,9 @@
 import React from "react";
-import ContactForm from "./components/ContactFrom";
+import ContactForm from "../components/ContactFrom";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 
 export default function About() {
-    const linkedinLink = "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-    const githubLink = "https://github.com/danielFernandezDj"
-
     return (
         <>
             <main className="flex flex-col items-center gap-24 max-w-sm mx-auto sm:max-w-3xl">

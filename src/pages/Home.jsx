@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectList from "./components/ProjectList";
-import ContactForm from "./components/ContactFrom"
+import ProjectList from "../components/ProjectList";
+import ContactForm from "../components/ContactFrom"
 
 // Icons
 import { FaRegArrowAltCircleRight, FaLinkedin } from "react-icons/fa";
