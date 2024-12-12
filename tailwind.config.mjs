@@ -16,9 +16,11 @@ export default {
         '90': '22rem',
       },
       colors: {
-        
+
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 }
