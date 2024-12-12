@@ -16,7 +16,8 @@
 
   /* ----------------------------- Card Styling ----------------------------- */
   .card-container {
-    @apply flex justify-center w-full md:h-[280px] h-56 gap-4 p-4 relative overflow-hidden rounded-lg backdrop-blur-xl hover:bg-slate-900 transition duration-300;
+    @apply flex justify-center w-full md:h-[280px] h-56 gap-4 p-4 relative overflow-hidden rounded-lg 
+    backdrop-blur-xl hover:bg-slate-900 transition duration-300;
   }
 
   .card-images {
