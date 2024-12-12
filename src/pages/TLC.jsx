@@ -6,8 +6,8 @@ export default function TLC() {
 
     return (
         <>
-            <section>
-                <div className="container">
+            <main className="container">
+                <section className="container">
                     <Strong>
                         TLC Licensing
                     </Strong>
@@ -19,9 +19,9 @@ export default function TLC() {
                         src=""
                         alt=""
                     />
-                </div>
+                </section>
 
-                <div className="container">
+                <section className="container">
                     <div>
                         <strong>
                             Project Purpose and Goal
@@ -64,15 +64,15 @@ export default function TLC() {
                             </p>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div className="container flex gap-4">
+                <section className="container flex gap-4">
                     <img src="" alt="" />
                     <img src="" alt="" />
                     <img src="" alt="" />
-                </div>
+                </section>
 
-                <div className="container">
+                <section className="container">
                     <strong>
                         Web Stack and Explanation
                     </strong>
@@ -94,9 +94,9 @@ export default function TLC() {
                         <img src="" alt="" />
                         <img src="" alt="" />
                     </div>
-                </div>
+                </section>
 
-                <div className="container">
+                <section className="container">
                     <strong>
                         Lessons Learned
                     </strong>
@@ -116,18 +116,18 @@ export default function TLC() {
                         changed how I approach software development, emphasizing the importance of clean, thoughtful code and
                         strategic project management.
                     </p>
-                </div>
+                </section>
 
-                <div className="container">
+                <section className="container">
                     <strong>
                         Other Projects
                     </strong>
 
                     {/* Projects card goes here! */}
 
-                </div>
+                </section>
 
-            </section>
+            </main>
         </>
     )
 }
