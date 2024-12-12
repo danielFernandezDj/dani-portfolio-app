@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-
-// Icons
-import { HiMiniHome } from "react-icons/hi2";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { SiMinutemailer } from "react-icons/si";
+import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 
 // Component
 import DropDowMenu from './components/DropDowMenu';
@@ -20,14 +15,18 @@ function Contact() {
   return <div className="p-4"></div>;
 }
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+
 function NavBar() {
   const [scrolled, setScrolled] = useState(false);
-
-  const links = [
-    { path: '/', label: 'Home', icon: <HiMiniHome className="w-4 h-auto" /> },
-    { path: 'Contact', label: 'Contact', icon: <SiMinutemailer className="w-4 h-auto" /> },
-    { path: 'About', label: 'About', icon: <BsFillPersonLinesFill className="w-4 h-auto" /> }
-  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +36,22 @@ function NavBar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const links = [
+    { path: '/home', label: 'Home'},
+    { path: '/contact', label: 'Contact'},
+    { path: '/about', label: 'About'}
+  ]
+
+  const scrollToProjectsSection = (elementId) => {
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+  };
+
+  const scrollToContactSection = (elementId) => {
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+  };
 
   return (
     <nav className={`my-6 z-50 sticky top-0 transition-all duration-300 
@@ -49,10 +64,30 @@ function NavBar() {
             &#123; ø &#125;
           </Link>
           <div className="flex content-center hidden md:block space-x-4">
-            <Link to="/" className="nav-text-style">Home</Link>
-            <Link to="/projects" className="nav-text-style">Projects</Link>
-            <Link to="/contact" className="nav-text-style">Contact</Link>
-            <Link to="/about" className="nav-text-style">About</Link>
+            <Link
+              to="/home"
+              className="nav-text-style"
+            >
+              Home
+            </Link>
+            <button
+              onClick={() => scrollToProjectsSection('projects')}
+              className="nav-text-style"
+            >
+              Projects
+            </button>
+            <button
+              onClick={() => scrollToContactSection('contact')}
+              className="hover:text-blue-500"
+            >
+              Contact
+            </button>
+            <Link
+              to="/about"
+              className="nav-text-style"
+            >
+              About
+            </Link>
           </div>
         </div>
         {/* –––––––––––––––––––––––––––– Right side - Icons –––––––––––––––––––––––––––– */}
@@ -80,10 +115,11 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen ">
       <Router >
+        <ScrollToTop />
         <NavBar />
         <div className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />

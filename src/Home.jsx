@@ -68,6 +68,7 @@ export default function Home() {
             </a>
           </div>
         </section>
+
         <ProjectList />
         <ContactForm />
       </main >

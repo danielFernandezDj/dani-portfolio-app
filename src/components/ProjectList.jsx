@@ -5,7 +5,7 @@ export default function ProjectList() {
   const cardsData = CardsData()
   return (
     <>
-      <section className="flex flex-col items-center w-full p-4 gap-4">
+      <section id="projects" className="flex flex-col items-center w-full p-4 gap-4">
         {/* Header */}
         <div className="mb-6 text-center ">
           <strong className="flex justify-center gap-6 text-3xl tracking-wider text-gradient">

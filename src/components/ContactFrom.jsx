@@ -18,7 +18,7 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="flex items-start justify-center p-4 mb-4 ">
+        <section id="contact" className="flex items-start justify-center p-4 mb-4">
             <div className="bg-slate-800 p-8 max-w-md w-full rounded-sm">
                 <strong className="flex justify-center items-center text-2xl font-bold mb-6 text-center text-gradient">
                     Let's work together

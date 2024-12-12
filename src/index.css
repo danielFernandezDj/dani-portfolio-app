@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
 
   /* ----------------------------- Hero Section ----------------------------- */
@@ -24,11 +25,6 @@
 
   .card-images-menu img {
     @apply max-w-16 max-h-16 rounded-md;
-  }
-
-  /* ----------------------------- About ----------------------------- */
-  .new {
-    @apply flex;
   }
 
   /* ----------------------------- Single Style ----------------------------- */

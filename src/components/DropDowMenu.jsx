@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom'
-import { Menu, Transition, Disclosure } from '@headlessui/react'
+import { Link } from 'react-router-dom';
+import { Menu, Transition, Disclosure, MenuItem } from '@headlessui/react'
 import CardsData from "./CardsData";
 
 // Icons
@@ -8,14 +8,20 @@ import { RiMenuFoldLine } from "react-icons/ri";
 import { RiMenuFold2Line } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 
+
 export default function DropDowMenu({ links }) {
   const cardsData = CardsData()
+
+  const scrollToContactSection = (elementId) => {
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+  };
 
   return (
     <div>
       <Menu
         as="div"
-        className="flexcontent-center relative text-left"
+        className="flex content-center relative text-left"
       >
         <div className="flex self-center">
           <Menu.Button>
@@ -41,16 +47,30 @@ export default function DropDowMenu({ links }) {
           {/* ------------ Menu Content ------------ */}
           <Menu.Items className="flex flex-col gap-2 fixed inset-x-0 top-0 top-14 mx-6 mt-8 w-100">
             <div className="flex justify-center px-1 py-4 rounded-xl bg-slate-800 shadow-lg">
-              {links.map((link) => (
-                <Menu.Item key={link.path}>
-                  <Link
-                    to={link.path}
-                    className={"flex justify-center gap-1 text-slate-200 w-full px-2 py-2 text-md"}
-                  >
-                    {link.label}
-                  </Link>
-                </Menu.Item>
-              ))}
+              <MenuItem>
+                <Link
+                  to="/home"
+                  className={"flex justify-center gap-1 text-slate-200 w-full px-2 py-2 text-md"}
+                >
+                  Home
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <button
+                  onClick={() => scrollToContactSection('contact')}
+                  className={"flex justify-center gap-1 text-slate-200 w-full px-2 py-2 text-md"}
+                >
+                  Contact
+                </button>
+              </MenuItem>
+              <MenuItem>
+                <Link
+                  to="/about"
+                  className={"flex justify-center gap-1 text-slate-200 w-full px-2 py-2 text-md"}
+                >
+                  About
+                </Link>
+              </MenuItem>
             </div>
 
             {/* ------------ Project List ------------ */}
