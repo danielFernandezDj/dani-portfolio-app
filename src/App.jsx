@@ -51,9 +51,9 @@ function NavBar() {
     <nav className={`my-6 z-50 sticky top-0 transition-all duration-300 
       ${scrolled ? 'md:pt-3 bg-transparent backdrop-blur-xl' : 'bg-white '}`
     }>
-      <div className="container mx-auto md:px-4 px-8 py-3 flex md:justify-around justify-between md:px-20 items-center">
+      <div className="container flex md:justify-around justify-between items-center mx-auto md:px-4 px-8 py-3 md:px-20">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
-        <div className='flex space-x-12 items-center justify-center'>
+        <div className='flex grow-1 w-full space-x-12 items-center justify-center'>
           <Link to="/" className="text-3xl logo-style simple-hover-animation">
             &#123; ø &#125;
           </Link>
@@ -84,21 +84,17 @@ function NavBar() {
             </Link>
           </div>
         </div>
+
         {/* –––––––––––––––––––––––––––– Right side - Icons –––––––––––––––––––––––––––– */}
-        <div className="flex gap-2">
+        <div className='flex w-full grow-1 justify-end'>
           <a href='https://docs.google.com/document/d/1RQ8uI58cl7uD3EA8v6hDp6M4YfOU0pwrCeszlcx7_eM/edit?usp=sharing' target='_Blank'
-            className="flex justify-center content-center gap-2 rounded-md / py-2 px-4 btn-hover-animation lg:block hidden"
+            className="flex justify-center content-center gap-2 rounded-md / mx-28 py-2 px-4 btn-hover-animation md:block hidden"
           >
-            CV ➚
+            Resume ➚
           </a>
-          <a href='https://docs.google.com/document/d/1ZdKekTgWMx22usWVeI8DbfDKO-m8UUrzPbLImbZnJSE/edit?usp=sharing' target='_Blank'
-            className="flex justify-center items-center gap-2 rounded-md 
-            py-2 px-4 text-slate-800 font-bold bg-transparent border-2 border-slate-800 hover:border-blue-600 hover:text-blue-600 md:block hidden"
-          >
-            Cover Letter ➚
-          </a>
-          <DropDowMenu />
         </div>
+
+        <DropDowMenu />
       </div>
     </nav >
   );

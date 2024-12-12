@@ -61,7 +61,7 @@ export default function Home() {
               If you're seeking to transform your web application into something truly exceptional,
               I'm ready to bring both technical expertise and genuine passion to your project.
             </p>
-            <a href="#">
+            <a href="/about">
               <strong className="text-gradient hover:underline decoration-blue-600 decoration-wavy | transition-all duration-300">
                 More about me {'>'}
               </strong>
