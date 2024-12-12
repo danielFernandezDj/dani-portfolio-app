@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ----------------------------- About Me ----------------------------- */}
+        {/* ----------------------------- About Me & Skills ----------------------------- */}
         <section className="m-4">
           <div className="flex gap-4 flex-wrap md:p-8 p-4 max-w-full justify-start rounded-xl bg-slate-800 text-slate-200">
             <strong className="flex justify-start text-3xl tracking-wider text-gradient">
@@ -66,6 +66,71 @@ export default function Home() {
                 More about me {'>'}
               </strong>
             </a>
+          </div>
+
+          <div className="flex flex-col gap-4 flex-wrap mt-4 p-4 md:p-8 max-w-full justify-start rounded-xl bg-slate-800 text-slate-200">
+            <strong className="flex justify-start text-3xl tracking-wider text-gradient">
+              Skills
+            </strong>
+            <div className="w-full grid-rows-4 gap-2">
+              <div className="flex flex-col mb-4">
+                <h3 className="font-bold text-slate-200">
+                  Languages:
+                </h3>
+                <div className="flex flex-wrap gap-x-2 text-slate-400">
+                  <p>JavaScript - </p>
+                  <p>TypeScript - </p>
+                  <p>Python - </p>
+                  <p>HTML - </p>
+                  <p>CSS - </p>
+                  <p>SQL</p>
+                </div>
+              </div>
+              <div className="flex flex-col mb-4">
+                <h3 className="font-bold text-slate-200">
+                  Frameworks:
+                </h3>
+                <div className="flex flex-wrap gap-x-2 text-slate-400">
+                  <p>Tailwind - </p>
+                  <p>NextUI - </p>
+                  <p>Bootstrap - </p>
+                  <p>MaterialUI</p>
+                </div>
+              </div>
+              <div className="flex flex-col mb-4">
+                <h3 className="font-bold text-slate-200">
+                  DataBases:
+                </h3>
+                <div className="flex flex-wrap gap-x-2 text-slate-400">
+                  <p>MongoDB - </p>
+                  <p>MongoAtlas - </p>
+                  <p>PostgreSQL</p>
+                </div>
+              </div>
+              <div className="flex flex-col mb-4">
+                <h3 className="font-bold text-slate-200">
+                  Deployment:
+                </h3>
+                <div className="flex flex-wrap gap-x-2 text-slate-400">
+                  <p>Vercel - </p>
+                  <p>Railway - </p>
+                  <p>Render</p>
+                </div>
+              </div>
+              <div className="flex flex-col mb-4">
+                <h3 className="font-bold text-slate-200">
+                  AI & Productivity Tools:
+                </h3>
+                <div className="flex flex-wrap gap-x-2 text-slate-400">
+                  <p>Git</p>
+                  <p>Command - </p>
+                  <p>Postman - </p>
+                  <p>Claude - </p>
+                  <p>ChatGPT - </p>
+                  <p>Copilot</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
