@@ -53,7 +53,7 @@ function NavBar() {
     }>
       <div className="container flex md:justify-around justify-between items-center mx-auto md:px-4 px-8 py-3 md:px-20">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
-        <div className='flex grow-1 w-full space-x-12 items-center justify-center'>
+        <div className='flex grow-1 md:justify-center justify-start w-full space-x-12 items-center'>
           <Link to="/" className="text-3xl logo-style simple-hover-animation">
             &#123; ø &#125;
           </Link>
