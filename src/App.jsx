@@ -49,7 +49,7 @@ function NavBar() {
 
   return (
     <nav className={`my-6 z-50 sticky top-0 transition-all duration-300 
-      ${scrolled ? 'md:pt-3 bg-transparent backdrop-blur-xl' : 'bg-white '}`
+      ${scrolled ? 'bg-transparent backdrop-blur-xl' : 'bg-white '}`
     }>
       <div className="container flex md:justify-around justify-between items-center mx-auto md:px-4 px-8 py-3 md:px-20">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
