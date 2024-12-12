@@ -37,12 +37,6 @@ function NavBar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const links = [
-    { path: '/home', label: 'Home'},
-    { path: '/contact', label: 'Contact'},
-    { path: '/about', label: 'About'}
-  ]
-
   const scrollToProjectsSection = (elementId) => {
     const element = document.getElementById(elementId);
     element?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
@@ -98,12 +92,12 @@ function NavBar() {
             CV ➚
           </a>
           <a href='https://docs.google.com/document/d/1ZdKekTgWMx22usWVeI8DbfDKO-m8UUrzPbLImbZnJSE/edit?usp=sharing' target='_Blank'
-            className="flex justify-center items-center gap-2 rounded-md / 
+            className="flex justify-center items-center gap-2 rounded-md 
             py-2 px-4 text-slate-800 font-bold bg-transparent border-2 border-slate-800 hover:border-blue-600 hover:text-blue-600 md:block hidden"
           >
             Cover Letter ➚
           </a>
-          <DropDowMenu links={links} />
+          <DropDowMenu />
         </div>
       </div>
     </nav >
@@ -119,7 +113,7 @@ function App() {
         <NavBar />
         <div className="flex-grow">
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
