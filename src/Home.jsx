@@ -5,6 +5,7 @@ import ContactForm from "./components/ContactFrom"
 // Icons
 import { FaRegArrowAltCircleRight, FaLinkedin } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const linkedinLink = "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
@@ -61,11 +62,11 @@ export default function Home() {
               If you're seeking to transform your web application into something truly exceptional,
               I'm ready to bring both technical expertise and genuine passion to your project.
             </p>
-            <a href="/about">
+            <Link to="/about">
               <strong className="text-gradient hover:underline decoration-blue-600 decoration-wavy | transition-all duration-300">
                 More about me {'>'}
               </strong>
-            </a>
+            </Link>
           </div>
 
           <div className="flex flex-col gap-4 flex-wrap mt-4 p-4 md:p-8 max-w-full justify-start rounded-xl bg-slate-800 text-slate-200">
@@ -122,7 +123,7 @@ export default function Home() {
                   AI & Productivity Tools:
                 </h3>
                 <div className="flex flex-wrap gap-x-2 text-slate-400">
-                  <p>Git</p>
+                  <p>Git - </p>
                   <p>Command - </p>
                   <p>Postman - </p>
                   <p>Claude - </p>
