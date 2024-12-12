@@ -12,23 +12,26 @@ export default function TLCLicensing() {
     return (
         <>
             <main className="container mx-auto px-4 flex flex-col gap-20">
-                <section className="flex flex-col items-center gap-4">
+                <section className="flex flex-col items-center gap-4 mt-4 pt-4 rounded-t-xl text-slate-800
+                    bg-gradient-to-b from-[#E2E065] to-slate-50"
+                >
                     <strong className="text-5xl">
                         TLC Licensing
                     </strong>
-                    <p>
+                    <p className="text-center px-4 md:w-4/6">
                         A comprehensive web platform integrating cutting-edge front-end, back-end, and database
                         technologies with secure, robust server infrastructure to deliver a seamless and reliable user experience.
                     </p>
                     <img
                         src="projects-img/tlc.png"
                         alt="TLC Licensing Home page Screenshot."
+                        className="rounded-md"
                     />
                     {cardData.length > 0 && (
                         <a
                             href={cardData[0].liveLink}
                             target="_blank"
-                            className="w-5/6 m-auto p-4 text-xl text-center font-semibold rounded-md"
+                            className="w-5/6 md:w-2/6 m-auto p-4 text-xl text-center font-semibold rounded-md"
                             style={{ backgroundColor: bottomColor.primary }}
                         >
                             Live Web Site➚
