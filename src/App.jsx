@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 
 // Component
 import DropDowMenu from './components/DropDowMenu';
@@ -66,7 +66,7 @@ function NavBar() {
             </button>
             <button
               onClick={() => scrollToContactSection('contact')}
-              className="hover:text-blue-500"
+              className="nav-text-style"
             >
               Contact
             </button>
@@ -105,7 +105,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/tlc-licensing" element={<TLCLicensing />} />
+            <Route path="/tlclicensing" element={<TLCLicensing />} />
           </Routes>
         </div>
         <Footer />

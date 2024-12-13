@@ -5,7 +5,7 @@ export default function CardsData() {
     {
       title: 'TLC LiCensing',
       description: 'Full-Stack Educational Institution at Miami, FL.',
-      link: '/tlc-licensing',
+      link: '/tlclicensing',
       liveLink: 'https://tlclicensing.com/',
       img: './projects-img/tlc.png',
       bgColor: 'bg-slate-800',
