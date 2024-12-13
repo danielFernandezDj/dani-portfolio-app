@@ -109,9 +109,6 @@ function ErrorBoundary() {
   // useRouteError provides detailed error information from React Router
   const error = useRouteError();
 
-  // Log the error for debugging (remove in production)
-  console.error("Caught Error:", error);
-
   return (
     <div className="error-container">
       {/* Render custom error page with dynamic error messages */}
@@ -141,9 +138,7 @@ function App() {
         <ScrollToTop />
         <NavBar />
 
-        {/* 🔍 Key Change: Add error handling to Routes */}
         <Routes>
-          {/* Standard Routes */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/tlc-licensing" element={<TLCLicensing />} />
