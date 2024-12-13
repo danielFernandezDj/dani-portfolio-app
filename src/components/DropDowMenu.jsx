@@ -50,7 +50,7 @@ export default function DropDowMenu() {
               <MenuItem>
                 <Link
                   to="/"
-                  className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-md"}
+                  className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-lg"}
                 >
                   Home
                 </Link>
@@ -58,7 +58,7 @@ export default function DropDowMenu() {
               <MenuItem>
                 <button
                   onClick={() => scrollToContactSection('contact')}
-                  className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-md"}
+                  className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-lg"}
                 >
                   Contact
                 </button>
@@ -66,7 +66,7 @@ export default function DropDowMenu() {
               <MenuItem>
                 <Link
                   to="/about"
-                  className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-md"}
+                  className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-lg"}
                 >
                   About
                 </Link>
@@ -78,7 +78,7 @@ export default function DropDowMenu() {
               <Disclosure defaultOpen>
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex px-4 w-full justify-between text-left text-md text-slate-800">
+                    <Disclosure.Button className="flex px-4 w-full justify-between text-left text-lg text-slate-800">
                       Projects
                       <span className='flex justify-center gap-2'>
                         3
