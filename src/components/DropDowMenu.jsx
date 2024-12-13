@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Transition, Disclosure } from '@headlessui/react';
+import { Menu, Transition, Disclosure, MenuItem } from '@headlessui/react';
 import CardsData from "./CardsData";
 
 // Icons
@@ -46,7 +46,7 @@ export default function DropDowMenu() {
                 {({ close }) => (
                   <Link
                     to="/"
-                    onClick={close} 
+                    onClick={close}
                     className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-lg"}
                   >
                     Home
@@ -58,7 +58,7 @@ export default function DropDowMenu() {
                   <button
                     onClick={() => {
                       scrollToContactSection('contact');
-                      close(); 
+                      close();
                     }}
                     className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-lg"}
                   >
@@ -70,7 +70,7 @@ export default function DropDowMenu() {
                 {({ close }) => (
                   <Link
                     to="/about"
-                    onClick={close} 
+                    onClick={close}
                     className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-lg"}
                   >
                     About
@@ -88,9 +88,8 @@ export default function DropDowMenu() {
                       <span className="flex justify-center gap-2">
                         3
                         <IoIosArrowDown
-                          className={`${
-                            open ? 'rotate-180 transform' : ''
-                          } h-5 w-5 text-slate-800`}
+                          className={`${open ? 'rotate-180 transform' : ''
+                            } h-5 w-5 text-slate-800`}
                         />
                       </span>
                     </Disclosure.Button>
@@ -103,7 +102,7 @@ export default function DropDowMenu() {
                               {({ close }) => (
                                 <Link
                                   to={card.link}
-                                  onClick={close} 
+                                  onClick={close}
                                   className="object-cover rounded-lg"
                                 >
                                   <img src={card.img} alt="Project Image" />
@@ -112,21 +111,31 @@ export default function DropDowMenu() {
                             </Menu.Item>
                             <div className="grid grid-cols-3">
                               <div className="col-span-2">
-                                <strong className="text-xl text-slate-800">
-                                  <Link to={card.link} target="_blank">
-                                    {card.title}
-                                  </Link>
-                                </strong>
+                                <Menu.Item>
+                                  {({ close }) => (
+                                    <Link
+                                      to={card.link}
+                                      onClick={close}
+                                      className="text-xl font-bold text-slate-800"
+                                    >
+                                      {card.title}
+                                    </Link>
+                                  )}
+                                </Menu.Item>
                                 <p className="text-sm text-slate-800 font-light">{card.description}</p>
                               </div>
                               <div className="flex p-2 justify-center items-start">
-                                <Link
-                                  to={card.link}
-                                  target="_blank"
-                                  className="w-[80%] p-1 text-slate-800 tracking-wider"
-                                >
-                                  Learn More➚
-                                </Link>
+                                <MenuItem>
+                                  {({ close }) => (
+                                    <Link
+                                      to={card.link}
+                                      onClick={close}
+                                      className="w-[80%] p-1 text-slate-800 tracking-wider"
+                                    >
+                                      Learn More➚
+                                    </Link>
+                                  )}
+                                </MenuItem>
                               </div>
                             </div>
                           </div>
@@ -140,6 +149,6 @@ export default function DropDowMenu() {
           </Menu.Items>
         </Transition>
       </Menu>
-    </div>
+    </div >
   );
 }

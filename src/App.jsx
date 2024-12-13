@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  useLocation,
+  // 💡 Import useRouteError for detailed error information
+  useRouteError
+} from 'react-router-dom';
+import ErrorPage from './ErrorPage';
 
 // Component
 import DropDowMenu from './components/DropDowMenu';
@@ -7,7 +16,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './Footer';
 import TLCLicensing from './pages/TLCLicensing';
-
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -18,6 +26,7 @@ function ScrollToTop() {
 
   return null
 }
+
 
 function NavBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -94,20 +103,60 @@ function NavBar() {
   );
 }
 
-// Main App
+// 🚨 NEW: Error Boundary Component
+// This component catches errors in child components and routes
+function ErrorBoundary() {
+  // useRouteError provides detailed error information from React Router
+  const error = useRouteError();
+
+  return (
+    <div className="error-container">
+      {/* Render custom error page with dynamic error messages */}
+      <ErrorPage
+        // Dynamically set error title based on error type
+        title={
+          error.status === 404
+            ? "Page Not Found"
+            : "Unexpected Error Occurred"
+        }
+        // Provide more context about the error
+        message={
+          error.status === 404
+            ? "The page you're looking for doesn't exist."
+            : error.message || "An unexpected error prevented the page from loading."
+        }
+      />
+    </div>
+  );
+}
+
+// Main App Component
 function App() {
   return (
     <main className="flex flex-col min-h-screen bg-slate-50">
-      <Router >
+      <Router>
         <ScrollToTop />
         <NavBar />
-        <div className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/tlc-licensing" element={<TLCLicensing />} />
-          </Routes>
-        </div>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/tlc-licensing" element={<TLCLicensing />} />
+
+          {/* 💥 Error Handling Route */}
+          {/* This route will catch and display errors */}
+          <Route
+            path="/error"
+            element={<ErrorPage />}
+          />
+
+          {/* 🛡️ Catch-All Error Boundary */}
+          <Route
+            path="*"
+            element={<ErrorBoundary />}
+          />
+        </Routes>
+
         <Footer />
       </Router>
     </main>

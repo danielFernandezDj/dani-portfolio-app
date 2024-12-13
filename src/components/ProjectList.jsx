@@ -22,10 +22,9 @@ export default function ProjectList() {
         <section className="flex flex-col px-3 gap-4 w-full">
           {/* Body */}
           {cardsData.map((card, index) => (
-            <div>
+            <div key={index}>
               <Link
                 to={card.link}
-                key={index}
                 className={`card-container ${card.bgColor}`}
               >
                 <img src={card.img} alt="Project Image" className="card-images" />
