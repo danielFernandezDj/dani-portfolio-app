@@ -2,14 +2,19 @@ import React from "react";
 import ProjectList from "../components/ProjectList";
 import ContactForm from "../components/ContactFrom"
 
-// Icons
 import { FaRegArrowAltCircleRight, FaLinkedin } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { Link } from "react-router-dom";
 
+
 export default function Home() {
   const linkedinLink = "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
   const githubLink = "https://github.com/danielFernandezDj"
+
+  const scrollToContactSection = (elementId) => {
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+  };
 
   return (
     <>
@@ -20,7 +25,10 @@ export default function Home() {
             <img className="rounded-xl size-fit h-auto" src="./mePhoto.jpeg" alt="Me in Moto)" />
             <div className="mt-2 flex gap-2 justify-between content-center">
 
-              <button className="flex gap-2 flex-row justify-center items-center w-full btn-hover-animation">
+              <button
+                onClick={() => scrollToContactSection('contact')}
+                className="flex gap-2 flex-row justify-center items-center w-full btn-hover-animation"
+              >
                 Let's Talk <FaRegArrowAltCircleRight className="size-4" />
               </button>
 

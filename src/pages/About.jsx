@@ -4,6 +4,11 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 
 export default function About() {
+    const scrollToContactSection = (elementId) => {
+        const element = document.getElementById(elementId);
+        element?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+    };
+
     return (
         <>
             <main className="flex flex-col items-center gap-24 max-w-sm mx-auto sm:max-w-3xl">
@@ -25,7 +30,10 @@ export default function About() {
                                 A exited Software Engineer ready to build relieve software, and learn new technology.
                                 With a expertise in Database, FrontEND + BackEND applications.
                             </p>
-                            <button className="flex gap-2 p-3 my-4 justify-center items-center btn-hover-animation">
+                            <button
+                                onClick={() => scrollToContactSection('contact')}
+                                className="flex gap-2 p-3 my-4 justify-center items-center btn-hover-animation"
+                            >
                                 Let's Talk <FaRegArrowAltCircleRight className="size-4" />
                             </button>
                         </div>
