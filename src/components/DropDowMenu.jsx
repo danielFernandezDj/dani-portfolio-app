@@ -46,11 +46,11 @@ export default function DropDowMenu() {
         >
           {/* ------------ Menu Content ------------ */}
           <Menu.Items className="flex flex-col gap-2 fixed inset-x-0 top-0 top-14 mx-6 mt-8 w-100">
-            <div className="flex justify-center px-1 py-4 rounded-xl bg-slate-800 shadow-lg">
+            <div className="flex justify-center px-1 py-4 rounded-xl bg-slate-300 shadow-lg">
               <MenuItem>
                 <Link
                   to="/"
-                  className={"flex justify-center gap-1 text-slate-200 w-full px-2 py-2 text-md"}
+                  className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-md"}
                 >
                   Home
                 </Link>
@@ -58,7 +58,7 @@ export default function DropDowMenu() {
               <MenuItem>
                 <button
                   onClick={() => scrollToContactSection('contact')}
-                  className={"flex justify-center gap-1 text-slate-200 w-full px-2 py-2 text-md"}
+                  className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-md"}
                 >
                   Contact
                 </button>
@@ -66,7 +66,7 @@ export default function DropDowMenu() {
               <MenuItem>
                 <Link
                   to="/about"
-                  className={"flex justify-center gap-1 text-slate-200 w-full px-2 py-2 text-md"}
+                  className={"flex justify-center gap-1 text-slate-800 w-full px-2 py-2 text-md"}
                 >
                   About
                 </Link>
@@ -74,11 +74,11 @@ export default function DropDowMenu() {
             </div>
 
             {/* ------------ Project List ------------ */}
-            <div className='flex flex-col gap-4 py-4 rounded-xl shadow-lg bg-slate-800'>
+            <div className='flex flex-col gap-4 py-4 rounded-xl shadow-lg bg-slate-300'>
               <Disclosure defaultOpen>
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex px-4 w-full justify-between text-left text-md text-slate-200">
+                    <Disclosure.Button className="flex px-4 w-full justify-between text-left text-md text-slate-800">
                       Projects
                       <span className='flex justify-center gap-2'>
                         3
@@ -89,7 +89,7 @@ export default function DropDowMenu() {
                       </span>
                     </Disclosure.Button>
 
-                    <Disclosure.Panel className="px-4 pb-2 text-slate-200 ">
+                    <Disclosure.Panel className="px-4 pb-2 text-slate-800 ">
                       <div className="flex flex-wrap justify-center w-full gap-6 max-h-[55vh] overflow-y-scroll scrollbar-hide">
                         {cardsData.map((card, index) => (
                           <div key={index} className="flex flex-col gap-2">
@@ -106,7 +106,7 @@ export default function DropDowMenu() {
                             <div className='grid grid-cols-3'>
                               {/* Col-1 */}
                               <div className='col-span-2'>
-                                <strong className="text-xl text-slate-200">
+                                <strong className="text-xl text-slate-800">
                                   <Link
                                     to={card.link}
                                     target='_blank'
@@ -114,7 +114,7 @@ export default function DropDowMenu() {
                                     {card.title}
                                   </Link>
                                 </strong>
-                                <p className="text-sm text-slate-400 font-light">
+                                <p className="text-sm text-slate-800 font-light">
                                   {card.description}
                                 </p>
                               </div>
@@ -123,7 +123,7 @@ export default function DropDowMenu() {
                                 <Link
                                   to={card.link}
                                   target='_blank'
-                                  className="w-[80%] p-1 text-slate-200 tracking-wider"
+                                  className="w-[80%] p-1 text-slate-800 tracking-wider"
                                 >
                                   Learn More➚
                                 </Link>
