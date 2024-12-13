@@ -77,7 +77,7 @@ function NavBar() {
               About
             </Link>
             <Link
-              to="/tlclicensing"
+              to="/tlc-licensing"
               className="nav-text-style"
             >
               TLCLicensing
@@ -111,7 +111,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/tlclicensing" element={<TLCLicensing />} />
+            <Route path="/tlc-licensing" element={<TLCLicensing />} />
           </Routes>
         </div>
         <Footer />
