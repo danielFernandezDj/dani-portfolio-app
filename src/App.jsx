@@ -76,12 +76,6 @@ function NavBar() {
             >
               About
             </Link>
-            <Link
-              to="/tlc-licensing"
-              className="nav-text-style"
-            >
-              TLCLicensing
-            </Link>
           </div>
         </div>
 
