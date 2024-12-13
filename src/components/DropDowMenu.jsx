@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Transition, Disclosure, MenuItem } from '@headlessui/react'
+import { Menu, Transition, Disclosure, MenuItem, MenuItems } from '@headlessui/react'
 import CardsData from "./CardsData";
 
 // Icons
@@ -93,22 +93,26 @@ export default function DropDowMenu() {
                       <div className="flex flex-wrap justify-center w-full gap-6 max-h-[55vh] overflow-y-scroll scrollbar-hide">
                         {cardsData.map((card, index) => (
                           <div key={index} className="flex flex-col gap-2">
-                            <a
-                              href={card.link}
-                              target="_blank"
-                              key={index}
+                            <Link
+                              to={card.link}
+                              target='_blank'
                             >
                               <img
                                 src={card.img}
                                 alt="Project Image"
                                 className="object-cover rounded-lg"
                               />
-                            </a>
+                            </Link>
                             <div className='grid grid-cols-3'>
                               {/* Col-1 */}
                               <div className='col-span-2'>
                                 <strong className="text-xl text-slate-200">
-                                  {card.title}
+                                  <Link
+                                    to={card.link}
+                                    target='_blank'
+                                  >
+                                    {card.title}
+                                  </Link>
                                 </strong>
                                 <p className="text-sm text-slate-400 font-light">
                                   {card.description}
@@ -116,13 +120,13 @@ export default function DropDowMenu() {
                               </div>
                               {/* Col-2 */}
                               <div className='flex p-2 justify-center items-start'>
-                                <a
-                                  href={card.link}
-                                  target="_blank"
+                                <Link
+                                  to={card.link}
+                                  target='_blank'
                                   className="w-[80%] p-1 text-slate-200 tracking-wider"
                                 >
                                   Learn More➚
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>

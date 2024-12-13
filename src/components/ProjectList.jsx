@@ -33,13 +33,12 @@ export default function ProjectList() {
               <div
                 href={card.link}
                 target="_blank"
-                key={index}
               >
                 <div className="flex flex-wrap md:flex-nowrap md:justify-between mb-10 px-4 py-4">
                   <div className="w-full">
-                    <a href={card.link} target="_blank">
+                    <Link to={card.link}>
                       <strong className="text-2xl text-slate-950">{card.title}</strong>
-                    </a>
+                    </Link>
                     <p className="text-slate-950/90 md:mb-0 mb-2">{card.description}</p>
                   </div>
 
