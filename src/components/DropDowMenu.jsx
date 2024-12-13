@@ -95,8 +95,6 @@ export default function DropDowMenu() {
                           <div key={index} className="flex flex-col gap-2">
                             <Link
                               to={card.link}
-                              key={index}
-                              target='_blank'
                             >
                               <img
                                 src={card.img}
@@ -110,7 +108,6 @@ export default function DropDowMenu() {
                                 <strong className="text-xl text-slate-800">
                                   <Link
                                     to={card.link}
-                                    target='_blank'
                                   >
                                     {card.title}
                                   </Link>
@@ -123,7 +120,6 @@ export default function DropDowMenu() {
                               <div className='flex p-2 justify-center items-start'>
                                 <Link
                                   to={card.link}
-                                  target='_blank'
                                   className="w-[80%] p-1 text-slate-800 tracking-wider"
                                 >
                                   Learn More➚
