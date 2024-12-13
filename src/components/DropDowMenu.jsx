@@ -84,7 +84,7 @@ export default function DropDowMenu() {
                         3
                         <IoIosArrowDown
                           className={`${open ? 'rotate-180 transform' : ''
-                            } h-5 w-5 text-white`}
+                            } h-5 w-5 text-slate-800`}
                         />
                       </span>
                     </Disclosure.Button>
