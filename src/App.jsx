@@ -42,8 +42,8 @@ function NavBar() {
   };
 
   return (
-    <nav className={`z-50 sticky top-0 transition-all duration-300 
-      ${scrolled ? 'bg-transparent backdrop-blur-3xl' : 'bg-slate-50 '}`
+    <nav className={`z-50 sticky top-0 transition-all duration-300 bg-slate-50 
+      ${scrolled ? 'shadow-2xl shadow-slate-200/40' : 'shadow-none'}`
     }>
       <div className="container flex md:justify-around justify-between items-center mx-auto md:px-4 px-8 py-3 md:px-20">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
