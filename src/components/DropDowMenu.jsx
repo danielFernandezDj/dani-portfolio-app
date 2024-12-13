@@ -95,6 +95,7 @@ export default function DropDowMenu() {
                           <div key={index} className="flex flex-col gap-2">
                             <Link
                               to={card.link}
+                              key={index}
                               target='_blank'
                             >
                               <img
