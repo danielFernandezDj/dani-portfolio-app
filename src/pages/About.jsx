@@ -28,7 +28,7 @@ export default function About() {
                         <div>
                             <p>
                                 A exited Software Engineer ready to build relieve software, and learn new technology.
-                                With a expertise in Database, FrontEND + BackEND applications.
+                                With a expertise in React, JavaScript, MongoDB, NodeJS & Express.
                             </p>
                             <button
                                 onClick={() => scrollToContactSection('contact')}
