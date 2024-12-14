@@ -133,7 +133,7 @@ function ErrorBoundary() {
 // Main App Component
 function App() {
   return (
-    <main className="flex flex-col min-h-screen bg-slate-50">
+    <main className="flex flex-col items-center min-h-screen bg-slate-50">
       <Router>
         <ScrollToTop />
         <NavBar />
