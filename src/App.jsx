@@ -51,8 +51,8 @@ function NavBar() {
   };
 
   return (
-    <nav className={`z-50 sticky top-0 transition-all duration-300 
-      ${scrolled ? 'bg-transparent backdrop-blur-3xl' : 'bg-slate-50 '}`
+    <nav className={`z-50 sticky top-0 transition-all duration-300 bg-slate-50 
+      ${scrolled ? 'shadow-2xl shadow-slate-200/40' : 'shadow-none'}`
     }>
       <div className="container flex md:justify-around justify-between items-center mx-auto md:px-4 px-8 py-3 md:px-20">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
@@ -133,29 +133,31 @@ function ErrorBoundary() {
 // Main App Component
 function App() {
   return (
-    <main className="flex flex-col min-h-screen bg-slate-50">
+    <main className="flex flex-col content-center bg-slate-50">
       <Router>
         <ScrollToTop />
         <NavBar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/tlc-licensing" element={<TLCLicensing />} />
+        <div className="flex-grow">
+          <Routes >
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/tlc-licensing" element={<TLCLicensing />} />
 
-          {/* 💥 Error Handling Route */}
-          {/* This route will catch and display errors */}
-          <Route
-            path="/error"
-            element={<ErrorPage />}
-          />
+            {/* 💥 Error Handling Route */}
+            {/* This route will catch and display errors */}
+            <Route
+              path="/error"
+              element={<ErrorPage />}
+            />
 
-          {/* 🛡️ Catch-All Error Boundary */}
-          <Route
-            path="*"
-            element={<ErrorBoundary />}
-          />
-        </Routes>
+            {/* 🛡️ Catch-All Error Boundary */}
+            <Route
+              path="*"
+              element={<ErrorBoundary />}
+            />
+          </Routes>
+        </div>
 
         <Footer />
       </Router>
