@@ -28,7 +28,7 @@ export default function CardsData() {
       description: 'This is just an example AI app.',
       link: 'https://tailwindcss.com',
       liveLink: '#',
-      img: '/projects-img/ai.png',
+      img: '/projects-img/ai-img.png',
       bgColor: 'bg-slate-800',
       tech: ['ChatGPT', 'NextJS', 'TypeScript']
     },

@@ -176,7 +176,7 @@ export default function TLCLicensing() {
                 {/* Other projects */}
                 <section
                     id="projects"
-                    className="flex flex-col items-center gap-6 md:gap-0 md:w-4/6 m-auto rounded-2xl bg-slate-800"
+                    className="flex flex-col items-center md:w-4/6 m-auto rounded-2xl bg-slate-800"
                 >
                     <strong className="text-4xl mt-4 md:mb-6 md:mt-12 text-gradient">
                         Other Projects
