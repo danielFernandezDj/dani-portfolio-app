@@ -19,7 +19,7 @@ export default function ArtisticEchoes() {
     const cardData = data.filter((element) => element.id === 0 || element.id === 2)
 
     return (
-        <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-28 text-slate-200 / border">
+        <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-28 text-slate-200">
             <div className="flex flex-col gap-4 m-auto mt-10 md:w-4/6">
                 <section className="py-8 text-center bg-gradient opacity-90 rounded-2xl">
                     <strong className="text-4xl text-slate-200 italic ">
