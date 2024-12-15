@@ -52,11 +52,10 @@ This is a personal portfolio website showcasing my professional profile, skills,
 
 ## 📄 License
 
-[MIT License \[\]](https://github.com/danielFernandezDj/dani-portfolio-app/blob/main/LICENSE.md)
+[MIT License](https://github.com/danielFernandezDj/dani-portfolio-app/blob/main/LICENSE.md)
 
 ## 🔗 Connect with Me
 
-- <a href="https://docs.google.com/document/d/1RQ8uI58cl7uD3EA8v6hDp6M4YfOU0pwrCeszlcx7_eM/edit?usp=sharing" target="_blank">Resume</a>
-- <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">LinkedIn</a>
-- <a href="https://github.com/danielFernandezDj" target="_blank">GitHub</a>
-
+- [Resume:](https://docs.google.com/document/d/1RQ8uI58cl7uD3EA8v6hDp6M4YfOU0pwrCeszlcx7_eM/edit?usp=sharing)
+- [LinkedIn:](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
+- [GitHub:](https://github.com/danielFernandezDj)
