@@ -67,7 +67,7 @@ export default function ArtisticEchoes() {
                             </a>
                         </div>
 
-                        <div className="flex justify-end w-4/6 gap-4">
+                        <div className="flex justify-end items-end w-4/6 gap-4">
                             <a href={linkedinLink} target="_blank"><FaLinkedin className="w-10 h-auto fill-slate-200 hover:fill-blue-500 " /></a>
                             <a href={githubLink} target="_blank"><SiGithub className="w-10 h-auto fill-slate-200 hover:fill-yellow-500" /></a>
                         </div>
