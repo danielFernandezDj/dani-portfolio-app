@@ -3,6 +3,7 @@ import React from "react";
 export default function CardsData() {
   return [
     {
+      id: 0,
       title: 'TLC LiCensing',
       description: 'Full-Stack Educational Institution at Miami, FL.',
       link: '/tlc-licensing',
@@ -12,6 +13,7 @@ export default function CardsData() {
       tech: ['React', 'Redux', 'JavaScript']
     },
     {
+      id: 1,
       title: 'Artistic Echoes',
       description: 'Image Stock Bank, offers free Download.',
       link: 'artistic-echoes',
@@ -21,6 +23,7 @@ export default function CardsData() {
       tech: ['React', 'MongoDB', 'Express']
     },
     {
+      id: 2,
       title: 'AI random app.',
       description: 'This is just an example AI app.',
       link: 'https://tailwindcss.com',

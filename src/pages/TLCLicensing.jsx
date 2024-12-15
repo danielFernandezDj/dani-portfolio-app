@@ -8,7 +8,9 @@ import { FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 
 export default function TLCLicensing() {
-    const cardData = CardsData()
+    const data = CardsData()
+    const cardData = data.filter((element) => element.id === 1 || element.id === 2)
+
     const bottomColor = {
         primary: '#E2E065',
         secondary: '#1E293B'
@@ -171,8 +173,6 @@ export default function TLCLicensing() {
                     </ol>
                 </section>
 
-
-
                 <section
                     id="projects"
                     className="flex flex-col items-center gap-6 md:gap-12 md:w-5/6 m-auto rounded-2xl"
@@ -182,7 +182,7 @@ export default function TLCLicensing() {
                         Other Projects
                     </strong>
 
-                    {cardData.slice(1).map((card, index) => (
+                    {cardData.map((card, index) => (
                         <div key={index} className="md:w-4/6">
                             <a
                                 href={card.link}
@@ -203,7 +203,7 @@ export default function TLCLicensing() {
                                     {/* Tech */}
                                     <div className="flex justify-end gap-2">
                                         {card.tech.map((technology, idx) => (
-                                            <strong key={idx} className="bg-slate-400 text-slate-800 m-auto px-4 py-2 rounded-md">
+                                            <strong key={idx} className="bg-slate-400 text-slate-800 px-2 py-2 m-auto rounded-lg">
                                                 {technology}
                                             </strong>
                                         ))}

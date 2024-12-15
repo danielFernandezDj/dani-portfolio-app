@@ -76,7 +76,7 @@ function NavBar() {
             </button>
             <button
               onClick={() => scrollToContactSection('contact')}
-              className="hover:text-blue-500"
+              className="nav-text-style"
             >
               Contact
             </button>
@@ -144,7 +144,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/tlc-licensing" element={<TLCLicensing />} />
-            <route path="/artistic-echoes" element={<ArtisticEchoes />} />
+            <Route path="/artistic-echoes" element={<ArtisticEchoes />} />
 
             {/* 💥 Error Handling Route */}
             {/* This route will catch and display errors */}
