@@ -76,21 +76,21 @@ export default function About() {
                     <div className="grid grid-cols-2 gap-2">
                         <div className="row-span-2">
                             <img
-                                src="/projects-img/old-pc.png"
+                                src="/about-img/pixel-1.jpg"
                                 alt="Hold computer image from Unsplash"
                                 className="w-auto h-full object-cover rounded-md rounded-tl-2xl rounded-bl-2xl"
                             />
                         </div>
                         <div className="row-span-1">
                             <img
-                                src="/projects-img/old-pc.png"
+                                src="/about-img/pixel-2.jpg"
                                 alt="Hold computer image from Unsplash"
                                 className="w-48 md:w-80 rounded-md rounded-tr-2xl"
                             />
                         </div>
                         <div className="row-span-1">
                             <img
-                                src="/projects-img/old-pc.png"
+                                src="/about-img/pixel-3.jpg"
                                 alt="Hold computer image from Unsplash"
                                 className="w-48 md:w-80 rounded-md rounded-br-2xl"
                             />

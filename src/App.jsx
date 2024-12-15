@@ -16,6 +16,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './Footer';
 import TLCLicensing from './pages/TLCLicensing';
+import ArtisticEchoes from './pages/ArtisticEchoes';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -143,6 +144,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/tlc-licensing" element={<TLCLicensing />} />
+            <route path="/artistic-echoes" element={<ArtisticEchoes />} />
 
             {/* 💥 Error Handling Route */}
             {/* This route will catch and display errors */}
