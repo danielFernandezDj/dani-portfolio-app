@@ -24,13 +24,13 @@ export default function CardsData() {
     },
     {
       id: 2,
-      title: 'AI random app.',
-      description: 'This is just an example AI app.',
-      link: 'https://tailwindcss.com',
+      title: 'Shield.ai',
+      description: 'Shield.ai is created to help U.S community to learn more about low & human rights.',
+      link: '/shield-ai',
       liveLink: '#',
-      img: '/projects-img/ai-img.png',
+      img: '/projects-img/shield-ai.png',
       bgColor: 'bg-slate-800',
-      tech: ['ChatGPT', 'NextJS', 'TypeScript']
+      tech: ['NextJS', 'TypeScript', 'ClaudeAi']
     },
   ]
 }
