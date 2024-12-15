@@ -17,8 +17,10 @@ export default function DropDowMenu() {
   };
 
   return (
-    <div>
-      <Menu as="div" className="flex content-center relative text-left">
+    <main>
+      <Menu
+        as="div"
+        className="flex content-center relative text-left">
         <div className="flex self-center">
           <Menu.Button>
             {({ open }) =>
@@ -39,9 +41,10 @@ export default function DropDowMenu() {
           leave="transition ease-in duration-75"
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
+          className='bg-slate-50'
         >
-          <Menu.Items className="flex flex-col gap-2 fixed inset-x-0 top-0 top-14 mx-6 mt-8 w-100">
-            <div className="flex justify-center px-1 py-4 rounded-xl bg-slate-300 shadow-lg">
+          <Menu.Items className="flex flex-col fixed inset-x-0 top-14">
+            <section className="flex justify-center px-1 pt-2 border-b border-slate-400/30 / bg-gradient-to-t from-slate-200 to-slate-50">
               <Menu.Item>
                 {({ close }) => (
                   <Link
@@ -77,9 +80,9 @@ export default function DropDowMenu() {
                   </Link>
                 )}
               </Menu.Item>
-            </div>
+            </section>
 
-            <div className="flex flex-col gap-4 py-4 rounded-xl shadow-lg bg-slate-300">
+            <section className="flex flex-col gap-4 py-4 / bg-gradient-to-b from-slate-200 to-slate-50">
               <Disclosure defaultOpen>
                 {({ open }) => (
                   <>
@@ -94,8 +97,8 @@ export default function DropDowMenu() {
                       </span>
                     </Disclosure.Button>
 
-                    <Disclosure.Panel className="px-4 pb-2 text-slate-800">
-                      <div className="flex flex-wrap justify-center w-full gap-6 max-h-[55vh] overflow-y-scroll scrollbar-hide">
+                    <Disclosure.Panel className="px-4 pb-2 text-slate-800 border-b">
+                      <div className="flex flex-wrap justify-center w-full gap-8 pt-4 pb-10 max-h-[65vh] overflow-auto scrollbar-hide">
                         {cardsData.map((card, index) => (
                           <div key={index} className="flex flex-col gap-2">
                             <Menu.Item>
@@ -141,14 +144,16 @@ export default function DropDowMenu() {
                           </div>
                         ))}
                       </div>
+
+                      <div className='w-full h-dvh border-t border-slate-400/30 / bg-gradient-to-t from-slate-200 from-30 to-slate-50/0'></div>
                     </Disclosure.Panel>
                   </>
                 )}
               </Disclosure>
-            </div>
+            </section>
           </Menu.Items>
         </Transition>
       </Menu>
-    </div >
+    </main >
   );
 }
