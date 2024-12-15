@@ -5,17 +5,15 @@ import CardsData from "../components/CardsData";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 
-export default function ArtisticEchoes() {
+export default function ShieldAi() {
     // Personal Account
     const linkedinLink = "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
     const githubLink = "https://github.com/danielFernandezDj"
 
     // Project Git-Links
-    const frontEND = "https://github.com/danielFernandezDj/artistic-echoes-front-end"
-    const backEND = "https://github.com/danielFernandezDj/artistic-echoes-back-end"
 
     const data = CardsData()
-    const cardData = data.filter((element) => element.id === 0 || element.id === 2)
+    const cardData = data.filter((element) => element.id === 0 || element.id === 1)
 
     return (
         <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-28 text-slate-200">
@@ -32,41 +30,24 @@ export default function ArtisticEchoes() {
                             Description
                         </p>
                         <strong className="text-2xl text-gradient">
-                            Artistic Echoes
+                            Shield.ai
                         </strong>
                     </div>
                     <p className="w-full md:w-4/6">
-                        Artistic Echoes is a Stock website that share old humans history paints from all over the word for free download.
+                        Shield.ai is created to help U.S community to learn more about low & human rights.
                     </p>
                     <img
-                        src="./projects-img/artistic-echoes.png"
+                        src="./projects-img/shield-ai.png"
                         alt="Artistic Echoes web site screenshot."
                         className="rounded-xl"
                     />
 
                     {/* Project Repos */}
                     <section className="flex flex-row gap-4">
-                        <div className="flex flex-col md:flex-row md:gap-4 w-5/6">
-                            <strong>
-                                Git Repositories :
-                            </strong>
-                            <a
-                                href={frontEND}
-                                target="_blank"
-                                className="text-blue-500 font-normal nav-text-style"
-                            >
-                                git-font-end➚
-                            </a>
-                            <a
-                                href={backEND}
-                                target="_blank"
-                                className="text-blue-500 font-normal nav-text-style"
-                            >
-                                git-back-end➚
-                            </a>
-                        </div>
-
-                        <div className="flex justify-end items-end w-4/6 gap-4">
+                        <p className="flex items-center px-4 w-5/6 text-blue-500">
+                            Contact Links {'->'}
+                        </p>
+                        <div className="flex justify-end w-full m-auto gap-4">
                             <a href={linkedinLink} target="_blank"><FaLinkedin className="w-10 h-auto fill-slate-200 hover:fill-blue-500 " /></a>
                             <a href={githubLink} target="_blank"><SiGithub className="w-10 h-auto fill-slate-200 hover:fill-yellow-500" /></a>
                         </div>

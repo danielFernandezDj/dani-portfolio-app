@@ -28,7 +28,7 @@ export default function CardsData() {
       description: 'Shield.ai is created to help U.S community to learn more about low & human rights.',
       link: '/shield-ai',
       liveLink: '#',
-      img: '/projects-img/ai-img.png',
+      img: '/projects-img/shield-ai.png',
       bgColor: 'bg-slate-800',
       tech: ['NextJS', 'TypeScript', 'ClaudeAi']
     },

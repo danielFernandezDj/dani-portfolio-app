@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectList from "../components/ProjectList";
 import ContactForm from "../components/ContactFrom";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
@@ -140,6 +141,7 @@ export default function About() {
                     </div>
                 </div>
 
+                <ProjectList />
                 <ContactForm />
             </main>
         </>

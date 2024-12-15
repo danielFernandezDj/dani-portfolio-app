@@ -6,7 +6,7 @@ export default function ProjectList() {
   const cardsData = CardsData()
   return (
     <>
-      <section id="projects" className="flex flex-col items-center w-full p-4 gap-4">
+      <main id="projects" className="flex flex-col items-center w-full p-4 gap-4">
         {/* Header */}
         <div className="mb-6 text-center ">
           <strong className="flex justify-center gap-6 text-3xl tracking-wider text-gradient">
@@ -33,7 +33,7 @@ export default function ProjectList() {
                 href={card.link}
                 target="_blank"
               >
-                <div className="flex flex-wrap md:flex-nowrap md:justify-between mb-10 px-4 py-4">
+                <div className="flex flex-wrap md:flex-nowrap md:justify-between px-4 ">
                   <div className="w-full">
                     <Link to={card.link}>
                       <strong className="text-2xl text-slate-950">{card.title}</strong>
@@ -54,7 +54,7 @@ export default function ProjectList() {
             </div>
           ))}
         </section>
-      </section>
+      </main>
     </>
   )
 }
