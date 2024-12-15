@@ -14,7 +14,7 @@ export default function CardsData() {
     {
       title: 'Artistic Echoes',
       description: 'Image Stock Bank, offers free Download.',
-      link: 'https://tailwindcss.com',
+      link: 'artistic-echoes',
       liveLink: '#',
       img: './projects-img/artistic-echoes.png',
       bgColor: 'bg-slate-800',
