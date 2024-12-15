@@ -21,7 +21,7 @@ export default function TLCLicensing() {
 
     return (
         <>
-            <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-28">
+            <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-80">
                 <section className="flex flex-col items-center gap-4 mt-4 pt-4 rounded-t-xl text-slate-800
                     bg-gradient-to-b from-[#E2E065] to-slate-50"
                 >
@@ -173,37 +173,51 @@ export default function TLCLicensing() {
                     </ol>
                 </section>
 
+                {/* Other projects */}
                 <section
                     id="projects"
-                    className="flex flex-col items-center gap-6 md:gap-12 md:w-5/6 m-auto rounded-2xl"
-                    style={{ backgroundColor: bottomColor.secondary }}
+                    className="flex flex-col items-center gap-6 md:gap-0 md:w-4/6 m-auto rounded-2xl bg-slate-800"
                 >
-                    <strong className="text-4xl mt-4 md:mt-12 text-gradient">
+                    <strong className="text-4xl mt-4 md:mb-6 md:mt-12 text-gradient">
                         Other Projects
                     </strong>
 
                     {cardData.map((card, index) => (
-                        <div key={index} className="md:w-4/6">
+                        <div key={index} className="p-4 md:w-5/6">
                             <a
                                 href={card.link}
                                 target="_blank"
-                                className="card-container"
                             >
-                                <img src={card.img} alt="Project Image" className="md:card-images rounded-lg" />
+                                <img
+                                    src={card.img}
+                                    alt="Project Image"
+                                    className="hover:outline outline-slate-400/80 outline-offset-4 outline-2 rounded-xl"
+                                />
                             </a>
                             <div>
-                                <div className="flex flex-wrap md:flex-nowrap md:justify-between md:mb-10 px-4 py-4">
+                                <div className="flex flex-wrap md:flex-nowrap md:justify-between md:mb-10 py-4">
                                     <div className="w-full">
                                         <a href={card.link} target="_blank">
-                                            <strong className="text-2xl text-slate-200">{card.title}</strong>
+                                            <strong
+                                                className="text-2xl text-slate-200"
+                                            >
+                                                {card.title}
+                                            </strong>
                                         </a>
-                                        <p className="text-slate-400 md:mb-0 mb-2">{card.description}</p>
+                                        <p
+                                            className="text-slate-400 md:mb-0 mb-2"
+                                        >
+                                            {card.description}
+                                        </p>
                                     </div>
 
-                                    {/* Tech */}
-                                    <div className="flex justify-end gap-2">
+                                    {/* Display Tech */}
+                                    <div className="flex justify-end gap-4">
                                         {card.tech.map((technology, idx) => (
-                                            <strong key={idx} className="bg-slate-400 text-slate-800 px-2 py-2 m-auto rounded-lg">
+                                            <strong
+                                                key={idx}
+                                                className="bg-slate-400 text-slate-800 px-2 py-2 m-auto rounded-lg"
+                                            >
                                                 {technology}
                                             </strong>
                                         ))}
