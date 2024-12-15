@@ -10,8 +10,6 @@ export default function ShieldAi() {
     const linkedinLink = "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
     const githubLink = "https://github.com/danielFernandezDj"
 
-    // Project Git-Links
-
     const data = CardsData()
     const cardData = data.filter((element) => element.id === 0 || element.id === 1)
 
