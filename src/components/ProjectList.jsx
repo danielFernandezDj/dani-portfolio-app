@@ -21,10 +21,7 @@ export default function ProjectList() {
         <section className="flex flex-col items-center m-auto rounded-2xl bg-slate-800">
           {cardsData.map((card, index) => (
             <div key={index} className="p-4 md:w-5/6">
-              <Link
-                to={card.link}
-                
-              >
+              <Link to={card.link}>
                 <img
                   src={card.img}
                   alt="Project Image"

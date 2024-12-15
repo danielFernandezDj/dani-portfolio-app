@@ -184,10 +184,7 @@ export default function TLCLicensing() {
 
                     {cardData.map((card, index) => (
                         <div key={index} className="p-4 md:w-5/6">
-                            <Link
-                                to={card.link}
-                                target="_blank"
-                            >
+                            <Link to={card.link}>
                                 <img
                                     src={card.img}
                                     alt="Project Image"
@@ -197,8 +194,7 @@ export default function TLCLicensing() {
                             <div>
                                 <div className="flex flex-wrap md:flex-nowrap md:justify-between md:mb-10 py-4">
                                     <div className="w-full">
-                                        <Link href={card.link} target="_blank"
-                                        >
+                                        <Link href={card.link}>
                                             <strong
                                                 className="text-2xl text-slate-200"
                                             >
