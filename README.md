@@ -10,11 +10,8 @@ This is a personal portfolio website showcasing my professional profile, skills,
 - **Routing**: React Router DOM
 - **Styling**: Tailwind CSS
 - **Icons**: 
-  - Font Awesome
-  - Hero Icons
   - React Icons
 - **Additional Libraries**:
-  - Axios (HTTP Requests)
   - EmailJS (Contact Form)
 
 ## 📦 Prerequisites
@@ -53,11 +50,6 @@ This is a personal portfolio website showcasing my professional profile, skills,
 - LinkedIn and Resume Links
 - Contact Form Integration
 
-## 📝 Environment Setup
-
-1. Create a `.env` file in the project root
-2. Add necessary environment variables (if any)
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -68,10 +60,10 @@ This is a personal portfolio website showcasing my professional profile, skills,
 
 ## 📄 License
 
-[Specify your license here, e.g., MIT License]
+MIT License []
 
 ## 🔗 Connect with Me
 
-- LinkedIn: [Your LinkedIn Profile URL]
-- Portfolio: [Live Site URL]
-- GitHub: [Your GitHub Profile]
+- [Resume: \[Live Site URL\]](https://docs.google.com/document/d/1RQ8uI58cl7uD3EA8v6hDp6M4YfOU0pwrCeszlcx7_eM/edit?usp=sharing)
+- [LinkedIn: \[Your LinkedIn Profile URL\]](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
+- [GitHub: \[Your GitHub Profile\]](https://github.com/danielFernandezDj)
