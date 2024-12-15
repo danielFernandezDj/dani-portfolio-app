@@ -20,10 +20,6 @@
     backdrop-blur-xl hover:bg-slate-900 transition duration-300;
   }
 
-  .card-images {
-    @apply max-w-fit md:h-90 h-56 rounded-md absolute md:-bottom-[5rem] -bottom-[1rem];
-  }
-
   .card-images-menu img {
     @apply max-w-16 max-h-16 rounded-md;
   }
