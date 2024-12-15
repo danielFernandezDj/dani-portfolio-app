@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex flex-col gap-16 m-auto md:max-w-3xl / border">
+      <main className="flex flex-col gap-16 m-auto md:max-w-3xl">
         {/* ----------------------------- HERO ----------------------------- */}
         <section className="flex sm:flex-row flex-col-reverse items-center sm:mt-8 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
