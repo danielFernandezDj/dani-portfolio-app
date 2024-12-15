@@ -17,7 +17,7 @@ import About from './pages/About';
 import Footer from './Footer';
 import TLCLicensing from './pages/TLCLicensing';
 import ArtisticEchoes from './pages/ArtisticEchoes';
-import ShieldAi from './pages/ShieldAI';
+import ShieldAi from './pages/ShieldAi';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
