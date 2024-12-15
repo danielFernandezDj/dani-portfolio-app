@@ -50,17 +50,9 @@ This is a personal portfolio website showcasing my professional profile, skills,
 - LinkedIn and Resume Links
 - Contact Form Integration
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📄 License
 
-MIT License []
+[MIT License \[\]](https://github.com/danielFernandezDj/dani-portfolio-app/blob/main/LICENSE.md)
 
 ## 🔗 Connect with Me
 
