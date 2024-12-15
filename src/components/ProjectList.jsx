@@ -8,7 +8,7 @@ export default function ProjectList() {
     <>
       <main id="projects" className="flex flex-col m-4 p-4 bg-slate-800 rounded-xl">
 
-        <div className="text-center mb-4">
+        <div className="text-center mb-4 mt-8">
           <strong className="text-3xl text-gradient">
             What I’ve been working on
           </strong>
