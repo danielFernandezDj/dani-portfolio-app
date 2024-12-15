@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactFrom";
 import CardsData from "../components/CardsData";
 
@@ -14,8 +15,7 @@ export default function ArtisticEchoes() {
     const frontEND = "https://github.com/danielFernandezDj/artistic-echoes-front-end"
     const backEND = "https://github.com/danielFernandezDj/artistic-echoes-back-end"
 
-    const data = CardsData()
-    const cardData = data.filter((element) => element.id === 0 || element.id === 2)
+    const cardData = CardsData().filter((element) => element.id === 0 || element.id === 2)
 
     return (
         <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-28 text-slate-200">
@@ -85,8 +85,8 @@ export default function ArtisticEchoes() {
 
                 {cardData.map((card, index) => (
                     <div key={index} className="p-4 md:w-5/6">
-                        <a
-                            href={card.link}
+                        <Link
+                            to={card.link}
                             target="_blank"
                         >
                             <img
@@ -94,17 +94,17 @@ export default function ArtisticEchoes() {
                                 alt="Project Image"
                                 className="hover:outline outline-slate-400/80 outline-offset-4 outline-2 rounded-xl"
                             />
-                        </a>
+                        </Link>
                         <div>
                             <div className="flex flex-wrap md:flex-nowrap md:justify-between md:mb-10 py-4">
                                 <div className="w-full">
-                                    <a href={card.link} target="_blank">
+                                    <Link href={card.link} target="_blank">
                                         <strong
                                             className="text-2xl text-slate-200"
                                         >
                                             {card.title}
                                         </strong>
-                                    </a>
+                                    </Link>
                                     <p
                                         className="text-slate-400 md:mb-0 mb-2"
                                     >

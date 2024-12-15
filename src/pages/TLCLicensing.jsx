@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import CardsData from "../components/CardsData"
 import ContactForm from "../components/ContactFrom"
 
@@ -8,8 +9,7 @@ import { FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 
 export default function TLCLicensing() {
-    const data = CardsData()
-    const cardData = data.filter((element) => element.id === 1 || element.id === 2)
+    const cardData = CardsData().filter((element) => element.id === 1 || element.id === 2)
 
     const bottomColor = {
         primary: '#E2E065',
@@ -184,8 +184,8 @@ export default function TLCLicensing() {
 
                     {cardData.map((card, index) => (
                         <div key={index} className="p-4 md:w-5/6">
-                            <a
-                                href={card.link}
+                            <Link
+                                to={card.link}
                                 target="_blank"
                             >
                                 <img
@@ -193,17 +193,18 @@ export default function TLCLicensing() {
                                     alt="Project Image"
                                     className="hover:outline outline-slate-400/80 outline-offset-4 outline-2 rounded-xl"
                                 />
-                            </a>
+                            </Link>
                             <div>
                                 <div className="flex flex-wrap md:flex-nowrap md:justify-between md:mb-10 py-4">
                                     <div className="w-full">
-                                        <a href={card.link} target="_blank">
+                                        <Link href={card.link} target="_blank"
+                                        >
                                             <strong
                                                 className="text-2xl text-slate-200"
                                             >
                                                 {card.title}
                                             </strong>
-                                        </a>
+                                        </Link>
                                         <p
                                             className="text-slate-400 md:mb-0 mb-2"
                                         >

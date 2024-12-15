@@ -1,17 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactFrom";
 import CardsData from "../components/CardsData";
 
 import { FaLinkedin } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 
-export default function ShieldAi() {
+export default function ShieldAI() {
     // Personal Account
     const linkedinLink = "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
     const githubLink = "https://github.com/danielFernandezDj"
 
-    const data = CardsData()
-    const cardData = data.filter((element) => element.id === 0 || element.id === 1)
+    const cardData = CardsData().filter((element) => element.id === 0 || element.id === 1)
 
     return (
         <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-28 text-slate-200">
@@ -64,8 +64,8 @@ export default function ShieldAi() {
 
                 {cardData.map((card, index) => (
                     <div key={index} className="p-4 md:w-5/6">
-                        <a
-                            href={card.link}
+                        <Link
+                            to={card.link}
                             target="_blank"
                         >
                             <img
@@ -73,17 +73,17 @@ export default function ShieldAi() {
                                 alt="Project Image"
                                 className="hover:outline outline-slate-400/80 outline-offset-4 outline-2 rounded-xl"
                             />
-                        </a>
+                        </Link>
                         <div>
                             <div className="flex flex-wrap md:flex-nowrap md:justify-between md:mb-10 py-4">
                                 <div className="w-full">
-                                    <a href={card.link} target="_blank">
+                                    <Link href={card.link} target="_blank">
                                         <strong
                                             className="text-2xl text-slate-200"
                                         >
                                             {card.title}
                                         </strong>
-                                    </a>
+                                    </Link>
                                     <p
                                         className="text-slate-400 md:mb-0 mb-2"
                                     >

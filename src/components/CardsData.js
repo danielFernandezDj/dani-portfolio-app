@@ -15,8 +15,8 @@ export default function CardsData() {
     {
       id: 1,
       title: 'Artistic Echoes',
-      description: 'Image Stock Bank, offers free Download.',
-      link: 'artistic-echoes',
+      description: 'Image Stock Web application that offers free Download.',
+      link: '/artistic-echoes',
       liveLink: '#',
       img: './projects-img/artistic-echoes.png',
       bgColor: 'bg-slate-800',

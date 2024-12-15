@@ -5,10 +5,7 @@ import {
   Routes,
   Link,
   useLocation,
-  // 💡 Import useRouteError for detailed error information
-  useRouteError
 } from 'react-router-dom';
-import ErrorPage from './ErrorPage';
 
 // Component
 import DropDowMenu from './components/DropDowMenu';
@@ -17,7 +14,7 @@ import About from './pages/About';
 import Footer from './Footer';
 import TLCLicensing from './pages/TLCLicensing';
 import ArtisticEchoes from './pages/ArtisticEchoes';
-import ShieldAi from './pages/ShieldAi';
+import ShieldAI from './pages/ShieldAI';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -105,33 +102,6 @@ function NavBar() {
   );
 }
 
-// 🚨 NEW: Error Boundary Component
-// This component catches errors in child components and routes
-function ErrorBoundary() {
-  // useRouteError provides detailed error information from React Router
-  const error = useRouteError();
-
-  return (
-    <div className="error-container">
-      {/* Render custom error page with dynamic error messages */}
-      <ErrorPage
-        // Dynamically set error title based on error type
-        title={
-          error.status === 404
-            ? "Page Not Found"
-            : "Unexpected Error Occurred"
-        }
-        // Provide more context about the error
-        message={
-          error.status === 404
-            ? "The page you're looking for doesn't exist."
-            : error.message || "An unexpected error prevented the page from loading."
-        }
-      />
-    </div>
-  );
-}
-
 // Main App Component
 function App() {
   return (
@@ -146,23 +116,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/tlc-licensing" element={<TLCLicensing />} />
             <Route path="/artistic-echoes" element={<ArtisticEchoes />} />
-            <Route path="/shield-ai" element={<ShieldAi />} />
-
-            {/* 💥 Error Handling Route */}
-            {/* This route will catch and display errors */}
-            <Route
-              path="/error"
-              element={<ErrorPage />}
-            />
-
-            {/* 🛡️ Catch-All Error Boundary */}
-            <Route
-              path="*"
-              element={<ErrorBoundary />}
-            />
+            <Route path="/shield-ai" element={<ShieldAI />} />
           </Routes>
         </div>
-
         <Footer />
       </Router>
     </main>
