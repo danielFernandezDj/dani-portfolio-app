@@ -41,7 +41,6 @@ export default function DropDowMenu() {
           leave="transition ease-in duration-75"
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
-          className='bg-slate-50'
         >
           <Menu.Items className="flex flex-col fixed inset-x-0 top-14">
             <section className="flex justify-center px-1 pt-2 border-b border-slate-400/30 / bg-gradient-to-t from-slate-200 to-slate-50">
@@ -97,8 +96,8 @@ export default function DropDowMenu() {
                       </span>
                     </Disclosure.Button>
 
-                    <Disclosure.Panel className="px-4 pb-2 text-slate-800 border-b">
-                      <div className="flex flex-wrap justify-center w-full gap-8 pt-4 pb-10 max-h-[65vh] overflow-auto scrollbar-hide">
+                    <Disclosure.Panel className="px-4 pb-2 text-slate-800">
+                      <div className="flex flex-wrap justify-center w-full gap-8 pt-2 pb-10 max-h-[65vh] overflow-auto scrollbar-hide">
                         {cardsData.map((card, index) => (
                           <div key={index} className="flex flex-col gap-2">
                             <Menu.Item>
@@ -106,13 +105,16 @@ export default function DropDowMenu() {
                                 <Link
                                   to={card.link}
                                   onClick={close}
-                                  className="object-cover rounded-lg"
+                                  className="h-40 overflow-hidden rounded-xl outline outline-slate-400/40 outline-offset-4 outline-1"
                                 >
-                                  <img src={card.img} alt="Project Image" />
+                                  <img
+                                    src={card.img}
+                                    alt="Project Image"
+                                  />
                                 </Link>
                               )}
                             </Menu.Item>
-                            <div className="grid grid-cols-3">
+                            <div className="grid grid-cols-3 px-2">
                               <div className="col-span-2">
                                 <Menu.Item>
                                   {({ close }) => (
@@ -127,13 +129,13 @@ export default function DropDowMenu() {
                                 </Menu.Item>
                                 <p className="text-sm text-slate-800 font-light">{card.description}</p>
                               </div>
-                              <div className="flex p-2 justify-center items-start">
+                              <div className="flex p-2 justify-center ">
                                 <MenuItem>
                                   {({ close }) => (
                                     <Link
                                       to={card.link}
                                       onClick={close}
-                                      className="w-[80%] p-1 text-slate-800 tracking-wider"
+                                      className="w-[80%] pl-6 text-slate-800 tracking-wider"
                                     >
                                       Learn More➚
                                     </Link>
