@@ -28,14 +28,14 @@ export default function Home() {
             <img
               className="rounded-xl size-fit h-auto"
               src="./mePhoto.jpeg"
-              alt="Me in Moto)"
+              alt="Me in my Motorcycle"
             />
             <div className="mt-2 flex gap-2 justify-between content-center">
               <button
                 onClick={() => scrollToContactSection("contact")}
                 className="flex gap-2 flex-row justify-center items-center w-full btn-hover-animation"
               >
-                Let's Talk <FaRegArrowAltCircleRight className="size-4" />
+                Let&lsquo;s Talk <FaRegArrowAltCircleRight className="size-4" />
               </button>
 
               <div className="flex gap-2">
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col md:w-[54rem] text-center sm:text-left">
             <strong className="text-7xl md:text-8xl text-gradient">
-              Hi there, I'm Daniel
+              Hi there, I&lsquo;m Daniel
             </strong>
             <p className="text-2xl sm:text-5xl font-bold text-gradient">
               Full Stack Developer & Enthusiast!
@@ -65,9 +65,9 @@ export default function Home() {
               About Me
             </strong>
             <p className="tracking-wider indent-4 max-w-full">
-              I'm a 27-year-old graduate student at the University of Nevada,
+              I&lsquo;m a 27-year-old graduate student at the University of Nevada,
               Las Vegas (UNLV), where my journey in Full Stack Software
-              Engineering has become more than just a career path—it's a
+              Engineering has become more than just a career path—it&lsquo;s a
               personal mission to create meaningful digital experiences.
               Specializing in technologies like React, Express, and JavaScript,
               I pour my heart into every line of code.
