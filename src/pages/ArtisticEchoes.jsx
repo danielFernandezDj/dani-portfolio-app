@@ -11,12 +11,6 @@ export default function ArtisticEchoes() {
     "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile";
   const githubLink = "https://github.com/danielFernandezDj";
 
-  // Project Git-Links
-  const frontEND =
-    "https://github.com/danielFernandezDj/artistic-echoes-front-end";
-  const backEND =
-    "https://github.com/danielFernandezDj/artistic-echoes-back-end";
-
   const cardData = CardsData().filter(
     (element) => element.id === 1 || element.id === 2
   );
@@ -32,7 +26,6 @@ export default function ArtisticEchoes() {
 
         <section className="flex flex-col gap-4 bg-slate-800 p-4 rounded-2xl">
           <div>
-            <p className="text-sm text-slate-200/80">Description</p>
             <strong className="text-2xl text-gradient">Artistic Echoes</strong>
           </div>
           <p className="w-full md:w-4/6">
@@ -40,28 +33,20 @@ export default function ArtisticEchoes() {
             paints from all over the word for free download.
           </p>
           <img
-            src="./projects-img/artistic-echoes.png"
+            src="./artistic-echoes-img/home-page.png"
             alt="Artistic Echoes web site screenshot."
             className="rounded-xl"
           />
 
           {/* Project Repos */}
-          <section className="flex flex-row gap-4">
+          <section className="flex flex-row gap-4 justify-between items-center">
             <div className="flex flex-col md:flex-row md:gap-4 w-5/6">
-              <strong>Git Repositories :</strong>
               <a
-                href={frontEND}
+                href="https://github.com/danielFernandezDj/artistic-echoes.git"
                 target="_blank"
                 className="text-blue-500 font-normal nav-text-style"
               >
-                git-font-end➚
-              </a>
-              <a
-                href={backEND}
-                target="_blank"
-                className="text-blue-500 font-normal nav-text-style"
-              >
-                git-back-end➚
+                Git Repositories ➚
               </a>
             </div>
 
