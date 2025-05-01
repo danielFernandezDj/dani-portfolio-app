@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectList from "../components/ProjectList";
 import ContactForm from "../components/ContactFrom";
 

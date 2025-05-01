@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from 'react-router-dom';
 import CardsData from "./CardsData";
 
@@ -31,13 +30,13 @@ export default function ProjectList() {
               <div>
                 <div className="flex flex-wrap md:flex-nowrap md:justify-between md:mb-10 py-4">
                   <div className="w-full">
-                    <Link href={card.link} >
+                    <a href={card.link} >
                       <strong
                         className="text-2xl text-slate-200"
                       >
                         {card.title}
                       </strong>
-                    </Link>
+                    </a>
                     <p
                       className="text-slate-400 md:mb-0 mb-2"
                     >
@@ -46,7 +45,7 @@ export default function ProjectList() {
                   </div>
 
                   {/* Display Tech */}
-                  <div className="flex justify-end gap-4">
+                  <div className="flex justify-end gap-2">
                     {card.tech.map((technology, idx) => (
                       <strong
                         key={idx}

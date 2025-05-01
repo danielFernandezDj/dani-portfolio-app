@@ -1,26 +1,24 @@
-import React from "react";
-// https://tlclicensing.com/
 export default function CardsData() {
   return [
+    {
+      id: 1,
+      title: 'Artistic Echoes',
+      description: 'Full-Stack image stock website that offers free Download.',
+      link: '/artistic-echoes',
+      liveLink: 'https://artistic-echoes.vercel.app/',
+      img: './artistic-echoes-img/home-page.png',
+      bgColor: 'bg-slate-800',
+      tech: ['Next.js', 'TypeScript', 'MongoDB']
+    },
     {
       id: 0,
       title: 'TLC LiCensing',
       description: 'Full-Stack Educational Institution at Miami, FL.',
       link: '/tlc-licensing',
-      liveLink: 'https://tlclicensing.com/',
+      liveLink: 'https://tlclicensing.com',
       img: './projects-img/tlc.png',
       bgColor: 'bg-slate-800',
       tech: ['React', 'Redux', 'JavaScript']
-    },
-    {
-      id: 1,
-      title: 'Artistic Echoes',
-      description: 'Image Stock Web application that offers free Download.',
-      link: '/artistic-echoes',
-      liveLink: '#',
-      img: './projects-img/artistic-echoes.png',
-      bgColor: 'bg-slate-800',
-      tech: ['React', 'MongoDB', 'Express']
     },
     {
       id: 2,
@@ -30,7 +28,7 @@ export default function CardsData() {
       liveLink: '#',
       img: '/projects-img/shield-ai.png',
       bgColor: 'bg-slate-800',
-      tech: ['NextJS', 'TypeScript', 'ClaudeAi']
+      tech: ['NextJS', 'TypeScript', 'Gemini']
     },
   ]
 }
