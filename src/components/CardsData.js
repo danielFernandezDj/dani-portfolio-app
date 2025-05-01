@@ -1,7 +1,7 @@
 export default function CardsData() {
   return [
     {
-      id: 1,
+      id: 0,
       title: 'Artistic Echoes',
       description: 'Full-Stack image stock website that offers free Download.',
       link: '/artistic-echoes',
@@ -11,11 +11,11 @@ export default function CardsData() {
       tech: ['Next.js', 'TypeScript', 'MongoDB']
     },
     {
-      id: 0,
+      id: 1,
       title: 'TLC LiCensing',
       description: 'Full-Stack Educational Institution at Miami, FL.',
       link: '/tlc-licensing',
-      liveLink: 'https://tlclicensing.com',
+      liveLink: 'https://tlclicensing.com/',
       img: './projects-img/tlc.png',
       bgColor: 'bg-slate-800',
       tech: ['React', 'Redux', 'JavaScript']

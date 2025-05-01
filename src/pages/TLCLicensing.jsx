@@ -9,7 +9,7 @@ import { FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 
 export default function TLCLicensing() {
-    const cardData = CardsData().filter((element) => element.id === 1 || element.id === 2)
+    const cardData = CardsData().filter((element) => element.id === 0 || element.id === 2)
 
     const bottomColor = {
         primary: '#E2E065',
@@ -21,8 +21,8 @@ export default function TLCLicensing() {
 
     return (
         <>
-            <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-80">
-                <section className="flex flex-col items-center gap-4 mt-4 pt-4 rounded-t-xl text-slate-800
+            <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-20">
+                <section className="flex flex-col items-center gap-8 mt-4 pt-4 rounded-t-xl text-slate-800
                     bg-gradient-to-b from-[#E2E065] to-slate-50"
                 >
                     <strong className="text-5xl">
@@ -41,7 +41,7 @@ export default function TLCLicensing() {
                         <a
                             href={cardData[0].liveLink}
                             target="_blank"
-                            className="w-5/6 md:w-2/6 m-auto p-4 text-xl text-center font-semibold rounded-md"
+                            className="w-5/6 md:w-2/6 m-auto p-4 text-xl text-center font-semibold rounded-md hover:bg-slate-500"
                             style={{ backgroundColor: bottomColor.primary }}
                         >
                             Live Web Site➚
@@ -127,16 +127,6 @@ export default function TLCLicensing() {
                                 src="/tlc-images/chopping-cart.png"
                                 alt="TLC Licensing Shopping-Cart page screenshot."
                                 className="rounded-xl my-2 shadow-sm"
-                            />
-                        </div>
-                        <div>
-                            <strong>
-                                Non Exams page:
-                            </strong>
-                            <img
-                                src="/tlc-images/non-exams.png"
-                                alt="TLC Licensing Non-Exams page screenshot."
-                                className="rounded-xl mt-2 shadow-sm"
                             />
                         </div>
                     </div>

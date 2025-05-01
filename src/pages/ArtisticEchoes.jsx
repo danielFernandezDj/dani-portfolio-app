@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactFrom";
 import CardsData from "../components/CardsData";
@@ -15,7 +14,7 @@ export default function ArtisticEchoes() {
     const frontEND = "https://github.com/danielFernandezDj/artistic-echoes-front-end"
     const backEND = "https://github.com/danielFernandezDj/artistic-echoes-back-end"
 
-    const cardData = CardsData().filter((element) => element.id === 0 || element.id === 2)
+    const cardData = CardsData().filter((element) => element.id === 1 || element.id === 2)
 
     return (
         <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-28 text-slate-200">
