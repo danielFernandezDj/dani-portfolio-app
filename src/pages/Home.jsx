@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex flex-col gap-16 m-auto md:max-w-3xl">
+      <main className="flex flex-col gap-16 m-auto md:max-w-3xl tracking-wide">
         {/* ----------------------------- HERO ----------------------------- */}
         <section className="flex sm:flex-row flex-col-reverse items-center sm:mt-8 p-4 overflow-hidden max-w-full gap-2">
           <div className="flex flex-col size-4/5">
@@ -60,8 +60,8 @@ export default function Home() {
 
         {/* ----------------------------- About Me & Skills ----------------------------- */}
         <section className="m-4">
-          <div className="flex gap-4 flex-wrap mb-20 md:p-8 p-4 max-w-full justify-start rounded-xl bg-slate-100 text-slate-800   ">
-            <strong className="flex justify-start text-3xl tracking-wider text-slate-800">
+          <div className="flex gap-4 flex-wrap mb-20 md:p-8 p-4 max-w-full justify-start rounded-xl bg-slate-800 text-slate-200   ">
+            <strong className="flex justify-start text-3xl tracking-wider text-gradient">
               About Me
             </strong>
             <p className="tracking-wider indent-4 max-w-full">
