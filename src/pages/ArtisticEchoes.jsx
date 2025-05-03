@@ -32,11 +32,13 @@ export default function ArtisticEchoes() {
             </span>
           </p>
         </div>
-        <img
-          src="./artistic-echoes-img/home-page.png"
-          alt="Artistic-Echoes home page Screenshot."
-          className="m-auto px-2 md:px-8"
-        />
+        <div className="m-auto px-2 md:px-8 ">
+          <img
+            src="./artistic-echoes-img/home-page.png"
+            alt="Artistic-Echoes home page Screenshot."
+            className="border-2 rounded-lg"
+          />
+        </div>
         <p className="text-center px-4 md:w-10/12 text-balance hidden md:inline-block">
           The app serves as a minimalist visual archive that pays homage to the
           timeless beauty of art, while also offering a fast and responsive user
