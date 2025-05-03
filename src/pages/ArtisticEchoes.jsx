@@ -165,13 +165,16 @@ export default function ArtisticEchoes() {
       {/* Technologies Used */}
       <section className="flex flex-col gap-4 md:w-4/6 m-auto text-slate-800 ">
         <strong className="text-3xl">🛠️ Technologies Used</strong>
-        <strong>
-          Every project has its ups and downs — here are the main challenges I
-          ran into:
-        </strong>
-        <p>
-          <strong>Framework:</strong> <span className="text-blue-500 font-semibold">Next.js</span>
-        </p>
+        <div>
+          <span className="text-slate-500">
+            Every project has its ups and downs — here are the main challenges I
+            ran into:
+          </span>
+          <p>
+            <span className="">Framework: </span>
+            <span className="text-blue-500 ">Next.js</span>
+          </p>
+        </div>
         <div>
           <table className="table-auto border-collapse border border-gray-400 w-full text-left">
             <thead>
@@ -208,42 +211,31 @@ export default function ArtisticEchoes() {
         </div>
       </section>
 
+      {/* Why It Matters */}
       <section
         className="flex flex-col gap-4 md:w-4/6 m-auto text-slate-800 md:p-8 px-4 py-8 rounded-2xl
-                    bg-gradient-to-b from-slate-50 to-[#E2E065]"
+                    bg-gradient-to-b from-slate-50 to-slate-200"
       >
-        <strong
-          className="text-3xl text-center"
-          style={{ color: textColor.colorXL }}
-        >
-          Lessons Learned
-        </strong>
-        <ol className="flex flex-col gap-4 list-decimal list-inside">
-          <li>
-            I could spend hours describing the invaluable lessons learned while
-            working on this project. The most significant insights came from my
-            deep dive into React Hooks, Git management, Feature Keys, and API
-            integration. As my first large-scale React project, it became a
-            transformative learning experience that reshaped my approach to
-            software development.
-          </li>
-          <li>
-            Initially, I was prone to writing hasty, unstructured code and
-            quickly moving on. However, this project taught me a critical
-            lesson: poor code organization can create significant challenges
-            down the line. Now, I invest substantial time in refactoring and
-            meticulously improving every line of code I write. My focus has
-            shifted to ensuring maximum readability and maintainability, which
-            ultimately prevents future headaches and creates more robust,
-            elegant solutions.
-          </li>
-          <li>
-            This project was more than just a technical challenge—it was a
-            personal growth journey that fundamentally changed how I approach
-            software development, emphasizing the importance of clean,
-            thoughtful code and strategic project management.
-          </li>
-        </ol>
+        <strong className="text-3xl text-center">🖼️ Why It Matters</strong>
+        <p>
+          Artistic Echoes isn’t just a tech demo — it’s a representation of how
+          code can be used to{" "}
+          <span className="font-semibold">
+            connect people with creativity and culture.
+          </span>{" "}
+          <img
+            src="public/wallpaper.jpg"
+            alt="Wallpaper Image"
+            className="md:hidden my-4"
+          />
+          This project blends my passion for visual design and coding, and shows
+          my ability to bring real-world data into usable digital experiences.
+        </p>
+        <img
+          src="public/wallpaper.jpg"
+          alt="Wallpaper Image"
+          className="hidden md:block"
+        />
       </section>
 
       {/* Project Repos */}
