@@ -127,7 +127,7 @@ export default function TLCLicensing() {
 
           <div className="flex flex-col my-4 gap-8 justify-center">
             <div>
-              <strong>Shopping Cart:</strong>
+              <strong>Shopping Cart: </strong>
               <img
                 src="/tlc-images/chopping-cart.png"
                 alt="TLC Licensing Shopping-Cart page screenshot."

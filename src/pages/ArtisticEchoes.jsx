@@ -1,41 +1,37 @@
 import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactFrom";
 import CardsData from "../components/CardsData";
-
-import { FaLinkedin } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 
 export default function ArtisticEchoes() {
-  // Personal Account
-  const linkedinLink =
-    "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile";
-  const githubLink = "https://github.com/danielFernandezDj";
-
   const cardData = CardsData().filter(
     (element) => element.id === 1 || element.id === 2
   );
 
   const btnColor = "#d2592a";
   const btnColorHover = "hover:bg-[#0f1113]";
-  const textColor = {
-    colorXL: "#8DB402",
-  };
 
   return (
     <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-20 tracking-wide">
       <section
-        className="flex flex-col items-center gap-8 mt-4 pt-8 rounded-t-2xl text-slate-800
-                    bg-gradient-to-b bg-slate-100 to-slate-50"
+        className="flex flex-col items-center gap-8 mt-4 pt-8 rounded-2xl text-slate-800
+                    bg-gradient-to-b bg-white to-slate-50"
       >
-        <strong className="text-5xl">🎨 Artistic Echoes</strong>
-        <p className="text-center px-4 md:w-10/12 text-balance">
-          Artistic Echoes is a web application designed to explore and celebrate
-          art from The Metropolitan Museum of Art’s open-access collection.
-          <span className="hidden md:inline-block">
-            Users can browse artwork from different time periods, styles, and
-            artists — all pulled dynamically through the museum’s public API.
-          </span>
-        </p>
+        <div className="flex flex-col gap-4">
+          <div className="text-center">
+            <strong className="text-4xl md:text-5xl">🎨 Artistic Echoes</strong>
+            <p className="text-black/50">By Daniel Fernandez</p>
+          </div>
+          <p className="text-center px-4 md:w-11/12 text-balance">
+            Artistic Echoes is a web application designed to explore and
+            celebrate art from The Metropolitan Museum of Art’s open-access
+            collection.
+            <span className="hidden md:inline-block">
+              Users can browse artwork from different time periods, styles, and
+              artists — all pulled dynamically through the museum’s public API.
+            </span>
+          </p>
+        </div>
         <img
           src="./artistic-echoes-img/home-page.png"
           alt="Artistic-Echoes home page Screenshot."
@@ -47,16 +43,24 @@ export default function ArtisticEchoes() {
           experience. It was built as a portfolio project to showcase skills in
           modern web development, API integration, and user-focused design.
         </p>
-        {cardData.length > 0 && (
+        <div className="flex flex-col w-full m-auto gap-6 items-center">
+          {cardData.length > 0 && (
+            <a
+              href={cardData[0].liveLink}
+              target="_blank"
+              className={`w-5/6 md:w-2/6 p-4 text-xl text-center font-semibold rounded-md text-white
+                bg-[${btnColor}] ${btnColorHover} transition duration-150`}
+            >
+              Live Web Site➚
+            </a>
+          )}
           <a
-            href={cardData[0].liveLink}
-            target="_blank"
-            className={`w-5/6 md:w-2/6 mb-14 p-4 text-xl text-center font-semibold rounded-md text-white
-                 bg-[${btnColor}] ${btnColorHover} transition duration-150`}
+            href=""
+            className="flex flex-row items-center gap-2 nav-text-style mb-8 "
           >
-            Live Web Site➚
+            <SiGithub /> Repository {"➚"}
           </a>
-        )}
+        </div>
       </section>
 
       <section className="flex flex-col gap-4 md:w-4/6 m-auto text-slate-800 md:p-8 px-4 py-8 bg-white rounded-2xl">
@@ -154,12 +158,28 @@ export default function ArtisticEchoes() {
               <img
                 src="artistic-echoes-img/mobile-view-menu.png"
                 alt="Screen shot of the mobile version of Artistic-Echoes home page."
+                className="hidden md:block"
               />
             </div>
           </ul>
         </div>
+      </section>
 
-        <hr />
+      {/* Direct Contact Section */}
+      <section className="flex flex-col items-center justify-center gap-4 py-10 bg-white rounded-lg text-slate-800">
+        <strong className="text-2xl">📬 Reach Out Directly</strong>
+        <p className="text-center">
+          If you&lsquo;d rather connect without the form, feel free to email me
+          directly:
+        </p>
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=your@email.com&su=Subject&body=Message"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#d2592a] hover:bg-[#0f1113] text-white px-6 py-3 rounded-md text-lg font-semibold"
+        >
+          Email Me
+        </a>
       </section>
 
       {/* Technologies Used */}
@@ -238,26 +258,21 @@ export default function ArtisticEchoes() {
         />
       </section>
 
-      {/* Project Repos */}
-      <section className="flex flex-row gap-4 justify-between items-center">
-        <div className="flex flex-col md:flex-row md:gap-4 w-5/6">
-          <a
-            href="https://github.com/danielFernandezDj/artistic-echoes.git"
-            target="_blank"
-            className="text-blue-500 font-normal nav-text-style"
-          >
-            Git Repositories ➚
-          </a>
-        </div>
-
-        <div className="flex justify-end items-end w-4/6 gap-4">
-          <a href={linkedinLink} target="_blank">
-            <FaLinkedin className="w-10 h-auto fill-slate-200 hover:fill-blue-500 " />
-          </a>
-          <a href={githubLink} target="_blank">
-            <SiGithub className="w-10 h-auto fill-slate-200 hover:fill-yellow-500" />
-          </a>
-        </div>
+      {/* Direct Contact Section */}
+      <section className="flex flex-col items-center justify-center gap-4 py-10 bg-white rounded-lg text-slate-800">
+        <strong className="text-2xl">📬 Reach Out Directly</strong>
+        <p className="text-center">
+          If you&lsquo;d rather connect without the form, feel free to email me
+          directly:
+        </p>
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=your@email.com&su=Subject&body=Message"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#d2592a] hover:bg-[#0f1113] text-white px-6 py-3 rounded-md text-lg font-semibold"
+        >
+          Email Me
+        </a>
       </section>
 
       {/* Other projects */}
@@ -308,7 +323,6 @@ export default function ArtisticEchoes() {
         ))}
       </section>
 
-      {/* Contact Form */}
       <ContactForm />
     </main>
   );

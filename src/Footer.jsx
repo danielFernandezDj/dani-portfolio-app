@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 
 // Icons
 import { FaLinkedin } from "react-icons/fa";
