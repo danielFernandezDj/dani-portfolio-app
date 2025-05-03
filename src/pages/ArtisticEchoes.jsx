@@ -22,13 +22,13 @@ export default function ArtisticEchoes() {
   };
 
   return (
-    <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-20">
+    <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-20 tracking-wide">
       <section
         className="flex flex-col items-center gap-8 mt-4 pt-8 rounded-t-2xl text-slate-800
                     bg-gradient-to-b bg-slate-100 to-slate-50"
       >
-        <strong className="text-5xl">Artistic Echoes</strong>
-        <p className="text-center px-4 md:w-10/12 text-balance tracking-wider">
+        <strong className="text-5xl">🎨 Artistic Echoes</strong>
+        <p className="text-center px-4 md:w-10/12 text-balance">
           Artistic Echoes is a web application designed to explore and celebrate
           art from The Metropolitan Museum of Art’s open-access collection.
           <span className="hidden md:inline-block">
@@ -41,7 +41,7 @@ export default function ArtisticEchoes() {
           alt="Artistic-Echoes home page Screenshot."
           className="m-auto px-2 md:px-8"
         />
-        <p className="text-center px-4 md:w-10/12 text-balance tracking-wider hidden md:inline-block">
+        <p className="text-center px-4 md:w-10/12 text-balance hidden md:inline-block">
           The app serves as a minimalist visual archive that pays homage to the
           timeless beauty of art, while also offering a fast and responsive user
           experience. It was built as a portfolio project to showcase skills in
@@ -52,7 +52,7 @@ export default function ArtisticEchoes() {
             href={cardData[0].liveLink}
             target="_blank"
             className={`w-5/6 md:w-2/6 mb-14 p-4 text-xl text-center font-semibold rounded-md text-white
-                 bg-[${btnColor}] ${btnColorHover} transition duration-150 tracking-wide`}
+                 bg-[${btnColor}] ${btnColorHover} transition duration-150`}
           >
             Live Web Site➚
           </a>
@@ -61,7 +61,7 @@ export default function ArtisticEchoes() {
 
       <section className="flex flex-col gap-4 md:w-4/6 m-auto text-slate-800 md:p-8 px-4 py-8 bg-white rounded-2xl">
         <div className="my-2">
-          <strong className="text-3xl mb-2">What I Learned</strong>
+          <strong className="text-3xl mb-2">💡 What I Learned</strong>
         </div>
         <div className="flex flex-col gap-4">
           <ul className="list-disc">
@@ -92,7 +92,7 @@ export default function ArtisticEchoes() {
             </li>
           </ul>
 
-          <ul className="list-disc space-y-2 ">
+          <ul className="list-disc space-y-2">
             <strong>I also deepened my understanding of:</strong>
             <div className="bg-slate-50 p-3 rounded-md shadow-sm">
               <li className="flex items-start gap-2">
@@ -112,32 +112,99 @@ export default function ArtisticEchoes() {
         </div>
       </section>
 
+      {/* Challenges Faced */}
       <section className="flex flex-col gap-4 md:w-4/6 m-auto text-slate-800">
-        <strong className="text-3xl">Web Stack and Explanation</strong>
-        <p>
-          React was the optimal choice for our web application due to its
-          flexibility and seamless back-end integration, ensuring a smooth and
-          efficient working environment. Its component-based architecture allows
-          for dynamic and responsive user interfaces that can easily communicate
-          with server-side resources.
-        </p>
-        <p>
-          For the complexity of transactions and account management, we utilized
-          React Hooks with Redux to centralize and organize all cart items and
-          user tasks in a single, cohesive state management system. This
-          approach provides a robust and predictable way to handle complex
-          application logic, enabling efficient data flow and user experience.
-        </p>
+        <strong className="text-3xl">🧠 Challenges Faced</strong>
+        <div>
+          <strong>
+            Every project has its ups and downs — here are the main challenges I
+            ran into:
+          </strong>
+          <ul className="list-disc space-y-2">
+            <li className="flex items-start gap-2 bg-white p-3 rounded-md shadow-sm my-2">
+              <span className="text-[#8DB402] mt-1">✓</span>
+              API Limitations: The Met’s API doesn’t always provide consistent
+              data (e.g. some entries have missing images or unclear titles), so
+              I had to implement graceful fallbacks and dynamic placeholders.
+            </li>
+            <li className="flex items-start gap-2 bg-white p-3 rounded-md shadow-sm my-2">
+              <span className="text-[#8DB402] mt-1">✓</span>
+              Design Consistency: Balancing creativity with usability was
+              tricky. I wanted the site to feel like an “art gallery,” but it
+              also needed to be usable and intuitive.
+            </li>
+            <li className="flex items-start gap-2 bg-white p-3 rounded-md shadow-sm my-2">
+              <span className="text-[#8DB402] mt-1">✓</span>
+              Mobile Responsiveness: Ensuring the art display grid looked great
+              on all devices — from phones to desktops — required custom styling
+              and lots of testing.
+            </li>
+            <li className="flex items-start gap-2 bg-white p-3 rounded-md shadow-sm my-2">
+              <span className="text-[#8DB402] mt-1">✓</span>
+              Deployment & Hosting: Integrating environment variables and making
+              sure everything worked correctly on Vercel took some
+              experimentation, especially when handling API keys securely.
+            </li>
 
-        <div className="flex flex-col my-4 gap-8 justify-center">
-          <div>
-            <strong>Shopping Cart:</strong>
-            <img
-              src="/tlc-images/chopping-cart.png"
-              alt="TLC Licensing Shopping-Cart page screenshot."
-              className="rounded-xl my-2 shadow-sm"
-            />
-          </div>
+            <div className="flex flex-col md:flex-row gap-4 py-4">
+              <img
+                src="artistic-echoes-img/mobile-home-page.png"
+                alt="Screen shot of the mobile version of Artistic-Echoes home page."
+              />
+              <img
+                src="artistic-echoes-img/mobile-view-menu.png"
+                alt="Screen shot of the mobile version of Artistic-Echoes home page."
+              />
+            </div>
+          </ul>
+        </div>
+
+        <hr />
+      </section>
+
+      {/* Technologies Used */}
+      <section className="flex flex-col gap-4 md:w-4/6 m-auto text-slate-800 ">
+        <strong className="text-3xl">🛠️ Technologies Used</strong>
+        <strong>
+          Every project has its ups and downs — here are the main challenges I
+          ran into:
+        </strong>
+        <p>
+          <strong>Framework:</strong> <span className="text-blue-500 font-semibold">Next.js</span>
+        </p>
+        <div>
+          <table className="table-auto border-collapse border border-gray-400 w-full text-left">
+            <thead>
+              <tr>
+                <th className="border border-gray-300 px-4 py-2 font-bold">
+                  Libraries
+                </th>
+                <th className="border border-gray-300 px-4 py-2 font-bold">
+                  Development Tools
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  Lucide React
+                </td>
+                <td className="border border-gray-300 px-4 py-2">Prisma</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Axios</td>
+                <td className="border border-gray-300 px-4 py-2">Jest</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Radix Ui</td>
+                <td className="border border-gray-300 px-4 py-2">Tailwind</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">NextAuth</td>
+                <td className="border border-gray-300 px-4 py-2">TypeScript</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
