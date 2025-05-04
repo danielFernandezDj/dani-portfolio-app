@@ -42,7 +42,7 @@ export default function ContactForm() {
                 type="text"
                 id="name"
                 name="user_name"
-                className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-300"
+                className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-200"
                 placeholder="Enter your name"
                 required
               />
@@ -55,7 +55,7 @@ export default function ContactForm() {
                 type="text"
                 id="phone"
                 name="user_phone"
-                className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-300"
+                className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-200"
                 placeholder="Enter your Phone"
                 required
               />
@@ -70,7 +70,7 @@ export default function ContactForm() {
               type="email"
               id="email"
               name="user_email"
-              className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-300"
+              className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-200"
               placeholder="Enter your email"
               required
             />
@@ -83,7 +83,7 @@ export default function ContactForm() {
             <textarea
               id="message"
               name="message"
-              className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-300"
+              className="w-full p-3 text-slate-200 border rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-200"
               placeholder="Enter your message"
               rows="4"
               required
