@@ -1,25 +1,22 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import CardsData from "./CardsData";
 
 export default function ProjectList() {
-  const cardsData = CardsData()
+  const cardsData = CardsData();
   return (
     <>
-      <main id="projects" className="flex flex-col m-4 p-4 bg-slate-900 rounded-xl">
-
-        <div className="text-center mb-4 mt-8">
-          <strong className="text-3xl text-gradient">
-            What I’ve been working on
-          </strong>
+      <main id="projects" className="flex flex-col bg-slate-900 rounded-xl">
+        <div className="text-center my-8">
+          <strong className="text-3xl text-gradient">Featured Projects</strong>
           <p className="text-slate-200/80">
-            Take a look at some of the applications and
-            companies I’ve dedicated my time to.
+            Take a look at some of the applications and companies I’ve dedicated
+            my time to.
           </p>
         </div>
 
-        <section className="flex flex-col items-center m-auto rounded-2xl bg-slate-900">
+        <section className="flex flex-col items-center p-4 m-auto rounded-2xl space-y-6 bg-slate-900">
           {cardsData.map((card, index) => (
-            <div key={index} className="p-4 md:w-5/6">
+            <div key={index} className="md:w-5/6">
               <Link to={card.link}>
                 <img
                   src={card.img}
@@ -28,18 +25,14 @@ export default function ProjectList() {
                 />
               </Link>
               <div>
-                <div className="flex flex-wrap md:flex-nowrap md:justify-between md:mb-10 py-4">
+                <div className="flex flex-wrap md:flex-nowrap md:justify-between mt-4 mb-10">
                   <div className="w-full">
-                    <a href={card.link} >
-                      <strong
-                        className="text-2xl text-slate-200"
-                      >
+                    <a href={card.link}>
+                      <strong className="text-2xl text-slate-200">
                         {card.title}
                       </strong>
                     </a>
-                    <p
-                      className="text-slate-400 md:mb-0 mb-2"
-                    >
+                    <p className="text-slate-400 md:mb-0 mb-2">
                       {card.description}
                     </p>
                   </div>
@@ -62,5 +55,5 @@ export default function ProjectList() {
         </section>
       </main>
     </>
-  )
+  );
 }

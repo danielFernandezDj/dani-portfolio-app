@@ -72,13 +72,13 @@ export default function Home() {
             </div>
           </section>
 
-          {/* ----------------------------- About Me & Skills ----------------------------- */}
+          {/* ----------------------------- About Me ----------------------------- */}
           <section>
             <div className="flex gap-4 flex-wrap md:p-8 p-4 max-w-full justify-start rounded-xl bg-slate-900 text-slate-200">
               <strong className="flex justify-start text-3xl tracking-wider text-gradient">
                 About Me
               </strong>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-col md:flex-row items-center gap-2">
                 <div className="space-y-2 text-lg text-slate-200">
                   <p>
                     Hi, I’m{" "}
@@ -95,7 +95,7 @@ export default function Home() {
                 <img
                   src="my-photo.jpg"
                   alt="Photo of Daniel Fernandez, creator of this website."
-                  className="w-full md:h-48 my-4 object-cover border-2 border-slate-700 rounded-full"
+                  className="w-full md:h-48 my-4 object-cover border-2 border-slate-700 rounded-full hidden md:block"
                 />
               </div>
               <Link to="/tlc-licensing">
