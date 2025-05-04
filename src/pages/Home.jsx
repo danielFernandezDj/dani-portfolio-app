@@ -1,15 +1,11 @@
 import ProjectList from "../components/ProjectList";
 import ContactForm from "../components/ContactFrom";
 
-import { FaRegArrowAltCircleRight, FaLinkedin } from "react-icons/fa";
-import { SiGithub } from "react-icons/si";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
-  const linkedinLink =
-    "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile";
-  const githubLink = "https://github.com/danielFernandezDj";
-
   const scrollToContactSection = (elementId) => {
     const element = document.getElementById(elementId);
     element?.scrollIntoView({
@@ -23,38 +19,55 @@ export default function Home() {
     <>
       <main className="flex flex-col gap-16 m-auto md:max-w-3xl tracking-wide">
         {/* ----------------------------- HERO ----------------------------- */}
-        <section className="flex sm:flex-row flex-col-reverse items-center sm:mt-8 p-4 overflow-hidden max-w-full gap-2">
-          <div className="flex flex-col size-4/5">
-            <img
-              className="rounded-xl size-fit h-auto"
-              src="./mePhoto.jpeg"
-              alt="Me in my Motorcycle"
-            />
-            <div className="mt-2 flex gap-2 justify-between content-center">
-              <button
-                onClick={() => scrollToContactSection("contact")}
-                className="flex gap-2 flex-row justify-center items-center w-full btn-hover-animation"
-              >
-                Let&lsquo;s Talk <FaRegArrowAltCircleRight className="size-4" />
-              </button>
+        <section className="flex flex-col text-center my-10 md:my-28 gap-4 w-11/12 m-auto">
+          <strong className="text-4xl md:text-6xl">
+            Turning creative ideas into clean,{" "}
+            <span className="text-gradient">modern</span> apps!
+          </strong>
 
-              <div className="flex gap-2">
-                <a href={linkedinLink} target="_blank">
-                  <FaLinkedin className="w-12 h-auto fill-blue-900 hover:fill-blue-500 " />
-                </a>
-                <a href={githubLink} target="_blank">
-                  <SiGithub className="w-12 h-auto fill-blue-900 hover:fill-blue-500" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col md:w-[54rem] text-center sm:text-left">
-            <strong className="text-7xl md:text-8xl text-gradient">
-              Hi there, I&lsquo;m Daniel
-            </strong>
-            <p className="text-2xl sm:text-5xl font-bold text-gradient">
-              Full Stack Developer & Enthusiast!
-            </p>
+          <p className="md:text-xl w-5/6 m-auto">
+            From{" "}
+            <span className="text-gradient font-semibold">
+              React components
+            </span>{" "}
+            to full-stack{" "}
+            <span className="text-gradient font-semibold">Next.js apps</span> —
+            I build responsive, accessible web experiences with{" "}
+            <span className="text-gradient font-semibold">TypeScript.</span>
+          </p>
+
+          <button
+            onClick={() => scrollToContactSection("contact")}
+            className="flex gap-2 flex-row justify-center items-center p-3 w-4/6 md:w-2/6 m-auto btn-hover-animation"
+          >
+            Let&lsquo;s Talk <FaRegArrowAltCircleRight className="size-4" />
+          </button>
+        </section>
+
+        {/* ----------------------------- Projects Card ----------------------------- */}
+        <section className="px-4 py-12 bg-slate-900 text-white">
+          <h2 className="text-3xl font-bold mb-8 text-gradient">
+            Featured Projects
+          </h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            <ProjectCard
+              title="Artistic Echoes"
+              image="/artistic-thumb.jpg"
+              link="/artistic-echoes"
+              description="Digital art gallery powered by The Met’s open API."
+            />
+            <ProjectCard
+              title="TLC Licensing"
+              image="/tlc-thumb.jpg"
+              link="/tlc-licensing"
+              description="Compliance app for TLC drivers, built during my internship."
+            />
+            <ProjectCard
+              title="(Your 3rd Project)"
+              image="/your-project.jpg"
+              link="/your-project-link"
+              description="Short one-liner to summarize what it does."
+            />
           </div>
         </section>
 
@@ -65,8 +78,8 @@ export default function Home() {
               About Me
             </strong>
             <p className="tracking-wider indent-4 max-w-full">
-              I&lsquo;m a 27-year-old graduate student at the University of Nevada,
-              Las Vegas (UNLV), where my journey in Full Stack Software
+              I&lsquo;m a 27-year-old graduate student at the University of
+              Nevada, Las Vegas (UNLV), where my journey in Full Stack Software
               Engineering has become more than just a career path—it&lsquo;s a
               personal mission to create meaningful digital experiences.
               Specializing in technologies like React, Express, and JavaScript,
