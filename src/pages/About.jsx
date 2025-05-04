@@ -75,7 +75,7 @@ export default function About() {
         </div>
 
         {/* My Journey */}
-        <div className="m-4 p-4 md:p-8 md:w-full bg-white rounded-lg">
+        <div className="m-4 p-4 md:w-full bg-white rounded-lg">
           <strong className="text-2xl">🌎 My Journey</strong>
           <div className="flex flex-col gap-2 mt-4">
             <p>
