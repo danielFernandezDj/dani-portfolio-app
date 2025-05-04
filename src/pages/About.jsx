@@ -1,149 +1,170 @@
-import React from "react";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import ProjectList from "../components/ProjectList";
 import ContactForm from "../components/ContactFrom";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
-
+import CardsData from "../components/CardsData";
 
 export default function About() {
-    const scrollToContactSection = (elementId) => {
-        const element = document.getElementById(elementId);
-        element?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
-    };
+  const cardsData = CardsData();
+  const card0 = cardsData[0];
+  const card1 = cardsData[1];
+  const scrollToContactSection = (elementId) => {
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "nearest",
+    });
+  };
 
-    return (
-        <>
-            <main className="flex flex-col items-center gap-24 max-w-sm mx-auto sm:max-w-3xl">
-                {/* hero */}
-                <div className="flex flex-col items-center gap-2 p-4 mt-4 text-slate-800">
-                    <div className="flex flex-col text-gradient text-center">
-                        <strong className="mb-6 text-start md:text-center text-5xl">
-                            Hi there, I’m Daniel Fernandez
-                        </strong>
-                    </div>
-                    <div className="w-full md:w-[70%] text-slate-800">
-                        <img
-                            src="/mePhoto.jpeg"
-                            alt="My Selfie"
-                            className="rounded-xl w-3/6 md:w-2/6 float-right"
-                        />
-                        <div>
-                            <p>
-                                A exited Software Engineer ready to build relieve software, and learn new technology.
-                                With a expertise in React, JavaScript, MongoDB, NodeJS & Express.
-                            </p>
-                            <button
-                                onClick={() => scrollToContactSection('contact')}
-                                className="flex gap-2 p-3 my-4 justify-center items-center btn-hover-animation"
-                            >
-                                Let's Talk <FaRegArrowAltCircleRight className="size-4" />
-                            </button>
-                        </div>
-                    </div>
-                </div>
+  <button
+    onClick={() => scrollToContactSection("contact")}
+    className="flex gap-2 p-3 my-4 justify-center items-center btn-hover-animation"
+  >
+    Let&lsquo;s Talk <FaRegArrowAltCircleRight className="size-4" />
+  </button>;
 
-                {/* Long Time ago */}
-                <div className="m-4 p-4 md:py-8 md:px-24 md:w-5/6 bg-slate-800 text-slate-200 rounded-lg">
-                    <strong className="text-2xl">
-                        Long time ago!
-                    </strong>
-                    <div className="mt-4">
-                        <img
-                            src="/projects-img/old-pc.png"
-                            alt="Hold computer image from Unsplash"
-                            className="ml-4 md:ml-2 w-40 md:w-56 rounded-md float-right"
-                        />
-                        <p>
-                            I have been surrounded by technology almost my entire life, starting with those old computers
-                            running Windows XP where you had to type commands to start them up—those PCs that made those distinctive, quirky startup noises.
-                        </p>
-                        <p>
-                            Technology has changed dramatically since those days, evolving to a point where AI now shows reasoning
-                            similar to human intelligence.
-                        </p>
-                    </div>
-                </div>
+  return (
+    <>
+      <main className="flex flex-col items-center gap-32 max-w-sm mx-auto sm:max-w-3xl tracking-widest">
+        {/* hero */}
+        <div className="flex flex-col-reverse md:flex-row gap-6 p-4 mt-4 bg-slate-100 rounded-lg">
+          {/* Image */}
+          <div>
+            <img
+              src="/my-photo.jpg"
+              alt="A picture of Daniel Fernandez."
+              className="md:w-full md:h-full rounded-md h-52 w-96 object-cover"
+            />
+          </div>
 
+          {/* Text */}
+          <div className="flex flex-col gap-3 p-4 md:w-full">
+            <strong className="text-3xl mb-2">👨‍💻 About Me</strong>
+            <p>
+              Hi, I’m <span className="font-semibold">Daniel Fernandez</span>, a
+              passionate full-stack software developer and creative
+              problem-solver.
+            </p>
+            <p>
+              I specialize in building fast, responsive, and accessible web
+              applications using Next.js, React, Node.js, and modern development
+              tools like TypeScript and Tailwind CSS.
+            </p>
+            <p>
+              But more than just code, I love bringing ideas to life — whether
+              it&lsquo;s a digital art gallery like{" "}
+              <a
+                href={card0.link}
+                target="_blank"
+                className="font-semibold text-blue-500"
+              >
+                Artistic Echoes
+              </a>{" "}
+              or streamlining licensing processes like{" "}
+              <a
+                href={card1.link}
+                target="_blank"
+                className="font-semibold text-blue-500"
+              >
+                TLC Licensing
+              </a>
+              . Every project is a chance to learn, grow, and build something
+              that makes someone&lsquo;s day easier or more inspiring.
+            </p>
+          </div>
+        </div>
 
-                {/* How Passion Began */}
-                <div className="flex flex-col items-center gap-2 p-4 md:p-24 text-slate-800">
-                    <strong className="text-2xl mb-4">
-                        How Passion Began
-                    </strong>
-                    <p>
-                        My journey before becoming a Full Stack developer was filled with different technological experiences
-                        that prepared me for my current path. My first application was a video game created in Constructor 2,
-                        which later moved to Unity Engine. It was here that I first learned to code in C#, a language I found fascinating.
-                    </p>
-                    <div className="grid grid-cols-2 gap-2">
-                        <div className="row-span-2">
-                            <img
-                                src="/about-img/pixel-1.jpg"
-                                alt="Hold computer image from Unsplash"
-                                className="w-auto h-full object-cover rounded-md rounded-tl-2xl rounded-bl-2xl"
-                            />
-                        </div>
-                        <div className="row-span-1">
-                            <img
-                                src="/about-img/pixel-2.jpg"
-                                alt="Hold computer image from Unsplash"
-                                className="w-48 md:w-80 rounded-md rounded-tr-2xl"
-                            />
-                        </div>
-                        <div className="row-span-1">
-                            <img
-                                src="/about-img/pixel-3.jpg"
-                                alt="Hold computer image from Unsplash"
-                                className="w-48 md:w-80 rounded-md rounded-br-2xl"
-                            />
-                        </div>
-                    </div>
-                    <p>
-                        I continued creating small projects that grew my passion for programming. The potential of the Internet,
-                        along with JS, HTML, and CSS, sparked my desire to become a professional programmer.
-                    </p>
-                </div>
+        {/* My Journey */}
+        <div className="m-4 p-4 md:p-8 md:w-full bg-white rounded-lg">
+          <strong className="text-2xl">🌎 My Journey</strong>
+          <div className="flex flex-col gap-2 mt-4">
+            <p>
+              My path into software wasn’t traditional — and I’m proud of that.{" "}
+              <br />
+              From managing responsibilities in different industries to{" "}
+              <span className="font-semibold">
+                collaborating remotely with engineers
+              </span>{" "}
+              on real-world applications, I&lsquo;ve developed a unique mix of
+              discipline, creativity, and problem-solving grit.
+            </p>
+            <div className="">
+              <img
+                src="projects-img/tlc.png"
+                alt="TLC Screenshot"
+                className="w-full md:h-48 my-4 h-32 object-cover"
+              />
+            </div>
+            <p>
+              During my internship, I worked with engineers in Florida to
+              develop software used by actual clients. That experience taught me
+              how to <span className="font-semibold">contribute to a team</span>
+              , deliver under pressure, and always keep the{" "}
+              <span className="font-semibold">user experience in focus.</span>
+            </p>
+          </div>
+        </div>
 
-                {/* Professional Growth */}
-                <div className="flex flex-col gap-2 m-4 p-4 md:p-8 md:w-5/6 bg-slate-800 text-slate-200 rounded-lg">
-                    <strong className="text-2xl mb-4 text-center">
-                        Professional Growth
-                    </strong>
-                    <p>
-                        During my university internship, I worked with a team of developers on the TLC Licensing application—an educational
-                        tool designed to help engineers and contractors in Florida. Working with Senior programmers, each with over 10 years
-                        of experience, was eye-opening. Together, we created an application that combined Database with Fire-Base,
-                        Front-End with React, and Back-End with Python. It was a challenge we successfully completed.
-                    </p>
-                    <img
-                        src="/projects-img/tlc.png"
-                        alt="TLC Licensing Screenshot."
-                        className="rounded-lg"
-                    />
-                    <p>
-                        This journey led me to enroll at the University of Nevada, Las Vegas (UNLV), where I graduated as a Full Stack Developer.
-                        I've learned technologies including React, JavaScript, Express, Node.js, TypeScript, MongoDB, and other key skills that
-                        make modern web development possible.
-                    </p>
-                </div>
+        {/* What I Bring */}
+        <div className="flex flex-col items-center gap-2 p-4 text-slate-800">
+          <strong className="text-2xl mb-4">🛠️ What I Bring</strong>
+          <ul className="list-disc space-y-3">
+            <li className="flex items-start gap-2 bg-slate-100 p-3 rounded-md shadow-sm my-2">
+              <span className="text-[#8DB402] mt-1">✓</span>• Clear
+              communication — with developers, designers, or non-technical
+              clients
+            </li>
+            <li className="flex items-start gap-2 bg-slate-100 p-3 rounded-md shadow-sm my-2">
+              <span className="text-[#8DB402] mt-1">✓</span>• Clean,
+              maintainable code — following industry standards
+            </li>
+            <li className="flex items-start gap-2 bg-slate-100 p-3 rounded-md shadow-sm my-2">
+              <span className="text-[#8DB402] mt-1">✓</span> • Creative UI
+              thinking — always blending functionality with aesthetics
+            </li>
+            <li className="flex items-start gap-2 bg-slate-100 p-3 rounded-md shadow-sm my-2">
+              <span className="text-[#8DB402] mt-1">✓</span> • Fast learning &
+              adaptability — especially in new stacks or problem spaces
+            </li>
+          </ul>
+        </div>
 
-                {/* Let's Create Something Together */}
-                <div className="flex flex-col gap-2 p-1 md:p-8 m-2 text-slate-800 bg-gradient rounded-xl">
-                    <div className="p-4 bg-white rounded-xl">
-                        <strong className="text-2xl text-gradient mb-4">
-                            Let's Create Something Amazing Together
-                        </strong>
-                        <p>
-                            I'm more than just a developer—I'm a problem solver, a creative thinker, and a passionate creator who believes in
-                            turning complex challenges into elegant solutions. If you're looking to bring your digital ideas to life, transform your
-                            vision into reality, or simply want to explore the possibilities of technology, I'm ready to listen, collaborate,
-                            and help you make your dreams code true. Let's connect and create something extraordinary!
-                        </p>
-                    </div>
-                </div>
+        {/* Looking Ahead */}
+        <div className="flex flex-col text-center text-balance gap-2 p-4 mx-4 md:p-8 md:w-full bg-slate-800 text-slate-200 rounded-lg">
+          <strong className="text-2xl mb-4 text-center">
+            🚀 Looking Ahead
+          </strong>
+          <p>
+            Right now, I&lsquo;m building up a portfolio of real, functional
+            apps — each one rooted in curiosity, purpose, and practical value.
+            I&lsquo;m open to opportunities in{" "}
+            <span className="text-[#ec6c3a] font-semibold">
+              front-end, full-stack, or product-focused teams
+            </span>{" "}
+            where I can keep growing and help bring meaningful ideas to life.
+          </p>
+        </div>
 
-                <ProjectList />
-                <ContactForm />
-            </main>
-        </>
-    )
+        {/* Direct Contact Section */}
+        <section className="flex flex-col items-center justify-center gap-4 w-full text-slate-800">
+          <strong className="text-2xl">📬 Reach Out Directly</strong>
+          <p className="text-center">
+            If you&lsquo;d rather connect without the form, feel free to email
+            me directly:
+          </p>
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=your@email.com&su=Subject&body=Message"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#d2592a] hover:bg-[#0f1113] text-white px-6 py-3 rounded-md text-lg font-semibold"
+          >
+            Email Me
+          </a>
+        </section>
+
+        <ProjectList />
+        <ContactForm />
+      </main>
+    </>
+  );
 }

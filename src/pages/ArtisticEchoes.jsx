@@ -12,7 +12,7 @@ export default function ArtisticEchoes() {
   const btnColorHover = "hover:bg-[#0f1113]";
 
   return (
-    <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-20 tracking-wide">
+    <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-20 tracking-widest">
       <section
         className="flex flex-col items-center gap-8 mt-4 pt-8 rounded-2xl text-slate-800
                     bg-gradient-to-b bg-white to-slate-50"

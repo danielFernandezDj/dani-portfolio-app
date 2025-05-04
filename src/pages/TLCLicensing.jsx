@@ -22,7 +22,7 @@ export default function TLCLicensing() {
 
   return (
     <>
-      <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-20">
+      <main className="container mx-auto px-4 flex flex-col gap-20 md:gap-20 tracking-widest">
         <section
           className="flex flex-col items-center gap-8 mt-4 pt-4 rounded-t-xl text-slate-800
                     bg-gradient-to-b from-[#E2E065] to-slate-50"
