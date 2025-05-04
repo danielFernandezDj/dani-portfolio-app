@@ -5,7 +5,7 @@ export default function ProjectList() {
   const cardsData = CardsData()
   return (
     <>
-      <main id="projects" className="flex flex-col m-4 p-4 bg-slate-800 rounded-xl">
+      <main id="projects" className="flex flex-col m-4 p-4 bg-slate-900 rounded-xl">
 
         <div className="text-center mb-4 mt-8">
           <strong className="text-3xl text-gradient">
@@ -17,7 +17,7 @@ export default function ProjectList() {
           </p>
         </div>
 
-        <section className="flex flex-col items-center m-auto rounded-2xl bg-slate-800">
+        <section className="flex flex-col items-center m-auto rounded-2xl bg-slate-900">
           {cardsData.map((card, index) => (
             <div key={index} className="p-4 md:w-5/6">
               <Link to={card.link}>
