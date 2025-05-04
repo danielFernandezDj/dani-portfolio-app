@@ -17,10 +17,10 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex flex-col gap-16 m-auto md:max-w-3xl tracking-wide">
+      <main className="flex flex-col gap-16 m-auto p-2 md:max-w-4xl tracking-wide">
         {/* ----------------------------- HERO ----------------------------- */}
-        <section className="flex flex-col text-center my-10 md:my-28 gap-4 w-11/12 m-auto">
-          <strong className="text-4xl md:text-6xl">
+        <section className="flex flex-col text-center my-10 md:my-28 gap-4 md:gap-6 w-full m-auto">
+          <strong className="text-4xl md:text-7xl">
             Turning creative ideas into clean,{" "}
             <span className="text-gradient">modern</span> apps!
           </strong>
@@ -38,7 +38,8 @@ export default function Home() {
 
           <button
             onClick={() => scrollToContactSection("contact")}
-            className="flex gap-2 flex-row justify-center items-center p-3 w-4/6 md:w-2/6 m-auto btn-hover-animation"
+            className="flex gap-2 flex-row justify-center items-center p-3 w-4/6 md:w-2/6 m-auto mt-2 btn-hover-animation text-indigo-800 hover:text-white
+                  border-2 border-indigo-400 hover:border-white/5 hover:-translate-y-1 hover:shadow-lg"
           >
             Let&lsquo;s Talk <FaRegArrowAltCircleRight className="size-4" />
           </button>
