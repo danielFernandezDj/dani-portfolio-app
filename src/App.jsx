@@ -53,13 +53,13 @@ function NavBar() {
     <nav className={`z-50 sticky top-0 transition-all duration-300 bg-slate-50 
       ${scrolled ? 'shadow-2xl shadow-slate-200/40' : 'shadow-none'}`
     }>
-      <div className="container flex md:justify-around justify-between items-center mx-auto md:px-4 px-8 py-3 md:px-20">
+      <div className="container flex md:justify-around justify-between items-center mx-auto md:px-4 px-8 py-3">
         {/* –––––––––––––––––––––––––––– Left Side –––––––––––––––––––––––––––– */}
         <div className='flex grow-1 md:justify-center justify-start w-full space-x-12 items-center'>
           <Link to="/" className="text-3xl logo-style simple-hover-animation">
             &#123; ø &#125;
           </Link>
-          <div className="flex content-center hidden md:block space-x-4">
+          <div className="hidden content-center  md:block space-x-4">
             <Link
               to="/"
               className="nav-text-style"

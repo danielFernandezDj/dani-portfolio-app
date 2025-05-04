@@ -187,6 +187,27 @@ export default function Home() {
           </section>
 
           <ProjectList />
+
+          {/* ----------------------------- Direct Contact Section ----------------------------- */}
+          <section
+            className="flex flex-col items-center justify-center gap-4 py-10 bg-white rounded-lg text-slate-800
+                border-2 border-slate-50/0 hover:border-indigo-600 transition duration-300"
+          >
+            <strong className="text-2xl">📬 Reach Out Directly</strong>
+            <p className="text-center">
+              If you&lsquo;d rather connect without the form, feel free to email
+              me directly:
+            </p>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=your@email.com&su=Subject&body=Message"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#d2592a] hover:bg-[#0f1113] text-white px-6 py-3 rounded-md text-lg font-semibold"
+            >
+              Email Me
+            </a>
+          </section>
+
           <ContactForm />
         </div>
       </main>
