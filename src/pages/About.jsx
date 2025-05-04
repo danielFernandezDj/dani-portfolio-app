@@ -96,7 +96,7 @@ export default function About() {
               />
             </div>
             <p>
-              During my internship, I worked with engineers in Florida to
+              During my internship, I worked with engineers in Las Vegas to
               develop software used by actual clients. That experience taught me
               how to <span className="font-semibold">contribute to a team</span>
               , deliver under pressure, and always keep the{" "}

@@ -254,7 +254,7 @@ export default function ArtisticEchoes() {
           my ability to bring real-world data into usable digital experiences.
         </p>
         <img
-          src="public/wallpaper.jpg"
+          src="wallpaper.jpg"
           alt="Wallpaper Image"
           className="hidden md:block"
         />
