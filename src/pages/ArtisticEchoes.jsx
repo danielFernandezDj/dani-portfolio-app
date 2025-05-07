@@ -48,7 +48,7 @@ export default function ArtisticEchoes() {
         <div className="flex flex-col w-full m-auto gap-6 items-center">
           {cardData.length > 0 && (
             <a
-              href="https://tlclicensing.com/"
+              href="https://artistic-echoes.vercel.app/"
               target="_blank"
               className={`w-5/6 md:w-2/6 p-4 text-xl text-center font-semibold rounded-md text-white
                 bg-[${btnColor}] ${btnColorHover} transition duration-150`}
