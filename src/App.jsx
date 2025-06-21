@@ -89,7 +89,7 @@ function NavBar() {
 
         {/* –––––––––––––––––––––––––––– Right side - Icons –––––––––––––––––––––––––––– */}
         <div className='flex w-full grow-1 justify-end'>
-          <a href='https://docs.google.com/document/d/1RQ8uI58cl7uD3EA8v6hDp6M4YfOU0pwrCeszlcx7_eM/edit?usp=sharing' target='_Blank'
+          <a href='https://docs.google.com/document/d/1WgpcOFVYRFDmgwcId7LwqEzXQcjuxGgNVkYZ9x3FQko/edit?usp=sharing' target='_Blank'
             className="flex justify-center content-center gap-2 rounded-md / mx-28 py-2 px-4 btn-hover-animation md:block hidden"
           >
             Resume ➚
